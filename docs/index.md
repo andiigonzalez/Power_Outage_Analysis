@@ -2,20 +2,19 @@
 title: "Powering Through: Analyzing Trends in Major US Power Outages"
 nav_order: 1
 ---
-
 <style>
   /* Background Image Section (Placed at the top) */
-  .background-image {
-    background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ocY7c.img?w=768&h=512&m=6"); /* Added the header image URL */
-    background-size: cover;   /* Ensures the image covers the entire area */
-    background-position: center; /* Centers the background image */
-    height: 400px; /* Adjust the height as necessary */
-    text-align: center; /* Centers the text inside the banner */
-    color: white; /* Makes text white for contrast */
-    padding-top: 100px; /* Adjusts the top padding to position the title better */
-    margin-bottom: 2em;
-    position: relative;
-  }
+.background-image {
+  background-image: url("images/header_image.jpeg"); /* Corrected to .jpeg extension */
+  background-size: cover;   /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the background image */
+  height: 400px; /* Adjust the height as necessary */
+  text-align: center; /* Centers the text inside the banner */
+  color: white; /* Makes text white for contrast */
+  padding-top: 100px; /* Adjusts the top padding to position the title better */
+  margin-bottom: 2em;
+  position: relative;
+}
 
   /* Title Style on Top of the Image */
   .background-image h1 {
