@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Powering Through: Analyzing Trends in Major US Power Outages"
+subtitle: Analyzing Trends in Major US Power Outages
 ---
 
 <style>
