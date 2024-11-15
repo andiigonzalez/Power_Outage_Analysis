@@ -4,44 +4,6 @@ nav_order: 1
 ---
 
 <style>
-  /* Navigation Bar */
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    z-index: 1000;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-  }
-
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar li {
-    margin: 0 20px;
-  }
-
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px;
-  }
-
-  .navbar a:hover {
-    background-color: #f39c12;
-    color: black;
-    border-radius: 5px;
-  }
-
   /* Background Image Section (Now at the top) */
   .background-image {
     background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ocY7c.img?w=768&h=512&m=6");
@@ -59,6 +21,42 @@ nav_order: 1
     font-size: 4em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
+  }
+
+  /* Navigation Bar - Positioned at the Top Right */
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background to contrast with white text */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Vertical spacing between links */
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #f39c12;
+    color: black;
+    border-radius: 5px;
   }
 
   /* Section Titles (h2) - Black Text */
@@ -101,7 +99,7 @@ nav_order: 1
   <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
 </div>
 
-<!-- Navigation Bar -->
+<!-- Navigation Bar (Fixed at Top Right) -->
 <nav class="navbar">
   <ul>
     <li><a href="#home">Home</a></li>
