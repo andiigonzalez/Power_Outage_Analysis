@@ -11,18 +11,17 @@ nav_order: 1
   height: 400px; /* Adjust the height as necessary */
   text-align: center; /* Centers the text inside the banner */
   color: white; /* Makes text white for contrast */
-  padding-top: 100px; /* Adjusts the top padding to position the title better */
-  margin-bottom: 2em;
+  padding-top: 120px; /* Adds padding to push the title down a bit from the top */
+  margin-bottom: 0; /* Removes the bottom margin */
   position: relative;
 }
 
-  /* Title Style on Top of the Image */
-  .background-image h1 {
-    font-size: 4em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
-    font-weight: bold;
-    margin: 0;
-  }
+.background-image h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+  font-weight: bold;
+  margin: 0; /* Removes any default margin */
+}
 
   /* Navigation Bar - Positioned at the Top Right */
   .navbar {
