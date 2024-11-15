@@ -1,0 +1,18 @@
+/* Custom Banner Background */
+.custom-banner {
+  background-image: url("{{ site.baseurl }}/assets/images/header_image.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  position: relative;
+}
+
+.custom-banner h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  margin: 0;
+}
