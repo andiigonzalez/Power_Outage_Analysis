@@ -30,11 +30,6 @@ title: "Powering Through: Analyzing Trends in Major US Power Outages"
   }
 </style>
 
-<!-- Banner Section with Title -->
-<div class="custom-banner">
-  <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
-</div>
-
 <!-- Content Section -->
 <div class="content-section">
   <h2 id="home">Introduction</h2>
