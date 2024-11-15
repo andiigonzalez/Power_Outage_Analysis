@@ -16,6 +16,7 @@ nav_order: 1
   }
 
   .background-image h1 {
+    font-size: 4em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
 
