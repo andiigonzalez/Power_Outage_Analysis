@@ -33,12 +33,12 @@ subtitle: Analyzing Trends in Major US Power Outages
 
 <!-- Content Section -->
 <div class="content-section">
-  <h2 id="home">Introduction</h2>
+  <h2 id="home" style="font-weight: bold;">Introduction</h2>
   <p>Welcome to the first page of our power outage analysis! Here, we'll explore key trends and insights into the patterns and impact of power disruptions across the United States.</p>
 
   <h2 id="data_cleaning">Data Cleaning and Exploratory Analysis</h2>
 
-  <h3>Data Cleaning</h3>
+  <h3 style="font-weight: bold;">Data Cleaning</h3>
   <p>[Description of your data cleaning process, including:
     - Initial dataset overview
     - Steps taken to clean the data
@@ -56,7 +56,7 @@ subtitle: Analyzing Trends in Major US Power Outages
     - Key patterns discovered
     - Notable relationships]</p>
 
-  <h2 id="missingness">Assessment of Missingness</h2>
+  <h2 id="missingness" style="font-weight: bold;">Assessment of Missingness</h2>
 
   <h3>NMAR Analysis</h3>
   <p>[Content for NMAR Analysis]</p>
@@ -64,18 +64,18 @@ subtitle: Analyzing Trends in Major US Power Outages
   <h3>Missingness Dependencies</h3>
   <p>[Content for Missingness Dependencies]</p>
 
-  <h2 id="hypothesis">Hypothesis Testing</h2>
+  <h2 id="hypothesis" style="font-weight: bold;">Hypothesis Testing</h2>
   <p>[Content for Hypothesis Testing]</p>
 
-  <h2>Framing a Prediction Problem</h2>
+  <h2style="font-weight: bold;">Framing a Prediction Problem</h2>
   <p>[Content for Prediction Problem]</p>
 
-  <h2>Baseline Model</h2>
+  <h2 style="font-weight: bold;">Baseline Model</h2>
   <p>[Content for Baseline Model]</p>
 
-  <h2 id="predictive">Final Model</h2>
+  <h2 id="predictive" style="font-weight: bold;">Final Model</h2>
   <p>[Content for Final Model]</p>
 
-  <h2>Fairness Analysis</h2>
+  <h2 style="font-weight: bold;">Fairness Analysis</h2>
   <p>[Content for Fairness Analysis]</p>
 </div>
