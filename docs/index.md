@@ -4,7 +4,12 @@ nav_order: 1
 ---
 
 <style>
-  /* Background Image Section (Now at the top) */
+  /* Remove default green banner */
+  .navbar-default {
+    display: none;
+  }
+
+  /* Background Image Section (Placed at the top) */
   .background-image {
     background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ocY7c.img?w=768&h=512&m=6");
     background-size: cover;
@@ -14,9 +19,10 @@ nav_order: 1
     color: white;
     padding-top: 150px;
     margin-bottom: 2em;
+    position: relative;
   }
 
-  /* White Text for the Main Title */
+  /* Title Style on Top of the Image */
   .background-image h1 {
     font-size: 4em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -59,7 +65,7 @@ nav_order: 1
     border-radius: 5px;
   }
 
-  /* Section Titles (h2) - Black Text */
+  /* Content Section Titles (h2) - Black Text */
   h2 {
     margin-top: 2em;
     padding-bottom: 0.5em;
@@ -85,13 +91,6 @@ nav_order: 1
   body {
     padding-top: 60px; /* Adjusted padding to fit the fixed navbar */
   }
-
-  /* Optional: Style for sections if needed */
-  #home, #about, #services, #contact {
-    padding: 50px;
-    margin-top: 60px; /* Space between the top navbar and sections */
-  }
-
 </style>
 
 <!-- Background Image Section -->
@@ -103,9 +102,13 @@ nav_order: 1
 <nav class="navbar">
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#data_cleaning">Data Cleaning, Univariate and Bivariate Analysis</a></li>
+    <li><a href="#missingness">Assessment of Missingness</a></li>
+    <li><a href="#hypothesis">Hypothesis Testing</a></li>
+    <li><a href="#predictive">Predictive Model</a></li>
+    <li><a href="#emergency_services">Emergency Services</a></li>
+    <li><a href="#about_us">About Us</a></li>
+    <li><a href="#citations">Citations</a></li>
   </ul>
 </nav>
 
@@ -114,7 +117,7 @@ nav_order: 1
   <h2 id="home">Introduction</h2>
   <p>Welcome to the first page of our power outage analysis! Here, we'll explore key trends and insights into the patterns and impact of power disruptions across the United States.</p>
 
-  <h2 id="about">Data Cleaning and Exploratory Analysis</h2>
+  <h2 id="data_cleaning">Data Cleaning and Exploratory Analysis</h2>
   <h3>Data Cleaning</h3>
   <p>[Description of your data cleaning process, including:
     - Initial dataset overview
@@ -133,14 +136,14 @@ nav_order: 1
     - Key patterns discovered
     - Notable relationships]</p>
 
-  <h2 id="services">Assessment of Missingness</h2>
+  <h2 id="missingness">Assessment of Missingness</h2>
   <h3>NMAR Analysis</h3>
   <p>[Content for NMAR Analysis]</p>
 
   <h3>Missingness Dependencies</h3>
   <p>[Content for Missingness Dependencies]</p>
 
-  <h2 id="contact">Hypothesis Testing</h2>
+  <h2 id="hypothesis">Hypothesis Testing</h2>
   <p>[Content for Hypothesis Testing]</p>
 
   <h2>Framing a Prediction Problem</h2>
@@ -149,7 +152,7 @@ nav_order: 1
   <h2>Baseline Model</h2>
   <p>[Content for Baseline Model]</p>
 
-  <h2>Final Model</h2>
+  <h2 id= "predictive">Final Model</h2>
   <p>[Content for Final Model]</p>
 
   <h2>Fairness Analysis</h2>
