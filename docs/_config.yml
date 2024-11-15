@@ -11,9 +11,11 @@ markdown: kramdown
 # Navigation
 navigation:
   - text: Home
-    link: /
-  - text: About
-    link: /about
+    link: /index
+  - text: Emergency Resources
+    link: /emergency
+  - text: Citations
+    link: /citations
 
 # Theme customization
 lumocs:
