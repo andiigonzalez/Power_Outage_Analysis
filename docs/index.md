@@ -6,7 +6,7 @@ title: "Powering Through: Analyzing Trends in Major US Power Outages"
 <style>
   /* Custom CSS for the Banner Image */
   .custom-banner {
-    background-image: url("/assets/images/header_image.jpeg"); /* Path to your image */
+    background-image: url("../assets/images/header_image.jpeg"); /* Path to your image */
     background-size: cover;
     background-position: center;
     height: 400px;
