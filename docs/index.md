@@ -31,10 +31,10 @@ nav_order: 1
 
   /* Navigation Bar - Positioned at the Top Right */
   .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.5); /* Dark background to contrast with white text */
     z-index: 1000;
     display: flex;
@@ -152,7 +152,7 @@ nav_order: 1
   <h2>Baseline Model</h2>
   <p>[Content for Baseline Model]</p>
 
-  <h2 id= "predictive">Final Model</h2>
+  <h2 id="predictive">Final Model</h2>
   <p>[Content for Final Model]</p>
 
   <h2>Fairness Analysis</h2>
