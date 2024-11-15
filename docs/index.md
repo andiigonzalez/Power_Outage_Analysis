@@ -42,7 +42,7 @@ nav_order: 1
     border-radius: 5px;
   }
 
-  /* Background Image Section */
+  /* Background Image Section (Now at the top) */
   .background-image {
     background-image: url("https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ocY7c.img?w=768&h=512&m=6");
     background-size: cover;
@@ -85,7 +85,7 @@ nav_order: 1
 
   /* Add padding for body content to avoid overlap with the fixed navbar */
   body {
-    padding-top: 80px;
+    padding-top: 60px; /* Adjusted padding to fit the fixed navbar */
   }
 
   /* Optional: Style for sections if needed */
@@ -96,6 +96,11 @@ nav_order: 1
 
 </style>
 
+<!-- Background Image Section -->
+<div class="background-image">
+  <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
+</div>
+
 <!-- Navigation Bar -->
 <nav class="navbar">
   <ul>
@@ -105,11 +110,6 @@ nav_order: 1
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
-<!-- Background Image Section -->
-<div class="background-image">
-  <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
-</div>
 
 <!-- Content Sections -->
 <div class="content-section">
