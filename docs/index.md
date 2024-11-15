@@ -67,7 +67,7 @@ subtitle: Analyzing Trends in Major US Power Outages
   <h2 id="hypothesis" style="font-weight: bold;">Hypothesis Testing</h2>
   <p>[Content for Hypothesis Testing]</p>
 
-  <h2style="font-weight: bold;">Framing a Prediction Problem</h2>
+  <h2 style="font-weight: bold;">Framing a Prediction Problem</h2>
   <p>[Content for Prediction Problem]</p>
 
   <h2 style="font-weight: bold;">Baseline Model</h2>
