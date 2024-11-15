@@ -5,7 +5,7 @@ nav_order: 1
 
 <style>
   .background-image {
-    background-image: url("https://whnt.com/wp-content/uploads/sites/20/2024/01/power20outage_1536847478770.JPG_55241905_ver1.0-1-2.jpg?w=1280&h=720&crop=1");
+    background-image: url("[https://whnt.com/wp-content/uploads/sites/20/2024/01/power20outage_1536847478770.JPG_55241905_ver1.0-1-2.jpg?w=1280&h=720&crop=1](https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1ocY7c.img?w=768&h=512&m=6)");
     background-size: cover;
     background-position: center;
     height: 400px;
