@@ -42,14 +42,27 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   }
 
   /* Styling for content headers */
-  .content-section h1,
-  .content-section h2,
-  .content-section h3,
-  .content-section h4,
-  .content-section h5,
-  .content-section h6 {
-    color: black !important;
+  body .content-section h1,
+  body .content-section h2,
+  body .content-section h3,
+  body .content-section h4,
+  body .content-section h5,
+  body .content-section h6 {
+  color: black !important;
+  font-weight: bold;
   }
+  body .content-section h1 {
+    font-size: 2.5em;  /* Larger size for h1 */
+  }
+
+  body .content-section h2 {
+    font-size: 2em;    /* Larger size for h2 */
+  }
+  
+  body .content-section h3 {
+    font-size: 1.75em; /* Larger size for h3 */
+  }
+  
 
   /* Navigation Bar Styles */
   nav {
