@@ -73,7 +73,7 @@ p, ul, ol, li {
 /* Navigation Bar Styles */
 nav {
   position: absolute; /* Place the nav inside the banner */
-  bottom: 10px; /* Position it near the bottom of the banner */
+  bottom: 80px; /* Position it near the bottom of the banner */
   width: 100%; /* Make it span the full width of the banner */
   display: flex; /* Horizontal layout */
   justify-content: center; /* Center the navigation links */
