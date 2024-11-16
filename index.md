@@ -18,7 +18,7 @@ The project map below illustrates the different stages and data points we will a
 
 ### Column Descriptions
 
-| ####COLUMN                    | ####DESCRIPTION                                                       |
+| COLUMN                      |    DESCRIPTION                                                       |
 |-----------------------------|-----------------------------------------------------------------------------|
 | `YEAR`                     | Year an outage occurred                                                     |
 | `MONTH`                    | Month an outage occurred                                                    |
