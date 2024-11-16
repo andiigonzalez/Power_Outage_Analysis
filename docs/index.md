@@ -89,12 +89,15 @@ title: "Powering Through: Analyzing Trends in Major US Power Outages"
       border-collapse: collapse;
       background-color: white;
     }
+    table, th, td {
+      border: 1px solid black; /* 1px black border around the table and cells */
+    }
 
     th,
     td {
       font-family: serif;
       font-weight: normal;
-      padding: 10px;
+      padding: 8px;
       text-align: center;
       border: 1px solid #ddd;
     }
@@ -106,6 +109,12 @@ title: "Powering Through: Analyzing Trends in Major US Power Outages"
 
     td {
       color: #555;
+    }
+    td.description {
+      white-space: nowrap; /* Prevents text from wrapping into multiple lines */
+      overflow: hidden; /* Ensures text doesn't overflow */
+    text-overflow: ellipsis; /* Adds "..." if the text overflows */
+    max-width: 300px; /* Set max width for the Description column */
     }
 
     /* Code Block Styling for the first column header */
