@@ -120,14 +120,12 @@ table, th, td {
 
 tr {
   border-bottom: 1px solid #ddd; 
-  margin-bottom: 10px;
-  margin-top: 10px;
 
 }
 
 
 th {
-  font-family: sans-serif;            /* Serif font for headers */
+  font-family: serif;            /* Serif font for headers */
   font-weight: bold;              /* Make headers bold */
   text-transform: uppercase;      /* Make headers uppercase */
   padding: 8px;
