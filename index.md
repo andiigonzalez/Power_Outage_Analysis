@@ -147,11 +147,6 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
     width: 100%;
     bottom: 0;
   }
-</style>
-<div class="custom-banner">
-  <h1>{{ page.title }}</h1>
-  <p class="subtitle">{{ page.subtitle }}</p>  <!-- Add subtitle wrapped in <p> -->
-</div>
 
 ## Introduction
 
