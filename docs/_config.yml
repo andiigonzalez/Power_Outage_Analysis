@@ -2,7 +2,7 @@
 title: Power Outage Analysis
 description: Analysis of power outages and their impacts
 baseurl: "/Power_Outage_Analysis"
-url: ""  # your GitHub Pages URL will be automatically set
+url: "https://andiigonzalez.github.io"  # your GitHub Pages URL will be automatically set
 
 # Theme settings
 remote_theme: pages-themes/cayman@v0.2.0
