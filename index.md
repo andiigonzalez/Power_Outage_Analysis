@@ -53,6 +53,11 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
     color: white !important;
     margin: 0;
   }
+  .custom-banner + p.subtitle {
+  font-size: 2em;  /* Adjust this value as needed */
+  color: white;    /* Set the color to black or any color you prefer */
+  margin-top: 20px; /* Optional: add some margin above the paragraph */
+}
 
   /* Hide the default title */
   .page-title {
