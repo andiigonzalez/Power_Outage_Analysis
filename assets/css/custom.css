@@ -118,7 +118,8 @@ table, th, td {
 }
 
 tr {
-  border-bottom: 1px solid #ddd;  /* Light grey border between rows */
+  border-bottom: 1px solid #ddd; 
+   margin-bottom: 10px;
 }
 
 
