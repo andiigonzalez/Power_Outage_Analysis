@@ -145,17 +145,9 @@ title: "Powering Through: Analyzing Trends in Major US Power Outages"
   </div>
   
 <nav>
-  <!-- Dynamically generated navigation from site.navigation -->
   {% for item in site.navigation %}
     <a href="{{ item.link }}">{{ item.text }}</a>
   {% endfor %}
-</nav>
-
-<nav>
-  <!-- Custom navigation with hardcoded sections -->
-  <a href="#emergency">Emergency Services</a>
-  <a href="#about">About Us</a>
-  <a href="#data">Citation</a>
 </nav>
 
   <main>
