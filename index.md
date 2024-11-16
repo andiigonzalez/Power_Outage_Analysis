@@ -15,7 +15,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   .site-header {
     display: none;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
   color: black !important;   /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   }
