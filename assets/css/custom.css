@@ -108,7 +108,8 @@ table {
   font-family: serif;
   width: 70%;
   margin: 20px auto;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 10px;
   background-color: white;
 }
 
