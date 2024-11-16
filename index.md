@@ -86,7 +86,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 
   /* Table Styling */
   table {
-    width: 80%;
+    width: 70%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
