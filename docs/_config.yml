@@ -19,3 +19,6 @@ navigation:
     link: /emergency
   - text: Citations
     link: /citations
+header:
+  image: /assets/images/header_image.jpeg
+  caption: "Powering Through: Analyzing Trends in Major US Power Outages"
