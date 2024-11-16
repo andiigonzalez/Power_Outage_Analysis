@@ -18,15 +18,21 @@ h2, h3, h4, h5, h6 {
 
 /* Specific font sizes for each header */
 h1 {
+  font-family: serif;
   font-size: 2.5em !important; /* Larger size for h1 */
 }
 
 h2 {
+  font-family: serif;
   font-size: 2.2em !important; /* Slightly larger size for h2 */
 }
 
 h3 {
+  font-family: serif;
   font-size: 2em !important;   /* Larger size for h3 */
+}
+p, ul, ol, li {
+  font-family: serif;
 }
 
 /* Custom Banner Styles */
