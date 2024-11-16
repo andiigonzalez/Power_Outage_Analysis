@@ -1,5 +1,5 @@
 # Site settings
-title: Power Outage Analysis
+# title: ""
 description: An analysis of major power outages across the United States
 theme: jekyll-theme-cayman  # Use this or choose one theme, not both
 markdown: kramdown
