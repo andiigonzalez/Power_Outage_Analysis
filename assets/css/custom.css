@@ -33,7 +33,7 @@ h3 {
   background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 500px;
   text-align: center;
   color: white;
   padding-top: 120px;
@@ -52,7 +52,7 @@ h3 {
 .custom-banner h3 {
   font-size: 2.5em !important;
   color: white !important; /* Keep white color for banner subtitle */
-  margin-top: 10px;
+  margin-top: 30px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for better contrast */
 }
 
