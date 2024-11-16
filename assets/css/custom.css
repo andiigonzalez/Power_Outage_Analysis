@@ -73,21 +73,27 @@ p, ul, ol, li {
 /* Navigation Bar Styles */
 nav {
   overflow: hidden;
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the links horizontally */
+  position: fixed; /* Stick to the top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 10px 0; /* Spacing inside the nav */
 }
 
 nav a {
-  float: left;
   font-family: serif;
   display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: black; /* Default link color */
+  text-align: center; /* Center text inside links */
+  padding: 14px 20px; /* Spacing for clickable area */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
 nav a:hover {
-  color: #ff6347;
+  color: #ff6347; /* Highlight on hover */
 }
 
 /* Centered Content Styles */
