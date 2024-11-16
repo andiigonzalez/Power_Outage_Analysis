@@ -1,5 +1,6 @@
 # Site settings
-title: Power Outage Analysis
+title: Powering Through
+subtitle: 
 description: Analysis of power outages and their impacts
 baseurl: "/Power_Outage_Analysis"
 url: "https://andiigonzalez.github.io"  # your GitHub Pages URL will be automatically set
