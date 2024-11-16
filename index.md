@@ -15,6 +15,23 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   .site-header {
     display: none;
   }
+  h1, h2, h3, h4, h5, h6 {
+  color: black !important;   /* Ensure all headers are black */
+  font-weight: bold;         /* Make headers bold */
+  }
+
+  /* Specific font sizes for each header */
+  h1 {
+    font-size: 2.5em !important; /* Larger size for h1 */
+  }
+  
+  h2 {
+    font-size: 2.2em !important; /* Slightly larger size for h2 */
+  }
+  
+  h3 {
+    font-size: 2em !important;   /* Larger size for h3 */
+  }
 
   /* Custom Banner Styles */
   .custom-banner {
@@ -30,7 +47,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   }
 
   .custom-banner h1 {
-    font-size: 4em;
+    font-size: 5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
     margin: 0;
@@ -39,28 +56,6 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   /* Hide the default title */
   .page-title {
     display: none;
-  }
-
-  /* Styling for content headers */
-  body .content-section h1,
-  body .content-section h2,
-  body .content-section h3,
-  body .content-section h4,
-  body .content-section h5,
-  body .content-section h6 {
-  color: black !important;
-  font-weight: bold;
-  }
-  body .content-section h1 {
-    font-size: 2.5em;  /* Larger size for h1 */
-  }
-
-  body .content-section h2 {
-    font-size: 2em;    /* Larger size for h2 */
-  }
-  
-  body .content-section h3 {
-    font-size: 1.75em; /* Larger size for h3 */
   }
   
 
