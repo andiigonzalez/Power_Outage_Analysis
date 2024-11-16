@@ -136,11 +136,6 @@
 </head>
 
 <body>
-
-  <div class="custom-banner">
-    <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
-  </div>
-
   <nav>
     <a href="#home">Home</a>
     <a href="#about">Emergency Services</a>
