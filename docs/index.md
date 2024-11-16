@@ -37,7 +37,22 @@ subtitle: Analyzing Trends in Major US Power Outages
 
 <div class="content-section">
   <h2 id="home" style="font-weight: bold;">Introduction</h2>
-  <p>Welcome to the first page of our power outage analysis! Here, we'll explore key trends and insights into the patterns and impact of power disruptions across the United States.</p>
+  <p> paragraph1.</p>
+  <p> paragraph2.</p>
+  <p> Project map</p>
+  <table>
+    <thead>
+      <tr>
+      <th>Column Name</th>
+      <th> Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>
+        <code
+      </td>
+    </tbody>
+  </table>
 
 <div class="content-section">
   <h2 id="home" style="font-weight: bold;">Introduction</h2>
