@@ -111,11 +111,11 @@ th, td {
 
 th {
   background-color: #f4f4f4;
-  color: #333;
+  color: #3c434a;
 }
 
 td {
-  color: #555;
+  color: #3c434a;
 }
 
 td.description {
@@ -129,7 +129,7 @@ td.description {
 th code, code {
   font-family: 'Roboto Mono', monospace;
   background-color: #E6FFE3;
-  color: #333;
+  color: #3c434a;
   padding: 2px 4px;
   border-radius: 3px;
 }
