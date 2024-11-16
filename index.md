@@ -15,7 +15,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 
   /* Custom Banner Styles */
   .custom-banner {
-    background-image: url("../assets/images/header_image.jpeg");
+    background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
     background-size: cover;
     background-position: center;
     height: 400px;
