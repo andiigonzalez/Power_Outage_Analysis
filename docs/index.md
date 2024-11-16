@@ -1,310 +1,216 @@
 ---
 layout: default
 title: "Powering Through"
-subtitle: Analyzing Trends in Major US Power Outages from 2004 to 2016
+subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 ---
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
 
-  <!-- Link to Google Fonts for Roboto Mono Medium -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  /* Custom Banner Styles */
+  .custom-banner {
+    background-image: url("../assets/images/header_image.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    margin-bottom: 0;
+    position: relative;
+  }
 
-  <!-- Basic Styles for the Page Layout and Navigation -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
+  .custom-banner h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    margin: 0;
+  }
 
-    /* Custom CSS for the Banner Image */
-    .custom-banner {
-      background-image: url("../assets/images/header_image.jpeg");
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      text-align: center;
-      color: white;
-      padding-top: 120px;
-      margin-bottom: 0;
-      position: relative;
-    }
+  /* Hide the default title */
+  .page-title {
+    display: none;
+  }
 
-    .custom-banner h1 {
-      font-size: 4em;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      font-weight: bold;
-      margin: 0;
-    }
+  /* Styling for content headers */
+  .content-section h1,
+  .content-section h2,
+  .content-section h3,
+  .content-section h4,
+  .content-section h5,
+  .content-section h6 {
+    color: black !important;
+  }
 
-    /* Hide any default title rendered by the layout */
-    .page-title {
-      display: none;
-    }
+  /* Navigation Bar Styles */
+  nav {
+    overflow: hidden;
+  }
 
-    /* Make all headers under the banner black */
-    .content-section h1,
-    .content-section h2,
-    .content-section h3,
-    .content-section h4,
-    .content-section h5,
-    .content-section h6 {
-      color: black !important;
-    }
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
 
-    /* Navigation Bar Styling */
-    nav {
-      overflow: hidden;
-    }
+  nav a:hover {
+    color: #ff6347;
+  }
 
-    nav a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+  /* Centered Content Styles */
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
 
-    nav a:hover {
-      color: #ff6347;
-    }
+  /* Table Styling */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+  }
 
-    /* Center Content on the Page */
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
+  table, th, td {
+    border: 1px solid black;
+  }
 
-    /* Table Styling */
-    table {
-      width: 80%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      background-color: white;
-    }
-    table, th, td {
-      border: 1px solid black; /* 1px black border around the table and cells */
-    }
+  th, td {
+    font-family: serif;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+  }
 
-    th,
-    td {
-      font-family: serif;
-      font-weight: normal;
-      padding: 8px;
-      text-align: center;
-      border: 1px solid #ddd;
-    }
+  th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
 
-    th {
-      background-color: #f4f4f4;
-      color: #333;
-    }
+  td {
+    color: #555;
+  }
 
-    td {
-      color: #555;
-    }
-    td.description {
-      white-space: nowrap; /* Prevents text from wrapping into multiple lines */
-      overflow: hidden; /* Ensures text doesn't overflow */
-    text-overflow: ellipsis; /* Adds "..." if the text overflows */
-    max-width: 300px; /* Set max width for the Description column */
-    }
+  td.description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
 
-    /* Code Block Styling for the first column header */
-    th code {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: 500;
-      background-color: rgba(144, 238, 144, 0.7);
-      color: #333;
-      padding: 2px 4px;
-      border-radius: 3px;
-    }
+  /* Code Block Styling */
+  th code, code {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgba(144, 238, 144, 0.7);
+    color: #333;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
 
-    /* Code Block Styling */
-    code {
-      font-family: 'Roboto Mono', monospace;
-      background-color: #f9f9f9;
-      padding: 2px 4px;
-      border-radius: 3px;
-    }
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
 
-    /* Footer Styling */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
-</head>
+<div class="custom-banner">
+  <h1>{{ site.title }}: {{ site.subtitle }}</h1>
+  <p>Your introduction or subtitle text here.</p>
+</div>
 
-<body>
-  <div class="custom-banner">
-    <h1>{{ site.title }}: {{ site.description }}</h1>
-  </div>
-  
-<nav>
-  {% for item in site.navigation %}
-    <a href="{{ item.link }}">{{ item.text }}</a>
-  {% endfor %}
-</nav>
+## Introduction
 
-  <main>
-    <div class="content-section">
-      <h2 id="home" style="font-weight: bold;">Introduction</h2>
-      <p>This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.</p>
+This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.
 
-      <p>By focusing on various factors such as climate anomalies, geographic regions, and cause categories, we aim to uncover key insights into the challenges posed by power outages in different parts of the country. The findings may help in improving preparedness and response strategies for such events.</p>
+By focusing on various factors such as climate anomalies, geographic regions, and cause categories, we aim to uncover key insights into the challenges posed by power outages in different parts of the country. The findings may help in improving preparedness and response strategies for such events.
 
-      <p>The project map below illustrates the different stages and data points we will analyze throughout this study.</p>
+The project map below illustrates the different stages and data points we will analyze throughout this study.
 
-      <!-- Project map placeholder -->
-      <p><strong>Project Map:</strong> [Insert your project map here, e.g., flowchart of analysis process]</p>
+**Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
 
-      <!-- Table with column descriptions -->
-      <table>
-        <thead>
-          <tr>
-            <th>Column</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>'YEAR'</code></td>
-            <td>Year an outage occurred</td>
-          </tr>
-          <tr>
-            <td><code>'MONTH'</code></td>
-            <td>Month an outage occurred</td>
-          </tr>
-          <tr>
-            <td><code>'U.S._STATE'</code></td>
-            <td>State the outage occurred in</td>
-          </tr>
-          <tr>
-            <td><code>'NERC.REGION'</code></td>
-            <td>North American Electric Reliability Corporation (NERC) regions involved in the outage event</td>
-          </tr>
-          <tr>
-            <td><code>'CLIMATE.REGION'</code></td>
-            <td>U.S. Climate regions as specified by National Centers for Environmental Information (9 Regions)</td>
-          </tr>
-          <tr>
-            <td><code>'ANOMALY.LEVEL'</code></td>
-            <td>Oceanic El Niño/La Niña (ONI) index referring to the cold and warm episodes by season</td>
-          </tr>
-          <tr>
-            <td><code>'OUTAGE.START.DATE'</code></td>
-            <td>Day of the year when the outage event started</td>
-          </tr>
-          <tr>
-            <td><code>'OUTAGE.START.TIME'</code></td>
-            <td>Time of the day when the outage event started</td>
-          </tr>
-          <tr>
-            <td><code>'OUTAGE.RESTORATION.DATE'</code></td>
-            <td>Day of the year when power was restored to all the customers</td>
-          </tr>
-          <tr>
-            <td><code>'OUTAGE.RESTORATION.TIME'</code></td>
-            <td>Time of the day when power was restored to all the customers</td>
-          </tr>
-          <tr>
-            <td><code>'CAUSE.CATEGORY'</code></td>
-            <td>Categories of all the events causing the major power outages</td>
-          </tr>
-          <tr>
-            <td><code>'OUTAGE.DURATION'</code></td>
-            <td>Duration of outage events (in minutes)</td>
-          </tr>
-          <tr>
-            <td><code>'DEMAND.LOSS.MW'</code></td>
-            <td>Amount of peak demand lost during an outage event (in Megawatt)</td>
-          </tr>
-          <tr>
-            <td><code>'CUSTOMERS.AFFECTED'</code></td>
-            <td>Number of customers affected by the power outage event</td>
-          </tr>
-          <tr>
-            <td><code>'TOTAL.PRICE'</code></td>
-            <td>Average monthly electricity price in the U.S. state (cents/kilowatt-hour)</td>
-          </tr>
-          <tr>
-            <td><code>'TOTAL.SALES'</code></td>
-            <td>Total electricity consumption in the U.S. state (megawatt-hour)</td>
-          </tr>
-          <tr>
-            <td><code>'TOTAL.CUSTOMERS'</code></td>
-            <td>Annual number of total customers served in the U.S. state</td>
-          </tr>
-          <tr>
-            <td><code>'POPPCT_URBAN'</code></td>
-            <td>Percentage of the total population of the U.S. state represented by the urban population (in %)</td>
-          </tr>
-          <tr>
-            <td><code>'POPDEN_URBAN'</code></td>
-            <td>Population density of the urban areas (persons per square mile)</td>
-          </tr>
-          <tr>
-            <td><code>'AREAPCT_URBAN'</code></td>
-            <td>Percentage of the land area of the U.S. state represented by the land area of the urban areas (in %)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+---
 
-    <section id="data_cleaning">
-      <h2>Data Cleaning and Exploratory Analysis</h2>
-      <h3>Data Cleaning</h3>
-      <p>[Description of your data cleaning process]</p>
-      
-      <h3>Univariate Analysis</h3>
-      <p>[Analysis of individual variables]</p>
-      
-      <h3>Bivariate Analysis</h3>
-      <p>[Analysis of relationships between variables]</p>
-    </section>
+### Column Descriptions
 
-    <section id="missingness">
-      <h2>Assessment of Missingness</h2>
-      <h3>NMAR Analysis</h3>
-      <p>[Content for NMAR Analysis]</p>
+| Column                      | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| `'YEAR'`                     | Year an outage occurred                                                     |
+| `'MONTH'`                    | Month an outage occurred                                                    |
+| `'U.S._STATE'`               | State the outage occurred in                                                |
+| `'NERC.REGION'`              | North American Electric Reliability Corporation (NERC) regions involved     |
+| `'CLIMATE.REGION'`           | U.S. Climate regions as specified by National Centers for Environmental Information (9 Regions) |
+| `'ANOMALY.LEVEL'`            | Oceanic El Niño/La Niña (ONI) index referring to cold and warm episodes    |
+| `'OUTAGE.START.DATE'`        | Day of the year when the outage event started                               |
+| `'OUTAGE.START.TIME'`        | Time of the day when the outage event started                               |
+| `'OUTAGE.RESTORATION.DATE'`  | Day of the year when power was restored                                     |
+| `'OUTAGE.RESTORATION.TIME'`  | Time of the day when power was restored                                     |
+| `'CAUSE.CATEGORY'`           | Categories of all events causing major power outages                        |
+| `'OUTAGE.DURATION'`          | Duration of outage events (in minutes)                                      |
+| `'DEMAND.LOSS.MW'`           | Amount of peak demand lost during an outage event (in Megawatt)             |
+| `'CUSTOMERS.AFFECTED'`       | Number of customers affected by the outage                                  |
+| `'TOTAL.PRICE'`              | Average monthly electricity price in the U.S. state (cents/kilowatt-hour)  |
+| `'TOTAL.SALES'`              | Total electricity consumption in the U.S. state (megawatt-hour)             |
+| `'TOTAL.CUSTOMERS'`          | Annual number of total customers served in the U.S. state                   |
+| `'POPPCT_URBAN'`             | Percentage of the total population of the U.S. state represented by urban areas (in %) |
+| `'POPDEN_URBAN'`             | Population density of urban areas (persons per square mile)                 |
+| `'AREAPCT_URBAN'`            | Percentage of the land area of the U.S. state represented by urban areas (in %) |
 
-      <h3>Missingness Dependencies</h3>
-      <p>[Content for Missingness Dependencies]</p>
-    </section>
+---
 
-    <section id="hypothesis">
-      <h2>Hypothesis Testing</h2>
-      <p>[Content for Hypothesis Testing]</p>
-    </section>
+### Data Cleaning and Exploratory Analysis
 
-    <section id="predictive">
-      <h2>Final Model</h2>
-      <p>[Content for Final Model]</p>
-    </section>
+#### Data Cleaning
+[Description of your data cleaning process]
 
-    <section>
-      <h2>Fairness Analysis</h2>
-      <p>[Content for Fairness Analysis]</p>
-    </section>
-  </main>
+#### Univariate Analysis
+[Analysis of individual variables]
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Powering Through: All Rights Reserved</p>
-  </footer>
+#### Bivariate Analysis
+[Analysis of relationships between variables]
 
-</body>
-</html>
+---
+
+### Assessment of Missingness
+
+#### NMAR Analysis
+[Content for NMAR Analysis]
+
+#### Missingness Dependencies
+[Content for Missingness Dependencies]
+
+---
+
+### Hypothesis Testing
+[Content for Hypothesis Testing]
+
+---
+
+### Final Model
+[Content for Final Model]
+
+---
+
+### Fairness Analysis
+[Content for Fairness Analysis]
+
+---
+
+### Footer
+
+&copy; 2024 Powering Through: All Rights Reserved
