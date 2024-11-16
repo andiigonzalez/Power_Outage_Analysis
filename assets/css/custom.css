@@ -109,13 +109,16 @@ table {
   width: 70%;
   margin: 20px auto;
   border-collapse: collapse;
-  border-spacing: 0 10px;
   background-color: white;
 }
 
 table, th, td {
+  padding: 12px;
   border: 1px solid black;
   font: serif;
+}
+th, td {
+  border-top: 1px solid #ddd; /* Adds top borders for the cells */
 }
 
 tr {
