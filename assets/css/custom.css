@@ -77,7 +77,7 @@ nav {
   width: 100%; /* Make it span the full width of the banner */
   display: flex; /* Horizontal layout */
   justify-content: center; /* Center the navigation links */
-  z-index: 2; /* Ensure it appears above the banner */
+  z-index: 10; /* Ensure it appears above the banner */
 }
 
 nav a {
