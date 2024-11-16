@@ -3,6 +3,10 @@ layout: default
 title: "Powering Through"
 subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 ---
+<div class="custom-banner" style="background-image: url('https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg');">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.subtitle }}</p>
+</div>
 
 <style>
   /* Global Styles */
