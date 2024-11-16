@@ -49,10 +49,11 @@ h3 {
   margin: 0;
 }
 
-.custom-banner + p.subtitle {
-  font-size: 2em;  /* Adjust this value as needed */
-  color: white;    /* Set the color to white */
-  margin-top: 20px; /* Optional: add some margin above the paragraph */
+.custom-banner h3 {
+  font-size: 2.5em !important;
+  color: white !important; /* Keep white color for banner subtitle */
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for better contrast */
 }
 
 /* Hide the default title */
