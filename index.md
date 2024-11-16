@@ -147,7 +147,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
     width: 100%;
     bottom: 0;
   }
-  </style>
+</style>
 
 ## Introduction
 
