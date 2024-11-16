@@ -111,7 +111,7 @@ tr {
 
 th, td {
   font-family: serif;
-  font-weight: bold;
+  font-weight: normal;
   padding: 8px;
   text-align: center;
 }
