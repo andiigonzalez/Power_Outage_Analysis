@@ -49,9 +49,9 @@
 
     /* Navigation Bar Styling */
     nav {
-      background-color: #333;
       overflow: hidden;
     }
+
     nav a {
       float: left;
       display: block;
@@ -59,10 +59,11 @@
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
+      transition: color 0.3s ease; /* Smooth transition for color change */
     }
+
     nav a:hover {
-      background-color: #ddd;
-      color: black;
+      color: #ff6347; /* Change this to any color you prefer */
     }
 
     /* Center Content on the Page */
@@ -82,6 +83,8 @@
     th, td {
       font-family: 'Roboto Mono', monospace;
       font-weight: 500;
+      background-color: rgba(144, 238, 144, 0.7);
+      color: #333;
       padding: 10px;
       text-align: center;
       border: 1px solid #ddd;
@@ -119,163 +122,163 @@
 </head>
 <body> 
 
-<div class="custom-banner">
-  <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
-</div>
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#analysis">Analysis</a>
-    <a href="#data">Data</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-<div class="content-section">
-  <h2 id="home" style="font-weight: bold;">Introduction</h2>
-  <p> paragraph1.</p>
-  <p> paragraph2.</p>
-  <p> Project map</p>
-  <table>
-      <thead>
-        <tr>
-          <th>Column</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code>'YEAR'</code></td>
-          <td>Year an outage occurred</td>
-        </tr>
-        <tr>
-          <td><code>'MONTH'</code></td>
-          <td>Month an outage occurred</td>
-        </tr>
-        <tr>
-          <td><code>'U.S._STATE'</code></td>
-          <td>State the outage occurred in</td>
-        </tr>
-        <tr>
-          <td><code>'NERC.REGION'</code></td>
-          <td>North American Electric Reliability Corporation (NERC) regions involved in the outage event</td>
-        </tr>
-        <tr>
-          <td><code>'CLIMATE.REGION'</code></td>
-          <td>U.S. Climate regions as specified by National Centers for Environmental Information (9 Regions)</td>
-        </tr>
-        <tr>
-          <td><code>'ANOMALY.LEVEL'</code></td>
-          <td>Oceanic El Niño/La Niña (ONI) index referring to the cold and warm episodes by season</td>
-        </tr>
-        <tr>
-          <td><code>'OUTAGE.START.DATE'</code></td>
-          <td>Day of the year when the outage event started</td>
-        </tr>
-        <tr>
-          <td><code>'OUTAGE.START.TIME'</code></td>
-          <td>Time of the day when the outage event started</td>
-        </tr>
-        <tr>
-          <td><code>'OUTAGE.RESTORATION.DATE'</code></td>
-          <td>Day of the year when power was restored to all the customers</td>
-        </tr>
-        <tr>
-          <td><code>'OUTAGE.RESTORATION.TIME'</code></td>
-          <td>Time of the day when power was restored to all the customers</td>
-        </tr>
-        <tr>
-          <td><code>'CAUSE.CATEGORY'</code></td>
-          <td>Categories of all the events causing the major power outages</td>
-        </tr>
-        <tr>
-          <td><code>'OUTAGE.DURATION'</code></td>
-          <td>Duration of outage events (in minutes)</td>
-        </tr>
-        <tr>
-          <td><code>'DEMAND.LOSS.MW'</code></td>
-          <td>Amount of peak demand lost during an outage event (in Megawatt) [but in many cases, total demand is reported]</td>
-        </tr>
-        <tr>
-          <td><code>'CUSTOMERS.AFFECTED'</code></td>
-          <td>Number of customers affected by the power outage event</td>
-        </tr>
-        <tr>
-          <td><code>'TOTAL.PRICE'</code></td>
-          <td>Average monthly electricity price in the U.S. state (cents/kilowatt-hour)</td>
-        </tr>
-        <tr>
-          <td><code>'TOTAL.SALES'</code></td>
-          <td>Total electricity consumption in the U.S. state (megawatt-hour)</td>
-        </tr>
-        <tr>
-          <td><code>'TOTAL.CUSTOMERS'</code></td>
-          <td>Annual number of total customers served in the U.S. state</td>
-        </tr>
-        <tr>
-          <td><code>'POPPCT_URBAN'</code></td>
-          <td>Percentage of the total population of the U.S. state represented by the urban population (in %)</td>
-        </tr>
-        <tr>
-          <td><code>'POPDEN_URBAN'</code></td>
-          <td>Population density of the urban areas (persons per square mile)</td>
-        </tr>
-        <tr>
-          <td><code>'AREAPCT_URBAN'</code></td>
-          <td>Percentage of the land area of the U.S. state represented by the land area of the urban areas (in %)</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="custom-banner">
+    <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
   </div>
+  
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">Emergency Services</a>
+    <a href="#analysis">About Us</a>
+    <a href="#data">Citation</a>
+  </nav>
+  
+  <main>
+    <div class="content-section">
+      <h2 id="home" style="font-weight: bold;">Introduction</h2>
+      <p>This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.</p>
+      
+      <p>By focusing on various factors such as climate anomalies, geographic regions, and cause categories, we aim to uncover key insights into the challenges posed by power outages in different parts of the country. The findings may help in improving preparedness and response strategies for such events.</p>
+      
+      <p>The project map below illustrates the different stages and data points we will analyze throughout this study.</p>
+      
+      <!-- Project map placeholder -->
+      <p><strong>Project Map:</strong> [Insert your project map here, e.g., flowchart of analysis process]</p>
 
-<div class="content-section">
-  <h2 id="home" style="font-weight: bold;">Introduction</h2>
-  <p>Welcome to the first page of our power outage analysis! Here, we'll explore key trends and insights into the patterns and impact of power disruptions across the United States.</p>
+      <!-- Table with column descriptions -->
+      <table>
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>'YEAR'</code></td>
+            <td>Year an outage occurred</td>
+          </tr>
+          <tr>
+            <td><code>'MONTH'</code></td>
+            <td>Month an outage occurred</td>
+          </tr>
+          <tr>
+            <td><code>'U.S._STATE'</code></td>
+            <td>State the outage occurred in</td>
+          </tr>
+          <tr>
+            <td><code>'NERC.REGION'</code></td>
+            <td>North American Electric Reliability Corporation (NERC) regions involved in the outage event</td>
+          </tr>
+          <tr>
+            <td><code>'CLIMATE.REGION'</code></td>
+            <td>U.S. Climate regions as specified by National Centers for Environmental Information (9 Regions)</td>
+          </tr>
+          <tr>
+            <td><code>'ANOMALY.LEVEL'</code></td>
+            <td>Oceanic El Niño/La Niña (ONI) index referring to the cold and warm episodes by season</td>
+          </tr>
+          <tr>
+            <td><code>'OUTAGE.START.DATE'</code></td>
+            <td>Day of the year when the outage event started</td>
+          </tr>
+          <tr>
+            <td><code>'OUTAGE.START.TIME'</code></td>
+            <td>Time of the day when the outage event started</td>
+          </tr>
+          <tr>
+            <td><code>'OUTAGE.RESTORATION.DATE'</code></td>
+            <td>Day of the year when power was restored to all the customers</td>
+          </tr>
+          <tr>
+            <td><code>'OUTAGE.RESTORATION.TIME'</code></td>
+            <td>Time of the day when power was restored to all the customers</td>
+          </tr>
+          <tr>
+            <td><code>'CAUSE.CATEGORY'</code></td>
+            <td>Categories of all the events causing the major power outages</td>
+          </tr>
+          <tr>
+            <td><code>'OUTAGE.DURATION'</code></td>
+            <td>Duration of outage events (in minutes)</td>
+          </tr>
+          <tr>
+            <td><code>'DEMAND.LOSS.MW'</code></td>
+            <td>Amount of peak demand lost during an outage event (in Megawatt) [but in many cases, total demand is reported]</td>
+          </tr>
+          <tr>
+            <td><code>'CUSTOMERS.AFFECTED'</code></td>
+            <td>Number of customers affected by the power outage event</td>
+          </tr>
+          <tr>
+            <td><code>'TOTAL.PRICE'</code></td>
+            <td>Average monthly electricity price in the U.S. state (cents/kilowatt-hour)</td>
+          </tr>
+          <tr>
+            <td><code>'TOTAL.SALES'</code></td>
+            <td>Total electricity consumption in the U.S. state (megawatt-hour)</td>
+          </tr>
+          <tr>
+            <td><code>'TOTAL.CUSTOMERS'</code></td>
+            <td>Annual number of total customers served in the U.S. state</td>
+          </tr>
+          <tr>
+            <td><code>'POPPCT_URBAN'</code></td>
+            <td>Percentage of the total population of the U.S. state represented by the urban population (in %)</td>
+          </tr>
+          <tr>
+            <td><code>'POPDEN_URBAN'</code></td>
+            <td>Population density of the urban areas (persons per square mile)</td>
+          </tr>
+          <tr>
+            <td><code>'AREAPCT_URBAN'</code></td>
+            <td>Percentage of the land area of the U.S. state represented by the land area of the urban areas (in %)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h2 id="data_cleaning">Data Cleaning and Exploratory Analysis</h2>
+    <section id="data_cleaning">
+      <h2>Data Cleaning and Exploratory Analysis</h2>
+      <h3>Data Cleaning</h3>
+      <p>[Description of your data cleaning process]</p>
+      
+      <h3>Univariate Analysis</h3>
+      <p>[Analysis of individual variables]</p>
+      
+      <h3>Bivariate Analysis</h3>
+      <p>[Analysis of relationships between variables]</p>
+    </section>
 
-  <h3 style="font-weight: bold;">Data Cleaning</h3>
-  <p>[Description of your data cleaning process, including:
-    - Initial dataset overview
-    - Steps taken to clean the data
-    - Handling of problematic values]</p>
+    <section id="missingness">
+      <h2>Assessment of Missingness</h2>
+      <h3>NMAR Analysis</h3>
+      <p>[Content for NMAR Analysis]</p>
 
-  <h3>Univariate Analysis</h3>
-  <p>[Analysis of individual variables, including:
-    - Distribution of outage durations
-    - Frequency of different causes
-    - Geographic distribution]</p>
+      <h3>Missingness Dependencies</h3>
+      <p>[Content for Missingness Dependencies]</p>
+    </section>
 
-  <h3>Bivariate Analysis</h3>
-  <p>[Analysis of relationships between variables, including:
-    - Correlation between factors
-    - Key patterns discovered
-    - Notable relationships]</p>
+    <section id="hypothesis">
+      <h2>Hypothesis Testing</h2>
+      <p>[Content for Hypothesis Testing]</p>
+    </section>
 
-  <h2 id="missingness" style="font-weight: bold;">Assessment of Missingness</h2>
+    <section id="predictive">
+      <h2>Final Model</h2>
+      <p>[Content for Final Model]</p>
+    </section>
 
-  <h3>NMAR Analysis</h3>
-  <p>[Content for NMAR Analysis]</p>
+    <section>
+      <h2>Fairness Analysis</h2>
+      <p>[Content for Fairness Analysis]</p>
+    </section>
+  </main>
 
-  <h3>Missingness Dependencies</h3>
-  <p>[Content for Missingness Dependencies]</p>
-
-  <h2 id="hypothesis" style="font-weight: bold;">Hypothesis Testing</h2>
-  <p>[Content for Hypothesis Testing]</p>
-
-  <h2 style="font-weight: bold;">Framing a Prediction Problem</h2>
-  <p>[Content for Prediction Problem]</p>
-
-  <h2 style="font-weight: bold;">Baseline Model</h2>
-  <p>[Content for Baseline Model]</p>
-
-  <h2 id="predictive" style="font-weight: bold;">Final Model</h2>
-  <p>[Content for Final Model]</p>
-
-  <h2 style="font-weight: bold;">Fairness Analysis</h2>
-  <p>[Content for Fairness Analysis]</p>
-</div>
-<footer>
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2024 Powering Through: All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
