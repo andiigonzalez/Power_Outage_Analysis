@@ -1,13 +1,145 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.site-header {
+  display: none;
+}
+
+h2, h3, h4, h5, h6 {
+  color: black !important;   /* Ensure all headers are black */
+  font-weight: bold;         /* Make headers bold */
+}
+
+/* Specific font sizes for each header */
+h1 {
+  font-size: 2.5em !important; /* Larger size for h1 */
+}
+
+h2 {
+  font-size: 2.2em !important; /* Slightly larger size for h2 */
+}
+
+h3 {
+  font-size: 2em !important;   /* Larger size for h3 */
+}
+
+/* Custom Banner Styles */
 .custom-banner {
-  background-image: url('/assets/images/header_image.jpeg'); /* Correct path to your header image */
+  background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
   background-size: cover;
-  background-position: center center;
-  color: white;
+  background-position: center;
+  height: 400px;
   text-align: center;
-  padding: 50px 0;
+  color: white;
+  padding-top: 120px;
+  margin-bottom: 0;
+  position: relative;
 }
 
 .custom-banner h1 {
-  font-size: 2.5em;
+  font-size: 5em !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  color: white !important;
   margin: 0;
+}
+
+.custom-banner + p.subtitle {
+  font-size: 2em;  /* Adjust this value as needed */
+  color: white;    /* Set the color to white */
+  margin-top: 20px; /* Optional: add some margin above the paragraph */
+}
+
+/* Hide the default title */
+.page-title {
+  display: none;
+}
+
+/* Navigation Bar Styles */
+nav {
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+/* Centered Content Styles */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;  /* Light grey border between rows */
+}
+
+th, td {
+  font-family: serif;
+  font-weight: normal;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+td {
+  color: #555;
+}
+
+td.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+/* Code Block Styling */
+th code, code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #E6FFE3;
+  color: #333;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
