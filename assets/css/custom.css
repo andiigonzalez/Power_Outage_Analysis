@@ -85,7 +85,13 @@ nav a:hover {
   padding: 20px;
   text-align: center;
 }
-
+code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #E6FFE3;
+  color: #3c434a;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 /* Table Styling */
 table {
   width: 70%;
@@ -96,6 +102,7 @@ table {
 
 table, th, td {
   border: 1px solid black;
+  font: serif;
 }
 
 tr {
@@ -125,14 +132,6 @@ td.description {
   max-width: 300px;
 }
 
-/* Code Block Styling */
-th code, code {
-  font-family: 'Roboto Mono', monospace;
-  background-color: #E6FFE3;
-  color: #3c434a;
-  padding: 2px 4px;
-  border-radius: 3px;
-}
 
 /* Footer Styles */
 footer {
