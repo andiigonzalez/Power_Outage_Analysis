@@ -110,12 +110,6 @@ tr {
   border-bottom: 1px solid #ddd;  /* Light grey border between rows */
 }
 
-th, td {
-  font-family: serif;
-  font-weight: normal;
-  padding: 8px;
-  text-align: center;
-}
 
 th {
   font-family: serif;             /* Serif font for headers */
