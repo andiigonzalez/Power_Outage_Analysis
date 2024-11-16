@@ -1,6 +1,4 @@
 # Site settings
-title: Powering Through
-description: Analyzing Trends in Major US Power Outages from 2004 to 2016
 baseurl: "/Power_Outage_Analysis"
 url: "https://andiigonzalez.github.io"  # your GitHub Pages URL will be automatically set
 
