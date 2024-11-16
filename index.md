@@ -47,10 +47,10 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   }
 
   .custom-banner h1 {
-    font-size: 5em;
+    font-size: 5em !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    color: white;
+    color: white !important;
     margin: 0;
   }
 
