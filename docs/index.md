@@ -9,7 +9,6 @@ subtitle: Analyzing Trends in Major US Power Outages from 2004 to 2016
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }} - {{ site.description }}</title>
 
   <!-- Link to Google Fonts for Roboto Mono Medium -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
