@@ -4,7 +4,7 @@ title: "Powering Through"
 subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 ---
 
-## Introduction
+# Introduction
 
 This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.
 
