@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Powering Through: Analyzing Trends in Major US Power Outages</title>
-  
+
   <!-- Link to Google Fonts for Roboto Mono Medium -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 
@@ -43,7 +44,12 @@
     }
 
     /* Make all headers under the banner black */
-    .content-section h1, .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6 {
+    .content-section h1,
+    .content-section h2,
+    .content-section h3,
+    .content-section h4,
+    .content-section h5,
+    .content-section h6 {
       color: black !important;
     }
 
@@ -59,11 +65,11 @@
       text-align: center;
       padding: 14px 20px;
       text-decoration: none;
-      transition: color 0.3s ease; /* Smooth transition for color change */
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #ff6347; /* Change this to any color you prefer */
+      color: #ff6347;
     }
 
     /* Center Content on the Page */
@@ -80,11 +86,10 @@
       background-color: white;
     }
 
-    th, td {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: 500;
-      background-color: rgba(144, 238, 144, 0.7);
-      color: #333;
+    th,
+    td {
+      font-family: serif;
+      font-weight: normal;
       padding: 10px;
       text-align: center;
       border: 1px solid #ddd;
@@ -97,6 +102,16 @@
 
     td {
       color: #555;
+    }
+
+    /* Code Block Styling for the first column header */
+    th code {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 500;
+      background-color: rgba(144, 238, 144, 0.7);
+      color: #333;
+      padding: 2px 4px;
+      border-radius: 3px;
     }
 
     /* Code Block Styling */
@@ -117,31 +132,31 @@
       width: 100%;
       bottom: 0;
     }
-
   </style>
 </head>
-<body> 
+
+<body>
 
   <div class="custom-banner">
     <h1>Powering Through: Analyzing Trends in Major US Power Outages</h1>
   </div>
-  
+
   <nav>
     <a href="#home">Home</a>
     <a href="#about">Emergency Services</a>
     <a href="#analysis">About Us</a>
     <a href="#data">Citation</a>
   </nav>
-  
+
   <main>
     <div class="content-section">
       <h2 id="home" style="font-weight: bold;">Introduction</h2>
       <p>This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.</p>
-      
+
       <p>By focusing on various factors such as climate anomalies, geographic regions, and cause categories, we aim to uncover key insights into the challenges posed by power outages in different parts of the country. The findings may help in improving preparedness and response strategies for such events.</p>
-      
+
       <p>The project map below illustrates the different stages and data points we will analyze throughout this study.</p>
-      
+
       <!-- Project map placeholder -->
       <p><strong>Project Map:</strong> [Insert your project map here, e.g., flowchart of analysis process]</p>
 
@@ -204,7 +219,7 @@
           </tr>
           <tr>
             <td><code>'DEMAND.LOSS.MW'</code></td>
-            <td>Amount of peak demand lost during an outage event (in Megawatt) [but in many cases, total demand is reported]</td>
+            <td>Amount of peak demand lost during an outage event (in Megawatt)</td>
           </tr>
           <tr>
             <td><code>'CUSTOMERS.AFFECTED'</code></td>
