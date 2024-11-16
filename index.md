@@ -117,7 +117,7 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   /* Code Block Styling */
   th code, code {
     font-family: 'Roboto Mono', monospace;
-    background-color: rgba(144, 238, 144, 0.7);
+    background-color: #E6FFE3;
     color: #333;
     padding: 2px 4px;
     border-radius: 3px;
