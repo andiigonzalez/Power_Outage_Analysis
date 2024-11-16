@@ -6,11 +6,12 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 
 # Introduction
 
-This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.
+Power outages are on the rise. With an already collapsing atmosphere, a dramatic increase in natural disasters and extreme weather conditions, the number of power outages is on the rise. According to CITATION, The United States has the most power outages of all developed countries. A nation-wide issue that is estimated to cost around … a year. That is why it is crucial to understand how the characteristics of power outages in the United States have shifted over time. What are the main catalysts of power outages nowadays? How can we best prepare and understand this issue which every citizen experiences for an estimate of 92 minutes a year.
 
-By focusing on various factors such as climate anomalies, geographic regions, and cause categories, we aim to uncover key insights into the challenges posed by power outages in different parts of the country. The findings may help in improving preparedness and response strategies for such events.
+With that in mind, we have decided to investigate the trends in power outage characteristics over time and create a predictive model to predict the cause of major power outages in the hopes that through a deeper understanding we can act accordingly and minimize the number of outages and their impact on communities. The focus of our analysis will be answering the following questions: “How have characteristics of major power outages changed over time?” and  “Is there a clear trend?”. The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. 
 
-The project map below illustrates the different stages and data points we will analyze throughout this study.
+Using the data from this data set we will employ data analysis techniques to ……
+
 
 **Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
 
