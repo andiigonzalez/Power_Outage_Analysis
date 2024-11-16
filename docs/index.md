@@ -129,11 +129,6 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
   }
 </style>
 
-<div class="custom-banner">
-  <h1>{{ site.title }}: {{ site.subtitle }}</h1>
-  <p>Your introduction or subtitle text here.</p>
-</div>
-
 ## Introduction
 
 This project aims to analyze major power outages in the United States, exploring trends, causes, and their impact across different regions. We will also investigate potential patterns in outage durations, affected populations, and more. The analysis will be based on data covering several years of reported power failures.
