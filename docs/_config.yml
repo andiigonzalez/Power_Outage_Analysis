@@ -1,5 +1,9 @@
 # Site settings
-baseurl: "/Power_Outage_Analysis"
+title: Power Outage Analysis
+description: An analysis of major power outages across the United States
+theme: jekyll-theme-cayman  # Use this or choose one theme, not both
+markdown: kramdown
+baseurl: "/Power_Outage_Analysis"  # Ensure this matches your GitHub repo path
 url: "https://andiigonzalez.github.io"  # your GitHub Pages URL will be automatically set
 
 # Theme settings
@@ -12,11 +16,12 @@ include:
 # Navigation
 navigation:
   - text: Home
-    link: /index
+    link: "{{ site.baseurl }}/index"
   - text: Emergency Resources
-    link: /emergency
+    link: "{{ site.baseurl }}/emergency"
   - text: Citations
-    link: /citations
+    link: "{{ site.baseurl }}/citations"
+
 header:
-  image: /assets/images/header_image.jpeg
+  image: "{{ site.baseurl }}/assets/images/header_image.jpeg"
   caption: "Powering Through: Analyzing Trends in Major US Power Outages"
