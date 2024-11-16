@@ -1,10 +1,14 @@
+---
+layout: default
+title: "Powering Through: Analyzing Trends in Major US Power Outages"
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Powering Through: Analyzing Trends in Major US Power Outages</title>
+  <title>{{ site.title }} - {{ site.description }}</title>
 
   <!-- Link to Google Fonts for Roboto Mono Medium -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -136,12 +140,23 @@
 </head>
 
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">Emergency Services</a>
-    <a href="#analysis">About Us</a>
-    <a href="#data">Citation</a>
-  </nav>
+  <div class="custom-banner">
+    <h1>{{ site.title }}: {{ site.description }}</h1>
+  </div>
+  
+<nav>
+  <!-- Dynamically generated navigation from site.navigation -->
+  {% for item in site.navigation %}
+    <a href="{{ item.link }}">{{ item.text }}</a>
+  {% endfor %}
+</nav>
+
+<nav>
+  <!-- Custom navigation with hardcoded sections -->
+  <a href="#emergency">Emergency Services</a>
+  <a href="#about">About Us</a>
+  <a href="#data">Citation</a>
+</nav>
 
   <main>
     <div class="content-section">
