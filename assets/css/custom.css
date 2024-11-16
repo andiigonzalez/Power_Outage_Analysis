@@ -118,8 +118,13 @@ th, td {
 }
 
 th {
-  background-color: #f4f4f4;
-  color: #3c434a;
+  font-family: serif;             /* Serif font for headers */
+  font-weight: bold;              /* Make headers bold */
+  text-transform: uppercase;      /* Make headers uppercase */
+  padding: 8px;
+  text-align: center;
+  background-color: #f4f4f4;     /* Light background for headers */
+  color: #3c434a;                /* Dark color for header text */
 }
 
 td {
