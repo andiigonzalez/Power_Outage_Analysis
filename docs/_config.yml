@@ -1,6 +1,6 @@
 # Site settings
 # title: ""
-description: An analysis of major power outages across the United States
+description: An analysis of major power outages across the United States from 2004 to 2016
 theme: jekyll-theme-cayman  # Use this or choose one theme, not both
 markdown: kramdown
 baseurl: "/Power_Outage_Analysis"  # Ensure this matches your GitHub repo path
