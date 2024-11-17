@@ -50,7 +50,7 @@ nav a:hover {
   margin-top: 60px; /* To avoid navbar overlap */
   padding: 20px;
 }
-author-container {
+.author-container {
   display: flex;
   align-items: center; /* Vertically align the content */
   margin-bottom: 40px; /* Space between authors */
