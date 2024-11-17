@@ -17,6 +17,7 @@ nav {
   padding: 15px 0; /* Added padding for a thicker navbar */
   z-index: 1000; /* Ensure the navbar stays above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  height: 70px
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Align items at the top */
-  margin-top: 60px; /* Space for the fixed navbar */
+  margin-top: 70px; /* Space for the fixed navbar */
   padding: 20px;
   width: 100%;
 }
