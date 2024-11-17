@@ -59,6 +59,8 @@ p, ul, ol, li {
   padding-top: 120px;
   margin-bottom: 0;
   position: relative;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .custom-banner h1 {
