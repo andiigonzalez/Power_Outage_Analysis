@@ -3,7 +3,6 @@ layout: default
 title: Cited Works
 ---
 
-# Cited Works
 * Citation 1
   * Description 
 * Citation 2
