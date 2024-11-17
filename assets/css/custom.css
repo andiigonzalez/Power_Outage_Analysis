@@ -72,7 +72,6 @@ p, ul, ol, li {
 
 /* Navigation Bar Styles */
 nav {
-  background-color: #F3F1F1;
   position: absolute; /* Place the nav inside the banner */
   bottom: 5px; /* Position it near the bottom of the banner */
   width: 100%; /* Make it span the full width of the banner */
