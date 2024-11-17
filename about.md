@@ -3,7 +3,6 @@ layout: default
 title: About Us
 ---
 
-# About Us
 
 ## Andrea González Martín
 
