@@ -117,7 +117,6 @@ table {
   font-family: serif;
   width: 70%;
   margin: 20px auto;
-  border-top: 2px solid #ddd;
   border-collapse: collapse;
   background-color: #f4f4f4;
 }
@@ -137,6 +136,7 @@ tr {
 }
 
 th {
+  border-top: 1px solid #ddd;
   font-family: serif;            /* Serif font for headers */
   font-weight: bold;              /* Make headers bold */
   text-transform: uppercase;      /* Make headers uppercase */
