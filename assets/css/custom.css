@@ -3,6 +3,7 @@ body {
   font-family: serif !important;
   margin: 0;
   padding: 0;
+  text-align: left;
   background-color: #f4f4f4;
 }
 
@@ -34,6 +35,10 @@ h3 {
 
 p, ul, ol, li {
   font-family: serif;
+   margin-left: 0;
+  padding-left: 20px; /* Adjust this value to control the indentation */
+  text-align: left; /* Align text to the left */
+  margin: 0 auto; /* Center the list horizontally */
 }
 
 /* Custom Banner Styles */
