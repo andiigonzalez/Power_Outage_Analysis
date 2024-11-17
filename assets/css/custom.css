@@ -31,6 +31,7 @@ h3 {
   font-family: serif;
   font-size: 2em !important;   /* Larger size for h3 */
 }
+
 p, ul, ol, li {
   font-family: serif;
 }
@@ -96,12 +97,12 @@ nav a:hover {
   color: #ff6347; /* Highlight on hover */
 }
 
-
 /* Centered Content Styles */
 .content {
   padding: 20px;
   text-align: center;
 }
+
 code {
   font-family: 'Roboto Mono', monospace;
   background-color: #E6FFE3;
@@ -110,13 +111,15 @@ code {
   border-radius: 3px;
   font-size: 0.85em;
 }
+
 /* Table Styling */
 table {
   font-family: serif;
   width: 70%;
   margin: 20px auto;
+  border-top: 2px solid #ddd;
   border-collapse: collapse;
-  background-color: white;
+  background-color: #f4f4f4;
 }
 
 table, th, td {
@@ -129,10 +132,9 @@ th, td {
 }
 
 tr {
+  border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd; 
-
 }
-
 
 th {
   font-family: serif;            /* Serif font for headers */
@@ -156,6 +158,31 @@ td.description {
   max-width: 300px;
 }
 
+/* Author Section Styles */
+.author-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.author-section .author-info {
+  flex: 1;
+}
+
+.author-section .author-info h2 {
+  font-size: 1.8em;
+}
+
+.author-section .author-bio {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.author-section .author-bio p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
 
 /* Footer Styles */
 footer {
