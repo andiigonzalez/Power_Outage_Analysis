@@ -1,3 +1,29 @@
+nav {
+  background-color: #F3F1F1;
+  position: absolute; /* Place the nav inside the banner */
+  bottom: 0px; /* Position it near the bottom of the banner */
+  width: 100%; /* Make it span the full width of the banner */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the navigation links */
+  z-index: 1000; /* Ensure it appears above the banner */
+}
+
+nav a {
+  font-family: serif;
+  display: block;
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* White for visibility on the banner */
+  text-align: center;
+  padding: 14px 20px; /* Clickable area */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347; /* Highlight on hover */
+}
+
+
 body {
   font-family: serif !important;
   margin: 0;
