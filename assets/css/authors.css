@@ -37,22 +37,30 @@ nav a:hover {
   color: #ff6347;
 }
 
+/* Container for the About Us Section */
 .about-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px; /* Ensure content doesn't overlap with the fixed navbar */
-  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  padding: 0 20px;
+  margin-top: 60px; /* Space for the fixed navbar */
 }
 
-/* About Section Styles */
 .about-section {
-  width: 45%;
+  flex: 1; /* Allow both sections to take equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100%; /* Ensure it takes full height of the viewport */
 }
 
 .left, .right {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
@@ -82,7 +90,7 @@ p {
   }
 
   .about-section {
-    width: 80%;
+    width: 80%; /* Make sections take more space on smaller screens */
     margin-bottom: 30px;
   }
 }
