@@ -12,6 +12,7 @@ plugins:
   - jekyll-remote-theme
 include:
   - _layouts/default.html
+  - _layouts/authors.html
   - assets/images/header_image.jpeg
 
 # Navigation
