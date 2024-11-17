@@ -10,11 +10,12 @@ body {
 
 /* Navigation Bar Styles */
 nav {
-  background-color: transparent; 
-  position: fixed;
+  background-color: transparent !important; 
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
+  margin: 0
   justify-content: center;
   padding: 15px 0;
   z-index: 1000; /* Increase z-index if needed */
