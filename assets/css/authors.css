@@ -10,6 +10,7 @@ body {
 
 /* Navigation Bar Styles */
 nav {
+  background-color: transparent; 
   position: fixed;
   top: 0;
   width: 100%;
