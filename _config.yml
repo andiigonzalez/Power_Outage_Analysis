@@ -19,10 +19,12 @@ include:
 navigation:
   - text: Home
     link: "{{ site.baseurl }}/index"
-  - text: Emergency Resources
-    link: "{{ site.baseurl }}/emergency"
   - text: Citations
     link: "{{ site.baseurl }}/citations"
+  - text: Other Resources
+    link: "{{ site.baseurl }}/resources"
+  - text: About Us
+    link: "{{ site.baseurl }}/about"
 
 header:
   image: "{{ site.baseurl }}/assets/images/header_image.jpeg"
