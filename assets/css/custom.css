@@ -34,7 +34,11 @@ h2 {
 h3 {
   font-family: serif;
   font-size: 2em !important;   /* Larger size for h3 */
+}
+h4 {
   text-decoration: underline;
+  font-family: serif;
+  font-size: 2em !important;   /* Larger size for h3 */
 }
 
 p, ul, ol, li {
