@@ -3,17 +3,12 @@ body {
   font-family: serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 50px;
+  background-color: #f4f4f4; /* Default background for the page */
 }
 
 /* Navigation Bar Styles */
 nav {
-  background-color: #E2DEDE;
+  background-color: #E2DEDE; /* Set the background color of the nav bar */
   position: fixed;
   top: 0;
   width: 100%;
@@ -37,30 +32,32 @@ nav a:hover {
   color: #ff6347;
 }
 
-/* Container for the About Us Section */
+/* About Us Section */
 .about-container {
   display: flex;
   justify-content: space-between;
-  height: 100vh; /* Full viewport height */
-  padding: 0 20px;
+  align-items: flex-start; /* Align items at the top */
   margin-top: 60px; /* Space for the fixed navbar */
+  padding: 20px;
+  width: 100%;
 }
 
+/* Each Section Styles (Left & Right) */
 .about-section {
-  flex: 1; /* Allow both sections to take equal space */
+  width: 48%; /* Each section takes up 48% of the width, leaving a small gap */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  height: 100%; /* Ensure it takes full height of the viewport */
 }
 
-.left, .right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.left {
+  padding-right: 20px;
+}
+
+.right {
+  padding-left: 20px;
 }
 
 .profile-pic {
@@ -69,6 +66,12 @@ nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 100px; /* To clear the fixed navbar */
 }
 
 h2 {
@@ -85,12 +88,12 @@ p {
 
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column; /* Stack sections vertically on smaller screens */
     align-items: center;
   }
 
   .about-section {
-    width: 80%; /* Make sections take more space on smaller screens */
+    width: 90%; /* Sections take more space on smaller screens */
     margin-bottom: 30px;
   }
 }
