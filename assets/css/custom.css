@@ -10,9 +10,7 @@ body {
 .site-header {
   display: none;
 }
-h2 {
-  text-align: center;
-}
+
 h2, h3, h4, h5, h6 {
   font-family: serif;
   color: black !important;   /* Ensure all headers are black */
@@ -29,11 +27,13 @@ h1 {
 h2 {
   font-family: serif;
   font-size: 2.2em !important; /* Slightly larger size for h2 */
+  text-align: center;
 }
 
 h3 {
   font-family: serif;
   font-size: 2em !important;   /* Larger size for h3 */
+  text-decoration: underline;
 }
 
 p, ul, ol, li {
