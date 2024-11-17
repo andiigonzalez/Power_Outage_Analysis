@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
   font-family: serif !important;
-  margin: 10px;
-  padding: 20px;
+  margin: 80px;
+  padding: 10px;
   text-align: left;
   background-color: #f4f4f4;
   color: #3c434a;
@@ -26,26 +26,26 @@ h1 {
 
 h2 {
   font-family: serif;
-  font-size: 2.2em !important; /* Slightly larger size for h2 */
+  font-size: 2.1em !important; /* Slightly larger size for h2 */
   text-align: center;
 }
 
 h3 {
   font-family: serif;
-  font-size: 2em !important;   /* Larger size for h3 */
+  font-size: 1.85em !important;   /* Larger size for h3 */
+  text-align: center;
 }
 h4 {
   text-decoration: underline;
   font-family: serif;
-  font-size: 2em !important;   /* Larger size for h3 */
+  font-size: 2em !important;   /* Larger size for h4 */
+  text-align: left;
 }
 
 p, ul, ol, li {
   font-family: serif;
-   margin-left: 0;
   padding-left: 20px; /* Adjust this value to control the indentation */
   text-align: left; /* Align text to the left */
-  margin: 0 auto; /* Center the list horizontally */
 }
 
 /* Custom Banner Styles */
