@@ -10,7 +10,9 @@ body {
 .site-header {
   display: none;
 }
-
+h2 {
+  text-align: center;
+}
 h2, h3, h4, h5, h6 {
   font-family: serif;
   color: black !important;   /* Ensure all headers are black */
@@ -21,6 +23,7 @@ h2, h3, h4, h5, h6 {
 h1 {
   font-family: serif;
   font-size: 2.5em !important; /* Larger size for h1 */
+  text-align: center;
 }
 
 h2 {
