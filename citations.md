@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Us
+title: Cited Works
 ---
 
 # Cited Works
