@@ -4,7 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  line-height: 1.6; /* This improves readability */
 }
+
 
 /* Navigation Bar Styles */
 nav {
@@ -15,7 +17,7 @@ nav {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  z-index: 1000;
+  z-index: 1000; /* Increase z-index if needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,6 +51,55 @@ nav a:hover {
   margin-top: 60px; /* To avoid navbar overlap */
   padding: 20px;
 }
+author-container {
+  display: flex;
+  align-items: center; /* Vertically align the content */
+  margin-bottom: 40px; /* Space between authors */
+}
+
+.author-pic {
+  width: 150px; /* Set a fixed size for the picture */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Make sure the image fits inside the circle */
+  margin-right: 20px; /* Space between the picture and text */
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.author-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.author-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.author-info strong {
+  font-weight: bold;
+}
+
+.author-info a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.author-info a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #3c434a;
+}
+
 
 .about-section {
   width: 48%;
