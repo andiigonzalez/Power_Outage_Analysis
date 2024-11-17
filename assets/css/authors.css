@@ -1,61 +1,88 @@
-nav {
-  background-color:#E2DEDE;
-  position: absolute; /* Place the nav inside the banner */
-  bottom: 0px; /* Position it near the bottom of the banner */
-  width: 100%; /* Make it span the full width of the banner */
-  display: flex; /* Horizontal layout */
-  justify-content: center; /* Center the navigation links */
-  z-index: 1000; /* Ensure it appears above the banner */
-}
-
-nav a {
-  font-family: serif;
-  display: block;
-  font-weight: bold; /* Makes the text bold */
-  color: white; /* White for visibility on the banner */
-  text-align: center;
-  padding: 14px 20px; /* Clickable area */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ff6347; /* Highlight on hover */
-}
-
-
+/* Global Styles */
 body {
-  font-family: serif !important;
+  font-family: serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
 
-.site-header {
-  display: none;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: serif;
-  color: black !important;   /* Ensure all headers are black */
-  font-weight: bold;         /* Make headers bold */
-}
-
-/* Specific font sizes for each header */
 h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #E2DEDE;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 100;
+}
+
+nav a {
   font-family: serif;
-  font-size: 2.5em !important; /* Larger size for h1 */
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px; /* Ensure content doesn't overlap with the fixed navbar */
+  padding: 20px;
+}
+
+/* About Section Styles */
+.about-section {
+  width: 45%;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 h2 {
-  font-family: serif;
-  font-size: 2.2em !important; /* Slightly larger size for h2 */
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
-h3 {
-  font-family: serif;
-  font-size: 2em !important;   /* Larger size for h3 */
+p {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #3c434a;
 }
-p, ul, ol, li {
-  font-family: serif;
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    width: 80%;
+    margin-bottom: 30px;
+  }
 }
