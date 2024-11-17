@@ -14,13 +14,14 @@ nav {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 10px;
-  z-index: 100;
+  padding: 15px 0; /* Added padding for a thicker navbar */
+  z-index: 1000; /* Ensure the navbar stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
 nav a {
   font-family: serif;
-  color: white;
+  color: black;
   font-weight: bold;
   padding: 14px 20px;
   text-decoration: none;
