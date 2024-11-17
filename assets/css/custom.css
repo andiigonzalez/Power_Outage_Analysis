@@ -5,6 +5,7 @@ body {
   padding: 0;
   text-align: left;
   background-color: #f4f4f4;
+  color: color: #3c434a;
 }
 
 .site-header {
@@ -141,7 +142,7 @@ th {
   text-transform: uppercase;      /* Make headers uppercase */
   padding: 8px;
   text-align: center;
-  background-color: #f4f4f4;     /* Light background for headers */
+  background-color: #f8f8f8;     /* Light background for headers */
   color: #3c434a;                /* Dark color for header text */
 }
 
