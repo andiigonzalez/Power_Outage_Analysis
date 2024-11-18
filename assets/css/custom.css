@@ -51,18 +51,20 @@ p, ul, ol, li {
 /* Custom Banner Styles */
 .custom-banner {
   background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  text-align: center;
-  color: white;
-  padding-top: 120px;
-  margin-bottom: 0 !important;
-  position: relative;
-  margin: 0 !important; /* Remove default margin */
-  padding: 0 !important; /* Remove default padding */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 400px; /* Adjust the height to your preference */
+  color: white; /* Text color */
+  text-align: center; /* Center the text horizontally */
+  padding-top: 120px; /* Space at the top for content */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  position: fixed; /* Fix it to the top of the screen */
+  top: 0; /* Ensure it starts at the very top */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Span the entire width of the page */
+  z-index: 1000; /* Ensure it stays on top of other elements */
 }
-
 .custom-banner h1 {
   font-size: 5em !important;
   font-family: serif;
