@@ -57,7 +57,7 @@ p, ul, ol, li {
   text-align: center;
   color: white;
   padding-top: 120px;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   position: relative;
   margin: 0 !important; /* Remove default margin */
   padding: 0 !important; /* Remove default padding */
