@@ -66,7 +66,7 @@ p, ul, ol, li {
   left: 0; /* Align with the left edge */
   right: 0; /* Ensure it spans the full width */
   width: 100%; /* Span the entire width of the page */
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  z-index: 1; /* Ensure it stays on top of other elements */
 }
 .custom-banner h1 {
   font-size: 5em !important;
