@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Powering Through"
-subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
+subtitle: "Analyzing Trends in Major US Power Outages"
 ---
 
 # Introduction
