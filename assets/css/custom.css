@@ -48,7 +48,7 @@ h4 {
 }
 
 .content {
-  padding: 1px 8px 8px 1px; /* Add padding to the sides */
+  padding: 1px 6px 6px 1px; /* Add padding to the sides */
   text-align: center;
   max-width: 90%; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
