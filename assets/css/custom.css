@@ -9,7 +9,7 @@ body {
   height: 100vh; /* Full viewport height */
   flex-direction: column; /* Stack content vertically */
 }
-}
+
 
 .site-header {
   display: none;
@@ -47,9 +47,9 @@ h4 {
 }
 
 .content {
-  padding: 2px 50px 50px 50px; /* Add padding to the sides */
+  padding: 2px 40px 40px 2px; /* Add padding to the sides */
   text-align: center;
-  max-width: 900px; /* Controls the text width */
+  max-width: 990px; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
 }
 
@@ -60,7 +60,7 @@ p, ul, ol, li {
   text-align: justify;
   font-size: 1.1em;
   line-height: 1.6;
-  max-width: 900px;
+  max-width: 990px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -71,7 +71,7 @@ p, ul, ol, li {
   background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center; /* Centers the image */
-  height: 400px; /* Adjust the height to your preference */
+  height: 500px; /* Adjust the height to your preference */
   color: white; /* Text color */
   text-align: center; /* Center the text horizontally */
   padding-top: 120px; /* Space at the top for content */
@@ -96,7 +96,7 @@ p, ul, ol, li {
   font-size: 2.5em !important;
   font-family: serif;
   color: white !important; /* Keep white color for banner subtitle */
-  margin-top: 100px !important;
+  margin-top: 80px ;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for better contrast */
 }
 
