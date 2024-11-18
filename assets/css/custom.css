@@ -94,11 +94,11 @@ p, ul, ol, li {
 nav {
   background-color: transparent !important; 
   position: absolute; /* Place the nav inside the banner */
-  bottom: 5px; /* Position it near the bottom of the banner */
+  #bottom: 5px; /* Position it near the bottom of the banner */
   width: 100%; /* Make it span the full width of the banner */
   display: flex; /* Horizontal layout */
   justify-content: center; /* Center the navigation links */
-  z-index: 900; /* Ensure it appears above the banner */
+  z-index: 1; /* Ensure it appears above the banner */
 }
 
 nav a {
@@ -118,7 +118,7 @@ nav a:hover {
 
 /* Centered Content Styles */
 .content {
-  padding: 400px 60px 40px 60px;
+  padding: 10px 60px 40px 10px;
   text-align: center;
 }
 
