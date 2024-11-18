@@ -22,7 +22,9 @@ The data we have used comes from the scientific dataset “Data on major power o
 -------
 
 ### Relevant Column Descriptions
-Below is a description of the columns that we maintained in our dataset as they were relevant to our analysis.
+The original dataset contained 1534 observations (maintained) and 55 variables (columns).
+We discarded columns that were not necessary for out analysis and will be using a modified version of the dataframe with 1534 columns and 18 variables (columns). 
+Below is a description of the variables we will utilize for out analysis.
 
 | COLUMN                      |    DESCRIPTION                                                              |
 |-----------------------------|-----------------------------------------------------------------------------|
