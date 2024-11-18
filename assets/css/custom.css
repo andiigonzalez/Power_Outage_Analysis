@@ -72,6 +72,7 @@ p, ul, ol, li {
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center; /* Centers the image */
   height: 500px; /* Adjust the height to your preference */
+  min-height: 500px;
   color: white; /* Text color */
   text-align: center; /* Center the text horizontally */
   padding-top: 120px; /* Space at the top for content */
