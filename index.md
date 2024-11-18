@@ -51,7 +51,7 @@ Below is a description of the columns that we maintained in our dataset as they 
 ### Data Cleaning and Exploratory Analysis
 
 #### Data Cleaning
-Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; PC.REALGSP.STATE, PC.REALGSP.USA, AREAPCT_URBAN, AREAPCT_UC. Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. 
+Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. 
 
 #### Univariate Analysis
 [Analysis of individual variables]
