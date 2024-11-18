@@ -18,7 +18,7 @@ The data we have used comes from the scientific dataset “Data on major power o
 
 **Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
 
----
+-------
 
 ### Column Descriptions
 
@@ -58,7 +58,7 @@ The data we have used comes from the scientific dataset “Data on major power o
 #### Bivariate Analysis
 [Analysis of relationships between variables]
 
----
+------
 
 ### Assessment of Missingness
 
@@ -85,6 +85,3 @@ The data we have used comes from the scientific dataset “Data on major power o
 
 ---
 
-### Footer
-
-&copy; 2024 Powering Through: All Rights Reserved
