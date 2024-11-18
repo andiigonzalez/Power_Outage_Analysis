@@ -205,19 +205,22 @@ td.description {
   font-size: 1.1em;
   line-height: 1.6;
 }
-.scrollable-image {
-  width: 100%;            /* Makes the div width 100% of the container */
-  overflow-x: auto;       /* Enables horizontal scrolling */
-  white-space: nowrap;    /* Prevents the image from wrapping */
-  display: flex;          /* Ensures the image is displayed in a line */
+.scrollable-image-container {
+  width: 80%;                /* Adjust the width to fit the text area, 80% is an example */
+  max-width: 100%;           /* Ensures it doesn't exceed the width of the parent container */
+  overflow-x: auto;          /* Enables horizontal scrolling */
+  margin: auto;              /* Centers the container horizontally */
+  padding: 10px;             /* Adds some padding inside the container */
+  text-align: center;        /* Centers the image inside the container */
 }
 
-.scrollable-image img {
-  height: auto;           /* Keeps the image aspect ratio intact */
-  width: auto;            /* Allows the image to be its natural width */
-  max-height: 300px;      /* Set a maximum height for the image */
+.scrollable-image-img {
+  width: 100%;               /* Image will scale to fit within the container's width */
+  max-width: 50000px;        /* Allows the image to grow up to 20000px wide */
+  max-height: 25000px;       /* Allows the image to grow up to 10000px tall */
+  height: auto;              /* Maintains the aspect ratio of the image */
+  display: block;            /* Ensures the image is displayed as a block element */
 }
-
 /* Footer Styles */
 footer {
   background-color: #333;
