@@ -6,11 +6,14 @@ subtitle: "Analyzing Trends in Major US Power Outages from 2004 to 2016"
 
 # Introduction
 
-Power outages are on the rise. With an already collapsing atmosphere, a dramatic increase in natural disasters and extreme weather conditions, the number of power outages is on the rise. According to CITATION, The United States has the most power outages of all developed countries. A nation-wide issue that is estimated to cost around … a year. That is why it is crucial to understand how the characteristics of power outages in the United States have shifted over time. What are the main catalysts of power outages nowadays? How can we best prepare and understand this issue which every citizen experiences for an estimate of 92 minutes a year.
+Power outages have become increasingly frequent in the United States due to the stress of extreme weather, aging infrastructure, and increasing energy demand. The United States, according to [CITATION], has the highest number of power outages among developed nations; it is a problem estimated to cost billions annually across the entire nation. Each US citizen is estimated to experience 92 minutes of power outage per year on average.  That is why it is crucial to understand how the characteristics of power outages in the United States have shifted over time and what the main catalysts are.
 
-With that in mind, we have decided to investigate the trends in power outage characteristics over time and create a predictive model to predict the cause of major power outages in the hopes that through a deeper understanding we can act accordingly and minimize the number of outages and their impact on communities. The focus of our analysis will be answering the following questions: “How have characteristics of major power outages changed over time?” and  “Is there a clear trend?”. The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. 
+This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
-Using the data from this data set we will employ data analysis techniques to ……
+**How have characteristics of major power outages changed over time?**
+**Is there a clear trend in the characteristics of power outages?**
+
+The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
 
 **Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
