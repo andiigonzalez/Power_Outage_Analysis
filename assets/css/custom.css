@@ -71,8 +71,8 @@ p, ul, ol, li {
   background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
   background-size: cover; /* Ensures the image covers the entire area */
   background-position: center; /* Centers the image */
-  height: 550px; /* Adjust the height to your preference */
-  min-height: 550px;
+  height: 400px; /* Adjust the height to your preference */
+  min-height: 400px;
   color: white; /* Text color */
   text-align: center; /* Center the text horizontally */
   padding-top: 120px; /* Space at the top for content */
@@ -97,7 +97,7 @@ p, ul, ol, li {
   font-size: 2.5em !important;
   font-family: serif;
   color: white !important; /* Keep white color for banner subtitle */
-  margin-top: 10px ;
+  margin-top: 90px ;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for better contrast */
 }
 
