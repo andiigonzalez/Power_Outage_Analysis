@@ -56,13 +56,13 @@ h4 {
 p, ul, ol, li {
   padding: 0px;
   font-family: serif;
-  margin: 0;
   text-align: justify;
   font-size: 1.1em;
   line-height: 1.6;
   max-width: 990px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 
