@@ -59,11 +59,12 @@ p, ul, ol, li {
   font-family: serif;
   text-align: justify;
   font-size: 1.1em;
-  line-height: 1.6;
+  line-height: 1.4;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 11px;
+  margin-bottom: 2px;
+  margin-top:2px;
 }
 
 
