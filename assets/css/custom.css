@@ -5,8 +5,10 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #3c434a;
-  display: block; /* Use flexbox to center the content */
+  display: flex; /* Use flexbox to center the content */
   height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Stack content vertically */
+}
 }
 
 .site-header {
