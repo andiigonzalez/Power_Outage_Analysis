@@ -120,6 +120,7 @@ nav a:hover {
 
 /* Centered Content Styles */
 .content {
+  width: 85%;
   padding: 3px 100px 100px 3px;
   text-align: center;
 }
