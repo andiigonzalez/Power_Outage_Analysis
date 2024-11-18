@@ -16,8 +16,6 @@ h2, h3, h4, h5, h6 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
-  margin-right: 30px;
-  margin-left: 30px;
 }
 
 /* Specific font sizes for each header */
@@ -120,7 +118,7 @@ nav a:hover {
 
 /* Centered Content Styles */
 .content {
-  padding: 3px 100px 100px 3px;
+  padding: 2px 50px 50px 2px;
   text-align: center;
 }
 
