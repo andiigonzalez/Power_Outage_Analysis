@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: serif !important;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   text-align: left;
   background-color: #f4f4f4;
@@ -116,7 +116,7 @@ nav a:hover {
 
 /* Centered Content Styles */
 .content {
-  padding: 20px;
+  padding: 400px 60px 40px 60px;
   text-align: center;
 }
 
