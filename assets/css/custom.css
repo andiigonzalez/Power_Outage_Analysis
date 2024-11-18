@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #3c434a;
-  display: flex; /* Use flexbox to center the content */
+  display: block; /* Use flexbox to center the content */
   height: 100vh; /* Full viewport height */
 }
 
@@ -44,15 +44,25 @@ h4 {
   text-align: justify;
 }
 
+.content {
+  padding: 2px 50px 50px 50px; /* Add padding to the sides */
+  text-align: center;
+  max-width: 900px; /* Controls the text width */
+  margin: 0 auto; /* Centers the content horizontally */
+}
+
 p, ul, ol, li {
   padding: 0px;
   font-family: serif;
-  margin: 0 auto; /* Centers the text block */
-  text-align: justify; /* Justify the text */
-  font-size: 1.1em; 
-  line-height: 1.6; /* Improve readability */
+  margin: 0;
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
   max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 /* Custom Banner Styles */
 .custom-banner {
@@ -117,12 +127,6 @@ nav a {
 
 nav a:hover {
   color: #ff6347; /* Highlight on hover */
-}
-
-/* Centered Content Styles */
-.content {
-  padding: 2px 50px 50px 2px;
-  text-align: center;
 }
 
 code {
