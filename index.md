@@ -4,7 +4,7 @@ title: "Powering Through"
 subtitle: "Analyzing Trends in Major US Power Outages"
 ---
 
-# Introduction
+## Introduction
 
 Power outages have become increasingly frequent in the United States due to the stress of extreme weather, aging infrastructure, and increasing energy demand. The United States, according to [CITATION], has the highest number of power outages among developed nations; it is a problem estimated to cost billions annually across the entire nation. Each US citizen is estimated to experience 92 minutes of power outage per year on average.  That is why it is crucial to understand how the characteristics of power outages in the United States have shifted over time and what the main catalysts are.
 
