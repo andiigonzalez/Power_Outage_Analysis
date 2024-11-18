@@ -7,9 +7,7 @@ title: Cited Works
 * Citation 1
   * Description 
 * Citation 2
- * Description
-  * Sub-item 1
-  * Sub-item 2
+  * Description 
 * Citation 3
   * Description
 * Citation 4
