@@ -11,6 +11,7 @@ Power outages have become increasingly frequent in the United States due to the 
 This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
 **How have characteristics of major power outages changed over time?**
+
 **Is there a clear trend in the characteristics of power outages?**
 
 The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
@@ -21,6 +22,7 @@ The data we have used comes from the scientific dataset “Data on major power o
 -------
 
 ### Relevant Column Descriptions
+Below is a description of the columns that we maintained in our dataset as they were relevant to our analysis.
 
 | COLUMN                      |    DESCRIPTION                                                              |
 |-----------------------------|-----------------------------------------------------------------------------|
@@ -49,7 +51,7 @@ The data we have used comes from the scientific dataset “Data on major power o
 ### Data Cleaning and Exploratory Analysis
 
 #### Data Cleaning
-[Description of your data cleaning process]
+Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; PC.REALGSP.STATE, PC.REALGSP.USA, AREAPCT_URBAN, AREAPCT_UC. Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. 
 
 #### Univariate Analysis
 [Analysis of individual variables]
