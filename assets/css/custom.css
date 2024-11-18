@@ -15,6 +15,7 @@ body {
 h2, h3, h4, h5, h6 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
+  color: #3c434a;
 }
 
 /* Specific font sizes for each header */
