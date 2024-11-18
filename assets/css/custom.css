@@ -16,6 +16,8 @@ h2, h3, h4, h5, h6 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
+  padding-left: 100px; /* Adjust this value to control the indentation */
+  padding-right: 100px;
 }
 
 /* Specific font sizes for each header */
