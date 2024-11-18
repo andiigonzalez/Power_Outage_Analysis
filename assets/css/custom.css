@@ -2,7 +2,7 @@
 body {
   font-family: serif !important;
   margin: 0px;
-  padding: 90px;
+  padding: 0;
   text-align: left;
   background-color: #f4f4f4;
   color: #3c434a;
@@ -43,6 +43,7 @@ h4 {
 }
 
 p, ul, ol, li {
+  padding: 90px;
   font-family: serif;
   padding-left: 20px; /* Adjust this value to control the indentation */
   text-align: left; /* Align text to the left */
