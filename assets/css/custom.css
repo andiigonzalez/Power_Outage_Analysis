@@ -6,10 +6,7 @@ body {
   background-color: #f4f4f4;
   color: #3c434a;
   display: flex; /* Use flexbox to center the content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
   height: 100vh; /* Full viewport height */
-  text-align: center; /* Center text */
 }
 
 .site-header {
@@ -53,6 +50,7 @@ p, ul, ol, li {
   margin-right: 30px;
   margin-left: 30px;
   text-align: justify;
+  font-size: 1.1em; 
 }
 
 /* Custom Banner Styles */
