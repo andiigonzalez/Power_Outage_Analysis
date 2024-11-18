@@ -54,9 +54,7 @@ Below is a description of the variables we will utilize for out analysis.
 #### Data Cleaning
 Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. 
 
-<div class="scrollable-image">
-  ![Visualization of our dataset columns](assets/data/dataframe_cols.jpeg)
-</div>
+<img src="assets/data/dataframe_cols.jpeg" alt="Visualization of our dataset columns" style="width:100%; max-width:600px; display:block; margin:auto;">
 
 #### Univariate Analysis
 [Analysis of individual variables]
