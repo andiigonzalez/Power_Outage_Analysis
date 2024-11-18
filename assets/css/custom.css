@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: serif !important;
-  margin: 5px;
+  margin: 1px;
   padding: 90px;
   text-align: left;
   background-color: #f4f4f4;
@@ -60,7 +60,7 @@ p, ul, ol, li {
   margin-bottom: 0;
   position: relative;
   margin: 0 !important; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  padding: 0 !important; /* Remove default padding */
 }
 
 .custom-banner h1 {
