@@ -19,6 +19,7 @@ h2, h3, h4, h5, h6 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
+  padding-right: 1.5px;
 }
 
 /* Specific font sizes for each header */
@@ -94,7 +95,7 @@ p, ul, ol, li {
 }
 
 .custom-banner h3 {
-  font-size: 2.5em !important;
+  font-size: 2.2em !important;
   font-family: serif;
   color: white !important; /* Keep white color for banner subtitle */
   margin-top: 90px ;
@@ -118,6 +119,7 @@ nav {
 }
 
 nav a {
+  font-size: 1.3em;
   font-family: serif;
   display: block;
   font-weight: bold; /* Makes the text bold */
@@ -202,6 +204,18 @@ td.description {
 .author-section .author-bio p {
   font-size: 1.1em;
   line-height: 1.6;
+}
+.scrollable-image {
+  width: 100%;            /* Makes the div width 100% of the container */
+  overflow-x: auto;       /* Enables horizontal scrolling */
+  white-space: nowrap;    /* Prevents the image from wrapping */
+  display: flex;          /* Ensures the image is displayed in a line */
+}
+
+.scrollable-image img {
+  height: auto;           /* Keeps the image aspect ratio intact */
+  width: auto;            /* Allows the image to be its natural width */
+  max-height: 300px;      /* Set a maximum height for the image */
 }
 
 /* Footer Styles */

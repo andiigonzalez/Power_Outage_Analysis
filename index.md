@@ -10,11 +10,11 @@ Power outages have become increasingly frequent in the United States due to the 
 
 This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
-**How have characteristics of major power outages changed over time?**
+<p style="text-align:center;"b>How have characteristics of major power outages changed over time?</p>
 
-**Is there a clear trend in the characteristics of power outages?**
+<p style="text-align:center;b">Is there a clear trend in the characteristics of power outages?</p>
 
-The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
+The data we have used comes from the scientific dataset [“Data on major power outage events in the continental U.S”](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
 
 **Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
@@ -22,7 +22,9 @@ The data we have used comes from the scientific dataset “Data on major power o
 -------
 
 ### Relevant Column Descriptions
-Below is a description of the columns that we maintained in our dataset as they were relevant to our analysis.
+The original dataset contained 1534 observations (maintained) and 55 variables (columns).
+We discarded columns that were not necessary for out analysis and will be using a modified version of the dataframe with 1534 columns and 18 variables (columns). 
+Below is a description of the variables we will utilize for out analysis.
 
 | COLUMN                      |    DESCRIPTION                                                              |
 |-----------------------------|-----------------------------------------------------------------------------|
@@ -34,7 +36,6 @@ Below is a description of the columns that we maintained in our dataset as they 
 | `ANOMALY.LEVEL`             | Oceanic El Niño/La Niña (ONI) index referring to cold/warm episodes (estimated as a 3-month running mean) |
 | `CLIMATE.CATEGORY`          | Represents the climate episodes corresponding to the year                   |
 | `OUTAGE.START.DATE`         | Day of the year when the outage event started                               |
-| `OUTAGE.START.TIME`         | Time of the day when the outage event started                               |
 | `CAUSE.CATEGORY`            | Categories of all events causing major power outages                        |
 | `CAUSE.CATEGORY.DETAIL`     | Detailed description of the event categories causing the power outages      |
 | `OUTAGE.DURATION`           | Duration of outage events (in minutes)                                      |
@@ -52,6 +53,10 @@ Below is a description of the columns that we maintained in our dataset as they 
 
 #### Data Cleaning
 Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. 
+
+<div class="scrollable-image">
+  ![Visualization of our dataset columns]('assets/data/dataframe_cols.jpeg')
+</div>
 
 #### Univariate Analysis
 [Analysis of individual variables]
