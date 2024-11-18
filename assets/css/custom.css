@@ -47,10 +47,11 @@ h4 {
 p, ul, ol, li {
   padding: 0px;
   font-family: serif;
-  margin-right: 30px;
-  margin-left: 30px;
-  text-align: justify;
+  margin: 0 auto; /* Centers the text block */
+  text-align: justify; /* Justify the text */
   font-size: 1.1em; 
+  line-height: 1.6; /* Improve readability */
+  max-width: 900px;
 }
 
 /* Custom Banner Styles */
