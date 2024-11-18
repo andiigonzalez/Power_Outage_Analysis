@@ -46,8 +46,8 @@ h4 {
 p, ul, ol, li {
   padding: 0px;
   font-family: serif;
-  padding-left: 20px; /* Adjust this value to control the indentation */
-  padding-right: 20px;
+  padding-left: 100px; /* Adjust this value to control the indentation */
+  padding-right: 100px;
   text-align: left; /* Align text to the left */
 }
 
@@ -118,7 +118,7 @@ nav a:hover {
 
 /* Centered Content Styles */
 .content {
-  padding: 3px 70px 70px 3px;
+  padding: 3px 100px 100px 3px;
   text-align: center;
 }
 
