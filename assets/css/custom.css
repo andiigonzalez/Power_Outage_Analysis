@@ -146,6 +146,7 @@ code {
 
 /* Table Styling */
 table {
+  font-size: 1em;
   font-family: serif;
   width: 70%;
   margin: 20px auto;
