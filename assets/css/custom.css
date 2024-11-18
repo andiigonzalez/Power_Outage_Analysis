@@ -61,7 +61,7 @@ p, ul, ol, li {
   text-align: center; /* Center the text horizontally */
   padding-top: 120px; /* Space at the top for content */
   margin: 0; /* Remove default margin */
-  position: static; /* Fix it to the top of the screen */
+  position: relative; /* Fix it to the top of the screen */
   top: 0; /* Ensure it starts at the very top */
   left: 0; /* Align with the left edge */
   right: 0; /* Ensure it spans the full width */
