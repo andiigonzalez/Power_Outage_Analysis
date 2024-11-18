@@ -44,9 +44,10 @@ h4 {
 }
 
 p, ul, ol, li {
-  padding: 20px;
+  padding: 0px;
   font-family: serif;
   padding-left: 20px; /* Adjust this value to control the indentation */
+  padding-right: 20px;
   text-align: left; /* Align text to the left */
 }
 
