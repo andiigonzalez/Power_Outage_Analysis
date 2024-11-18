@@ -14,7 +14,7 @@ This study investigates the trends in power outages across the nation, identifie
 
 <p style="text-align:center;b">Is there a clear trend in the characteristics of power outages?</p>
 
-The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
+The data we have used comes from the scientific dataset [“Data on major power outage events in the continental U.S”](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
 
 **Project Map:** [Insert your project map here, e.g., flowchart of analysis process]
