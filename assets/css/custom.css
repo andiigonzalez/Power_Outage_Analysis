@@ -219,7 +219,7 @@ td.description {
 .scrollable-image-img {
   width: 160%;               /* Image will scale to fit within the container's width */
   max-width: 20000px;        /* Allows the image to grow up to 20000px wide */
-  max-height: 10000px;       /* Allows the image to grow up to 10000px tall */
+  max-height: 15000px;       /* Allows the image to grow up to 10000px tall */
   height: auto;              /* Maintains the aspect ratio of the image */
   display: block;            /* Ensures the image is displayed as a block element */
 }        /* Centers the image inside the container */
