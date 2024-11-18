@@ -10,9 +10,9 @@ Power outages have become increasingly frequent in the United States due to the 
 
 This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
-**How have characteristics of major power outages changed over time?**
+<p style="text-align:center;">**How have characteristics of major power outages changed over time?**</p>
 
-**Is there a clear trend in the characteristics of power outages?**
+<p style="text-align:center;">**Is there a clear trend in the characteristics of power outages?**</p>
 
 The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
