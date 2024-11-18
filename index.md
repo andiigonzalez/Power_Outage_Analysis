@@ -23,14 +23,14 @@ The data we have used comes from the scientific dataset [Data on major power out
 
 ### Relevant Column Descriptions
 The original dataset contained 1534 observations (maintained) and 55 variables (columns).
-We discarded columns that were not necessary for out analysis and will be using a modified version of the dataframe with 1534 columns and 18 variables (columns). 
-Below is a description of the variables we will utilize for out analysis.
+For our analysis we will be using a modified version of the dataframe composed of 1534 columns and 18 variables. 
+Below is a table with the variables we maintained and a description of what they describe.
 
 | COLUMN                      |    DESCRIPTION                                                              |
 |-----------------------------|-----------------------------------------------------------------------------|
-| `YEAR`                      | Year an outage occurred                                                     |
-| `MONTH`                     | Month an outage occurred                                                    |
-| `U.S._STATE`                | State the outage occurred in                                                |
+| `YEAR`                      | Year the outage occurred                                                    |
+| `MONTH`                     | Month the outage occurred                                                   |
+| `U.S._STATE`                | State where the outage occurred                                             |
 | `POSTAL.CODE`               | State's Postal Code                                                         |
 | `CLIMATE.REGION`            | U.S. Climate regions as specified by National Centers for Environmental Information (9 Regions) |
 | `ANOMALY.LEVEL`             | Oceanic El Niño/La Niña (ONI) index referring to cold/warm episodes (estimated as a 3-month running mean) |
@@ -43,7 +43,7 @@ Below is a description of the variables we will utilize for out analysis.
 | `CUSTOMERS.AFFECTED`        | Number of customers affected by the power outage event                      |
 | `RES.SALES`                 | Electricity consumption in the residential sector (megawatt-hour)           |
 | `COM.SALES`                 | Electricity consumption in the commercial sector (megawatt-hour)            |
-| `IND.SALES  `               | Electricity consumption in the industrial sector (megawatt-hour)            |
+| `IND.SALES`                 | Electricity consumption in the industrial sector (megawatt-hour)            |
 | `TOTAL.SALES`               | Total electricity consumption in the U.S. state (megawatt-hour)             |
 | `POPULATION`                | Population in the U.S. state in a year                                      |
 
@@ -52,11 +52,13 @@ Below is a description of the variables we will utilize for out analysis.
 ### Data Cleaning and Exploratory Analysis
 
 #### Data Cleaning
-Our first step was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
+Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
 <div style="overflow-x: auto; width: 100%; margin: auto; padding: 10px;" class="scrollable-image">
   <img src="assets/images/dataframe_cols.jpeg" alt="Visualization of our dataset columns" class="scrollable-image-img">
 </div>
+
+Once we narrowed down the variables for our analysis, 
 
 #### Univariate Analysis
 [Analysis of individual variables]
