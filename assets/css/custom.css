@@ -205,6 +205,18 @@ td.description {
   font-size: 1.1em;
   line-height: 1.6;
 }
+.scrollable-image {
+  width: 100%;            /* Makes the div width 100% of the container */
+  overflow-x: auto;       /* Enables horizontal scrolling */
+  white-space: nowrap;    /* Prevents the image from wrapping */
+  display: flex;          /* Ensures the image is displayed in a line */
+}
+
+.scrollable-image img {
+  height: auto;           /* Keeps the image aspect ratio intact */
+  width: auto;            /* Allows the image to be its natural width */
+  max-height: 300px;      /* Set a maximum height for the image */
+}
 
 /* Footer Styles */
 footer {
