@@ -10,9 +10,9 @@ Power outages have become increasingly frequent in the United States due to the 
 
 This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
-<p style="text-align:center;">**How have characteristics of major power outages changed over time?**</p>
+<p style="text-align:center;"b>**How have characteristics of major power outages changed over time?**</p>
 
-<p style="text-align:center;">**Is there a clear trend in the characteristics of power outages?**</p>
+<p style="text-align:center;b">**Is there a clear trend in the characteristics of power outages?**</p>
 
 The data we have used comes from the scientific dataset “Data on major power outage events in the continental U.S” and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
@@ -34,7 +34,6 @@ Below is a description of the columns that we maintained in our dataset as they 
 | `ANOMALY.LEVEL`             | Oceanic El Niño/La Niña (ONI) index referring to cold/warm episodes (estimated as a 3-month running mean) |
 | `CLIMATE.CATEGORY`          | Represents the climate episodes corresponding to the year                   |
 | `OUTAGE.START.DATE`         | Day of the year when the outage event started                               |
-| `OUTAGE.START.TIME`         | Time of the day when the outage event started                               |
 | `CAUSE.CATEGORY`            | Categories of all events causing major power outages                        |
 | `CAUSE.CATEGORY.DETAIL`     | Detailed description of the event categories causing the power outages      |
 | `OUTAGE.DURATION`           | Duration of outage events (in minutes)                                      |
