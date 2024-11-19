@@ -68,7 +68,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 
 #### Univariate Analysis
 [Analysis of individual variables]
-<iframe src="assets/images/outages_by_year.html" width="1000" height="600"></iframe>
+<iframe src="assets/images/outages_by_year.html" width="400" height="200"></iframe>
 
 #### Bivariate Analysis
 [Analysis of relationships between variables]
