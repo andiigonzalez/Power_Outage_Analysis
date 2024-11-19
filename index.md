@@ -58,7 +58,7 @@ Below is a table with the variables we maintained and a description of what they
 #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
-<iframe src="assets/images/outages_head.html" width="100%" height="400"></iframe>
+<iframe src="assets/images/outages_head.html" width="100%"></iframe>
 
 Once we narrowed down the variables for our analysis, 
 
