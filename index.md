@@ -26,7 +26,7 @@ The data we have used comes from the scientific dataset [Data on major power out
 -------
 
 ### Relevant Column Descriptions
-The original dataset contained 1534 observations (maintained) and 55 variables (columns).
+The original dataset contained 1534 observations and 55 variables (columns).
 For our analysis we will be using a modified version of the dataframe composed of 1534 columns and 18 variables. 
 Below is a table with the variables we maintained and a description of what they describe.
 
@@ -58,12 +58,17 @@ Below is a table with the variables we maintained and a description of what they
 #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
-<iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
+Once we narrowed down the variables for our analysis, made some adjustments to the variables:
 
-Once we narrowed down the variables for our analysis, 
+1. Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`
+  
+3. We actively decided to maintain missing variables as `NaN' or `NaT' until we complete out Missingness Analysis
+   
+<iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
 
 #### Univariate Analysis
 [Analysis of individual variables]
+<iframe src="assets/images/outages_by_year.html" width="1000" height="600"></iframe>
 
 #### Bivariate Analysis
 [Analysis of relationships between variables]
