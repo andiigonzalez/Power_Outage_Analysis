@@ -213,7 +213,7 @@ td.description {
   padding: 2px 6px 6px 2px;
   overflow-x: auto;      /* Enables horizontal scrolling */ 
   margin: 20px auto;              /* Centers the container horizontally */
-  padding: 10px;             /* Adds some padding inside the container */
+  padding: 0;             /* Adds some padding inside the container */
   text-align: center;        /* Centers the image inside the container */
 }
 
@@ -229,7 +229,7 @@ td.description {
   width: 95%;                 /* Adjust the width to fit the text area */
   max-width: 95%;
   height: auto;
-  padding: 10px;              /* Adds some padding inside the container */
+  padding: 0;              /* Adds some padding inside the container */
   overflow-x: auto;           /* Enables horizontal scrolling */
   margin: 20px auto;          /* Centers the container horizontally */
   text-align: center;         /* Centers the iframe within the container */
@@ -238,7 +238,7 @@ td.description {
 .scrollable-plot-iframe {
   width: 100%;                /* The iframe scales to fit the container */
   max-width: 20000px;         /* Prevents excessive shrinking */
-  height: 100%;               /* Maintains the aspect ratio */
+  height: 120%;               /* Maintains the aspect ratio */
   border: none;               /* Removes the border around the iframe */
   display: block;             /* Ensures the iframe behaves as a block element */
 }
