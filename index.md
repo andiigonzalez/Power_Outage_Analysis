@@ -60,23 +60,21 @@ Our first step in data cleaning was to discern which columns in the dataset are 
 
 Once we narrowed down the variables for our analysis, made some adjustments to the variables:
 
-1. Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`
-  
-3. We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis. 
+- Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`.
+- We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis. 
    
 <iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
 
 #### Univariate Analysis
 Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time. 
 
-<div class="scrollable-plot-container">
   <iframe class="scrollable-plot-iframe" src="assets/images/outages_by_year.html" scrolling="yes"></iframe>
-</div>
+
 
 Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
-<div class="scrollable-plot-container">
+
   <iframe class="scrollable-plot-iframe" src="assets/images/outages_by_state.html" scrolling="yes"> </iframe>
-</div>
+
 
 #### Bivariate Analysis
 [Analysis of relationships between variables]
