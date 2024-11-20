@@ -226,12 +226,12 @@ td.description {
   display: block;            /* Ensures the image is displayed as a block element */
 }    
 .scrollable-plot-container {
-  width: 95%;                 /* Adjust the width to fit the text area */
-  max-width: 95%;
+  width: 80%;                 /* Adjust the width to fit the text area */
+  max-width: 90%;
   padding: 0;              /* Adds some padding inside the container */
   overflow-x: auto;           /* Enables horizontal scrolling */
   margin: 20px auto;          /* Centers the container horizontally */
-  text-align: center;         /* Centers the iframe within the container */
+  text-align: left;         /* Centers the iframe within the container */
 }
 
 .scrollable-plot-iframe {
