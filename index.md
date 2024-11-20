@@ -11,10 +11,10 @@ Power outages have become increasingly frequent in the United States due to the 
 This study investigates the trends in power outages across the nation, identifies the primary drivers for these events and hopes to provide relevant information that may assist communities and their policy makers in reducing the frequency and impact of this phenomena. The focus of our analysis will be answering the following questions: 
 
 
-<p style="text-align:center;"><b>How have characteristics of major power outages changed over time?</b></p>
+<p style="text-align:center;"><b>Where and when do major outages tend to occur?</b></p>
 <p></p>
 
-<p style="text-align:center;"><b>Is there a clear trend in the characteristics of power outages?</b></p>
+<p style="text-align:center;"><b>Predict the cause of a major power outage?</b></p>
 <p></p>
 
 
