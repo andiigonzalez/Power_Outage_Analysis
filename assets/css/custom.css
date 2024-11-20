@@ -228,7 +228,7 @@ td.description {
 .scrollable-plot-container {
   width: 80%;                 /* Adjust the width to fit the text area */
   max-width: 90%;
-  height: 700px;
+  max-height: 2000px;
   padding: 0;              /* Adds some padding inside the container */
   overflow-x: auto;           /* Enables horizontal scrolling */
   margin: 20px auto;          /* Centers the container horizontally */
