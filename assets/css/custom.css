@@ -221,12 +221,13 @@ td.description {
   width: 160%;               /* Image will scale to fit within the container's width */
   max-width: 20000px;        /* Allows the image to grow up to 20000px wide */
   max-height: 15000px;       /* Allows the image to grow up to 10000px tall */
-  height: auto;              /* Maintains the aspect ratio of the image */
+  height: 160%;              /* Maintains the aspect ratio of the image */
   display: block;            /* Ensures the image is displayed as a block element */
 }        /* Centers the image inside the container */
 .scrollable-plot-container {
   width: 80%;                 /* Adjust the width to fit the text area */
-  max-width: 80%;             /* Ensures it doesn't exceed the width of the parent container */
+  max-width: 80%;
+  height: 80%; /* Ensures it doesn't exceed the width of the parent container */
   padding: 10px;              /* Adds some padding inside the container */
   overflow-x: auto;           /* Enables horizontal scrolling */
   margin: 20px auto;          /* Centers the container horizontally */
@@ -236,7 +237,7 @@ td.description {
 .scrollable-plot-iframe {
   width: 160%;                /* The iframe scales to fit the container */
   max-width: 20000px;         /* Prevents excessive shrinking */
-  height: auto;               /* Maintains the aspect ratio */
+  height:160%;               /* Maintains the aspect ratio */
   border: none;               /* Removes the border around the iframe */
   display: block;             /* Ensures the iframe behaves as a block element */
 }
