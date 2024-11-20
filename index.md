@@ -80,7 +80,9 @@ Our second univariate analysis was the total number of customers affected by out
 
 #### Bivariate Analysis
 [Analysis of relationships between variables]
-
+<div class="scrollable-plot-container">
+  <iframe class="scrollable-plot-iframe" src="assets/images/outages_by_region_map.html" scrolling="yes"> </iframe>
+</div>
 ------
 
 ### Assessment of Missingness
