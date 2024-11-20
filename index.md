@@ -72,8 +72,8 @@ Our first univariate analysis was the number of outages per year. Our interest w
 
 Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
 
-  <iframe  src="assets/images/outages_by_state.html" align="left"></iframe>
-</div>
+
+  <iframe src="assets/images/outages_by_state.html" align="left"></iframe>
 
 #### Bivariate Analysis
 [Analysis of relationships between variables]
