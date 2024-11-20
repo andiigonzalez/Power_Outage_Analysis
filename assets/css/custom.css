@@ -228,6 +228,7 @@ td.description {
 .scrollable-plot-container {
   width: 80%;                 /* Adjust the width to fit the text area */
   max-width: 90%;
+  height: 700px;
   padding: 0;              /* Adds some padding inside the container */
   overflow-x: auto;           /* Enables horizontal scrolling */
   margin: 20px auto;          /* Centers the container horizontally */
@@ -237,7 +238,7 @@ td.description {
 .scrollable-plot-iframe {
   width: 100%;                /* The iframe scales to fit the container */
   max-width: 20000px;         /* Prevents excessive shrinking */
-  height: 120%;               /* Maintains the aspect ratio */
+  height: auto;               /* Maintains the aspect ratio */
   border: none;               /* Removes the border around the iframe */
   display: block;             /* Ensures the iframe behaves as a block element */
 }
