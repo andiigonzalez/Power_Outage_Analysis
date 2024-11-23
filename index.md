@@ -83,11 +83,11 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 <p></p>
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
-    <div style="flex: 1; margin-right: 10px;">
+    <div style="flex: 1; margin-right: 15px;">
         <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 400px; border: none;"></iframe>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-        <h5 style="margin: 0 0 10px 0; text-align: left;">Total Customer Affected per Year:</h5>
+        <h5 style="margin: 0 0 15px 0; text-align: left;">Total Customer Affected per Year:</h5>
         <p style="margin: 0;"> 
             Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
         </p>
@@ -99,8 +99,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 
 <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
     <!-- Text Content -->
-    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 10px;">
-        <h5 style="margin: 0 0 10px 0; text-align: left;">Total Outages Per Climate Region:</h5>
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 15px;">
+        <h5 style="margin: 0 0 15px 0; text-align: left;">Total Outages Per Climate Region:</h5>
         <p style="margin: 0;"> 
             Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially directing our focus to identify the causes why some regions had more power outages than the others.
         </p>
@@ -111,8 +111,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 </div>
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
-    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 10px;">
-        <h5 style="margin: 0 0 10px 0; text-align: left;">Power Outages Per Climate Region and The Cause Distribution:</h5>
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 15px;">
+        <h5 style="margin: 0 0 15px 0; text-align: left;">Power Outages Per Climate Region and The Cause Distribution:</h5>
         <p style="margin: 0;"> 
             Our second Bivariate analysis focused on comparing the number of total power outages each region has experienced from January 2000 to July 2016 and what the causes were. As such we created a stacked bar plot where each climate region's bar was distributed in size by the number of outages resulting from a specific cause.
         </p>
