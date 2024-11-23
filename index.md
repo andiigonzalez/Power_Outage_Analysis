@@ -78,7 +78,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 </div>
 
 <div style="display: flex; align-items: center; width: 100%;">
-    <iframe src="assets/images/outages_by_state.html" width="70%" height="400" style="margin-right: 10px;"></iframe>
+    <iframe src="assets/images/outages_by_state.html" width="68%" height="400" style="margin-right: 10px;"></iframe>
     <div style="width: 50%;">
         <h5 style="margin: 0;">Total Customer Affected per Year:</h5>
         <p style="margin: 5px 0;"> 
