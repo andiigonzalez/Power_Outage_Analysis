@@ -144,7 +144,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes"> </iframe>
 
 ##### Pivot Table #2
-  <iframe src="assets/images/pivot_table_outages.html" s width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes"> </iframe>
 
 ##### Pivot Table #3
   <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes"> </iframe>
