@@ -70,7 +70,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ##### Outages per Year:
 Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time. 
 
-<iframe src="assets/images/outages_by_year.html" width="100%" height="100%"></iframe>
+<iframe src="assets/images/outages_by_year.html" width="100%" height="300"></iframe>
 
 ##### Total Customer Affected per Year:
 Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
