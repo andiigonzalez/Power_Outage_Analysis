@@ -76,6 +76,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
         </p>
     </div>
 </div>
+<p></p>
 
 <div style="display: flex; align-items: center; width: 100%;">
     <iframe src="assets/images/outages_by_state.html" width="68%" height="400" style="margin-right: 10px;"></iframe>
