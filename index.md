@@ -89,20 +89,18 @@ Our first Bivariate analysis focused on creating a chart that reflected the numb
 ##### Power Outages Per Climate Region and The Cause Distribution:
 Our second Bivariate analysis focused on comparing the number of total power outages each region has experienced from January 2000 to July 2016 and what the causes were. As such we created a stacked bar plot where each climate region's bar was distributed in size by the number of outages resulting from a specific cause.
 
-  <iframe class="scrollable-plot-iframe" src="assets/images/bivariate_stacked_barplot.html" scrolling="yes"> </iframe>
+  <iframe src="assets/images/bivariate_stacked_barplot.html" scrolling="yes"> </iframe>
 
 #### Interesting Aggregates
 
-  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_outages_by_year_&_climate_region.html" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" scrolling="yes"> </iframe>
 
 
-<div class="scrollable-plot-container">
-  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_outages.html" scrolling="yes"> </iframe>
-</div>
+  <iframe src="assets/images/pivot_table_outages.html" scrolling="yes"> </iframe>
 
-<div class="scrollable-plot-container">
-  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_consumption_vs_outages_per_state.html" scrolling="yes"> </iframe>
-</div>
+
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" scrolling="yes"> </iframe>
+
 
 
 ------
