@@ -70,13 +70,13 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ##### Outages per Year:
 <div style="display: flex; align-items: center; width: 100%;">
     <iframe src="assets/images/outages_by_year.html" width="60%" height="300" style="margin-right: 5px;"></iframe>
-    <p style="width: 20%; margin: 0;"> Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. </p>
+    <p style="width: 40%; margin: 0;"> Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. </p>
 </div>
 
 ##### Total Customer Affected per Year: 
 <div style="display: flex; align-items: center; width: 100%;">
     <iframe src="assets/images/outages_by_state.html" width="60%" height="300" style="margin-right: 5px;"></iframe>
-    <p style="width: 20%; margin: 0;"> Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values.  </p>
+    <p style="width: 40%; margin: 0;"> Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values.  </p>
 </div>
 <iframe src="assets/images/outages_by_state.html" width="700" height="400"></iframe>
 
