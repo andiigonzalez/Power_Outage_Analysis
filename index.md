@@ -67,11 +67,12 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 <p></p>
 
 #### Univariate Analysis
+##### Outages per Year:
 Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time. 
 <p></p>
 <iframe src="assets/images/outages_by_year.html" class="scrollable-plot-iframe"></iframe>
 <p></p>
-
+##### Total Customer Affected per Year:
 Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
 <p></p>
 <iframe src="assets/images/outages_by_state.html" class="scrollable-plot-iframe"></iframe>
@@ -92,6 +93,20 @@ Our second Bivariate analysis focused on comparing the number of total power out
 
 <div class="scrollable-plot-container">
   <iframe class="scrollable-plot-iframe" src="assets/images/bivariate_stacked_barplot.html" scrolling="yes"> </iframe>
+</div>
+
+#### Interesting Aggregates
+
+<div class="scrollable-plot-container">
+  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_outages_by_year_&_climate_region.html" scrolling="yes"> </iframe>
+</div>
+
+<div class="scrollable-plot-container">
+  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_outages.html" scrolling="yes"> </iframe>
+</div>
+
+<div class="scrollable-plot-container">
+  <iframe class="scrollable-plot-iframe" src="assets/images/pivot_table_consumption_vs_outages_per_state.html" scrolling="yes"> </iframe>
 </div>
 
 
