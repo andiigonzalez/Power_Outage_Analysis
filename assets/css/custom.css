@@ -47,9 +47,8 @@ h4 {
   text-align: justify;
 }
 h5 {
-  text-decoration: underline;
   font-family: serif;
-  font-size: 1.45em !important;   /* Larger size for h5 */
+  font-size: 1.35em !important;   /* Larger size for h5 */
   text-align: justify;
 }
 
