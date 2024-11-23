@@ -67,29 +67,33 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 <p></p>
 
 #### Univariate Analysis
-<div style="display: flex; align-items: center; width: 100%; margin-bottom: 20px;">
+
+<div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
     <div style="flex: 1; margin-right: 10px;">
         <iframe src="assets/images/outages_by_year.html" style="width: 100%; height: 300px; border: none;"></iframe>
     </div>
-    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
-        <h5 style="margin: 0; text-align: center;">Outages per Year:</h5>
-        <p style="margin: 5px 0;"> 
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+        <h5 style="margin: 0 0 10px 0; text-align: left;">Outages per Year:</h5>
+        <p style="margin: 0;"> 
             Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. 
         </p>
     </div>
 </div>
+
 <p></p>
-<div style="display: flex; align-items: center; width: 100%;">
+
+<div style="display: flex; align-items: flex-start; width: 100%;">
     <div style="flex: 1; margin-right: 10px;">
         <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 400px; border: none;"></iframe>
     </div>
-    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
-        <h5 style="margin: 0; text-align: center;">Total Customer Affected per Year:</h5>
-        <p style="margin: 5px 0;"> 
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+        <h5 style="margin: 0 0 10px 0; text-align: left;">Total Customer Affected per Year:</h5>
+        <p style="margin: 0;"> 
             Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
         </p>
     </div>
 </div>
+
 #### Bivariate Analysis
 ##### Total Outages Per Climate Region: 
 
