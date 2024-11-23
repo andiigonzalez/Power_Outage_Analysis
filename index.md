@@ -82,16 +82,21 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 </div>
 
 <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
-    <div style="flex: 1; margin-right: 15px;">
-        <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 400px; border: none;"></iframe>
-    </div>
-    <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
-        <h5 style="margin: 0 0 20px 0; text-align: center; width: 100%; color: darkblue">Total Customer Affected per Year:</h5>
-        <p style="margin: 0; text-align: center;"> 
+   <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
+        Total Outages per state
+    </h5>
+   <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; margin-right: 10px;">
+            <p style="margin: 0; text-align: justify;"> 
             Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
-        </p>
+               </p>
+        </div>
+        <div style="flex: 1; margin-left: 10px;">
+            <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 300px; border: none;"></iframe>
+        </div>
     </div>
 </div>
+  
 
 
 #### Bivariate Analysis
