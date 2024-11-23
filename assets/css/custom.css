@@ -237,7 +237,7 @@ td.description {
   overflow-x: auto;           /* Prevent unnecessary scrolling inside container */
   margin: 0 auto 20px;        /* Reduced bottom margin to limit the space below the plot */
   padding: 0;                 /* Remove any extra padding inside container */
-  text-align: center;         /* Center content inside container */
+  text-align: left;         /* Center content inside container */
 }
 
 /* Styling for iframe to make it responsive */
