@@ -97,17 +97,17 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 #### Bivariate Analysis
 
 <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
-    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 15px;">
-        <h5 style="margin: 0 0 20px 0; text-align: center;">Total Outages Per Climate Region:</h5>
+    <div style="flex: 1; margin-right: 10px;">
+        <iframe src="assets/images/outages_by_region_map.html" style="width: 100%; height: 300px; border: none;"></iframe>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+        <h5 style="margin: 0 0 20px 0; text-align: center; color: orange;">Total Outages Per Climate Region:</h5>
         <p style="margin: 0; text-align: center;"> 
-            Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially directing our focus to identify the causes why some regions had more power outages than the others.
-           
+            Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially direct our focus to identify the causes why some regions had more power outages than others.
         </p>
     </div>
-    <div style="flex: 1;">
-        <iframe src="assets/images/outages_by_region_map.html" style="width: 110%; height: 400px; border: none;"></iframe>
-    </div>
 </div>
+
 
 <div style="display: flex; align-items: flex-start; width: 100%;">
     <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; margin-right: 15px;">
