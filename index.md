@@ -68,10 +68,9 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 
 #### Univariate Analysis
 ##### Outages per Year:
-
 <div style="display: flex; align-items: center;">
-    <iframe src="assets/images/outages_by_year.html" width="650" height="300" style="margin-right: 20px;"></iframe>
-    <p>Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time.</p>
+    <iframe src="assets/images/outages_by_year.html" width="70%" height="300" style="margin-right: 20px;"></iframe>
+    <p style="flex-shrink: 0;">Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time.</p>
 </div>
 
 ##### Total Customer Affected per Year:
