@@ -66,7 +66,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 <iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
 <p></p>
 
-<h4 style="text-align: center; margin-bottom: 20px;">Univariate Analysis</h4>
+#### Univariate Analysis
 
 <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
     <div style="flex: 1; margin-right: 10px;">
