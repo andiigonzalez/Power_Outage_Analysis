@@ -50,6 +50,7 @@ h5 {
   font-family: serif;
   font-size: 1.35em !important;   /* Larger size for h5 */
   text-align: justify;
+  padding-right: 1.95px;
 }
 
 .content {
