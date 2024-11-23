@@ -87,7 +87,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;">Total Outages per State:</h5>
     <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
         <div style="flex: 1; margin-right: 10px;">
-            <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 300px; border: none;"></iframe>
+            <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 350px; border: none;"></iframe>
         </div>
         <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
             <p style="margin: 0; text-align: justify;"> 
@@ -127,13 +127,13 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
             <p style="margin: 0; text-align: justify;"> 
                
                Our second Bivariate analysis focused on comparing the number of total power outages each region has experienced from January 2000 to July 2016 and what the causes were. As such we created a stacked bar plot where each climate region's bar was distributed in size by the number of outages resulting from a specific cause.
-            </p>
-        </div>
+               </p>
+                </div>
         <div style="flex: 1; margin-left: 10px;">
-            <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 100%; height: 300px; border: none;"></iframe>
-        </div>
+           <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 100%; height: 300px; border: none;"></iframe>
+         </div>
     </div>
-</div>
+</div>>
 
 
 
