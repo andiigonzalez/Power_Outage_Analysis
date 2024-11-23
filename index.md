@@ -83,7 +83,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
     </div>
 </div>
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; margin-right: 10px">
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;">Total Outages per State:</h5>
     <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
         <div style="flex: 1; margin-right: 10px;">
