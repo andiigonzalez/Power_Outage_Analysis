@@ -46,6 +46,12 @@ h4 {
   font-size: 1.65em !important;   /* Larger size for h4 */
   text-align: justify;
 }
+h5 {
+  text-decoration: underline;
+  font-family: serif;
+  font-size: 1.45em !important;   /* Larger size for h5 */
+  text-align: justify;
+}
 
 .content {
   padding: 1px 6px 6px 1px; /* Add padding to the sides */
@@ -208,8 +214,8 @@ td.description {
   line-height: 1.6;
 }
 .scrollable-image-container {
-  width: 60%;                /* Adjust the width to fit the text area, 80% is an example */
-  max-width: 60%;            /* Ensures it doesn't exceed the width of the parent container */
+  width: 70%;                /* Adjust the width to fit the text area, 80% is an example */
+  max-width: 70%;            /* Ensures it doesn't exceed the width of the parent container */
   padding: 2px 6px 6px 2px;
   overflow-x: auto;      /* Enables horizontal scrolling */ 
   margin: 20px auto;              /* Centers the container horizontally */
@@ -219,28 +225,26 @@ td.description {
 
 .scrollable-image-img {
   width: 100%;               /* Image will scale to fit within the container's width */
-  max-width: 20000px;
-  height: 100%;  /* Allows the image to grow up to 20000px wide */
+  height: 100%;            /* Allows the image to grow up to 20000px wide */
   max-height: 15000px;       /* Allows the image to grow up to 10000px tall */
   height: 100%;             /* Maintains the aspect ratio of the image */
   display: block;            /* Ensures the image is displayed as a block element */
 }    
 .scrollable-plot-container {
-  width: 80%;                 /* Adjust the width to fit the text area */
+  width: 80%;                     /* Adjust the width to fit the text area */
   max-width: 90%;
-  max-height: 2000px;
-  padding: 0;              /* Adds some padding inside the container */
-  overflow-x: auto;           /* Enables horizontal scrolling */
-  margin: 20px auto;          /* Centers the container horizontally */
-  text-align: left;         /* Centers the iframe within the container */
+  padding: 0;                     /* Adds no padding inside the container */
+  overflow-x: auto;               /* Enables horizontal scrolling */
+  margin: 20px auto;              /* Centers the container horizontally */
+  text-align: left;               /* Aligns the plot/iframe to the left */
+  height: auto;                   /* Allows the container height to adjust based on content */
 }
 
 .scrollable-plot-iframe {
-  width: 100%;                /* The iframe scales to fit the container */
-  max-width: 20000px;         /* Prevents excessive shrinking */
-  height: auto;               /* Maintains the aspect ratio */
-  border: none;               /* Removes the border around the iframe */
-  display: block;             /* Ensures the iframe behaves as a block element */
+  width: 100%;                    /* The iframe scales to fit the container */
+  height: auto;                   /* Allows the iframe height to scale proportionally */
+  border: none;                   /* Removes the border around the iframe */
+  display: block;                 /* Ensures the iframe behaves as a block element */
 }
 /* Footer Styles */
 footer {
