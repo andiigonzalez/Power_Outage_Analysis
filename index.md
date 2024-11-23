@@ -88,7 +88,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
         <h5 style="margin: 0 0 20px 0; text-align: center; width: 100%; color: darkblue">Total Customer Affected per Year:</h5>
         <p style="margin: 0; text-align: center;"> 
-            Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values.
+            Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
         </p>
     </div>
 </div>
