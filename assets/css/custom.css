@@ -231,21 +231,22 @@ td.description {
   display: block;            /* Ensures the image is displayed as a block element */
 }    
 .scrollable-plot-container {
-  width: 100%;                /* Take up full width of its parent */
-  height: auto;               /* Automatically adjust height based on content */
-  max-height: 60vh;           /* Increase height to 70% of the viewport (adjust as needed) */
-  overflow: hidden;           /* Prevent overflow, since we're adjusting the height */
-  margin: 20px auto;          /* Center the container horizontally with some margin */
-  text-align: center;         /* Centers the content inside the container */
+  width: 100%;                /* Full width */
+  height: auto;               /* Auto height based on content */
+  max-height: 60vh;           /* Adjust to a reasonable maximum height */
+  overflow: hidden;           /* Prevent unnecessary scrolling inside container */
+  margin: 0 auto 20px;        /* Reduced bottom margin to limit the space below the plot */
+  padding: 0;                 /* Remove any extra padding inside container */
+  text-align: center;         /* Center content inside container */
 }
 
 /* Styling for iframe to make it responsive */
 .scrollable-plot-iframe {
-  width: 100%;                /* Take up full width of the container */
-  height: 100%;               /* Take up full height of the container */
-  border: none;               /* Remove the iframe border */
-  display: block;             /* Make iframe behave as a block-level element */
-  object-fit: contain;        /* Maintain aspect ratio and ensure the plot fits inside */
+  width: 100%;                /* Full width */
+  height: 100%;               /* Full height of container */
+  border: none;               /* Remove iframe border */
+  display: block;             /* Block-level element */
+  object-fit: contain;        /* Maintain aspect ratio */
 }
 /* Footer Styles */
 footer {
