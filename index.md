@@ -67,16 +67,24 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 <p></p>
 
 #### Univariate Analysis
-##### Outages per Year:
-<div style="display: flex; align-items: center; width: 100%;">
+<div style="display: flex; align-items: center; width: 100%; margin-bottom: 20px;">
     <iframe src="assets/images/outages_by_year.html" width="60%" height="300" style="margin-right: 10px;"></iframe>
-    <p style="width: 50%; margin: 0;"> Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. </p>
+    <div style="width: 50%;">
+        <h5 style="margin: 0;">Outages per Year:</h5>
+        <p style="margin: 5px 0;"> 
+            Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. 
+        </p>
+    </div>
 </div>
 
-##### Total Customer Affected per Year: 
 <div style="display: flex; align-items: center; width: 100%;">
     <iframe src="assets/images/outages_by_state.html" width="70%" height="400" style="margin-right: 10px;"></iframe>
-    <p style="width: 50%; margin: 0;"> Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values.  </p>
+    <div style="width: 50%;">
+        <h5 style="margin: 0;">Total Customer Affected per Year:</h5>
+        <p style="margin: 5px 0;"> 
+            Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
+        </p>
+    </div>
 </div>
 
 #### Bivariate Analysis
