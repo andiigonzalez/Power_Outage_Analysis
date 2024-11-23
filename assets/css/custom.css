@@ -233,8 +233,8 @@ td.description {
 .scrollable-plot-container {
   width: 100%;                /* Full width */
   height: auto;               /* Auto height based on content */
-  max-height: 60vh;           /* Adjust to a reasonable maximum height */
-  overflow: hidden;           /* Prevent unnecessary scrolling inside container */
+  max-height: 50vh;           /* Adjust to a reasonable maximum height */
+  overflow-x: auto;           /* Prevent unnecessary scrolling inside container */
   margin: 0 auto 20px;        /* Reduced bottom margin to limit the space below the plot */
   padding: 0;                 /* Remove any extra padding inside container */
   text-align: center;         /* Center content inside container */
