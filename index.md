@@ -76,7 +76,7 @@ Our second univariate analysis was the total number of customers affected by out
   <iframe src="assets/images/outages_by_state.html" align="left"></iframe>
 
 #### Bivariate Analysis
-###### Total Outages Per Climate Region: 
+##### Total Outages Per Climate Region: 
 
 Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially directing our focus to identify the causes why some regions had more power outages than the others. 
 
@@ -84,7 +84,7 @@ Our first Bivariate analysis focused on creating a chart that reflected the numb
   <iframe class="scrollable-plot-iframe" src="assets/images/outages_by_region_map.html" scrolling="yes"> </iframe>
 </div>
 
-###### Power Outages Per Climate Region and The Cause Distribution:
+##### Power Outages Per Climate Region and The Cause Distribution:
 Our second Bivariate analysis focused on comparing the number of total power outages each region has experienced from January 2000 to July 2016 and what the causes were. As such we created a stacked bar plot where each climate region's bar was distributed in size by the number of outages resulting from a specific cause.
 
 <div class="scrollable-plot-container">
