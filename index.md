@@ -70,12 +70,12 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ##### Outages per Year:
 Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages relevant to time. 
 
-<iframe src="assets/images/outages_by_year.html" width="600" height="300"></iframe>
+<iframe src="assets/images/outages_by_year.html" width="650" height="300"></iframe>
 
 ##### Total Customer Affected per Year:
 Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population. We quantified these values. 
 <p></p>
-<iframe src="assets/images/outages_by_state.html" width="600" height="400"></iframe>
+<iframe src="assets/images/outages_by_state.html" width="650" height="400"></iframe>
 <p></p>
 
 #### Bivariate Analysis
@@ -83,7 +83,7 @@ Our second univariate analysis was the total number of customers affected by out
 
 Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially directing our focus to identify the causes why some regions had more power outages than the others. 
 
-  <iframe src="assets/images/outages_by_region_map.html" scrolling="yes"> </iframe>
+  <iframe src="assets/images/outages_by_region_map.html" width="650" height="400" scrolling="yes"> </iframe>
 
 
 ##### Power Outages Per Climate Region and The Cause Distribution:
