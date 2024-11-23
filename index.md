@@ -92,14 +92,14 @@ Our second Bivariate analysis focused on comparing the number of total power out
   <iframe src="assets/images/bivariate_stacked_barplot.html" width="600" height="400" scrolling="yes"> </iframe>
 
 #### Interesting Aggregates
+##### Pivot Table #1
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes"> </iframe>
 
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" scrolling="yes"> </iframe>
-
-
+##### Pivot Table #2
   <iframe src="assets/images/pivot_table_outages.html" scrolling="yes"> </iframe>
 
-
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" scrolling="yes"> </iframe>
+##### Pivot Table #3
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes"> </iframe>
 
 
 
