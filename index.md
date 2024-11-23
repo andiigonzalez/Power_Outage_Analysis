@@ -90,7 +90,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
             <iframe src="assets/images/outages_by_state.html" style="width: 105%; height: 350px; border: none;"></iframe>
         </div>
         <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-            <p style="margin: 5px; text-align: justify;"> 
+            <p style="margin: 10px; text-align: justify;"> 
                
                Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
             </p>
