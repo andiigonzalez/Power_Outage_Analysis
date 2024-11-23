@@ -73,7 +73,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
         <iframe src="assets/images/outages_by_year.html" style="width: 100%; height: 300px; border: none;"></iframe>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
-        <h5 style="margin: 0 0 20px 0; text-align: center; color: orange;">Outages per Year:</h5>
+        <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;">Outages per Year:</h5>
         <p style="margin: 0; text-align: center;"> 
             Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. 
    
@@ -86,7 +86,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
         <iframe src="assets/images/outages_by_state.html" style="width: 100%; height: 400px; border: none;"></iframe>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
-        <h5 style="margin: 0 0 20px 0; text-align: center; width: 100%;">Total Customer Affected per Year:</h5>
+        <h5 style="margin: 0 0 20px 0; text-align: center; width: 100%; color: darkblue">Total Customer Affected per Year:</h5>
         <p style="margin: 0; text-align: center;"> 
             Our second univariate analysis was the total number of customers affected by outages per year. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values.
         </p>
@@ -101,7 +101,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
         <iframe src="assets/images/outages_by_region_map.html" style="width: 100%; height: 300px; border: none;"></iframe>
     </div>
     <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-        <h5 style="margin: 0 0 20px 0; text-align: center; color: orange;">Total Outages Per Climate Region:</h5>
+        <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;">Total Outages Per Climate Region:</h5>
         <p style="margin: 0; text-align: center;"> 
             Our first Bivariate analysis focused on creating a chart that reflected the number of outages per the 7 major climatic regions as defined by the National Center for Environmental Information. The idea to create this plot was to identify regions where more outages occurred and potentially direct our focus to identify the causes why some regions had more power outages than others.
         </p>
