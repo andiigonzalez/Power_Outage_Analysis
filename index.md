@@ -130,7 +130,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
                </p>
                 </div>
         <div style="flex: 1; margin-left: 10px;">
-           <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 100%; height: 300px; border: none;"></iframe>
+           <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 100%; height: 400px; border: none;"></iframe>
          </div>
     </div>
 </div>>
