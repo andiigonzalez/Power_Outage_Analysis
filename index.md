@@ -68,7 +68,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 
 #### Univariate Analysis
 
-<<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;">
         Outages per Year:
     </h5>
