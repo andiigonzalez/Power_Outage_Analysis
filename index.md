@@ -74,7 +74,7 @@ We investigated the [source]( https://www.oe.netl.doe.gov/oe417_annual_summary.a
 
 As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
    
-<iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
+<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
 <p></p>
 
 #### Univariate Analysis
@@ -185,13 +185,13 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 #### Interesting Aggregates
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
 
 
 
@@ -209,7 +209,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 - P-value: 0.0
 
 
-<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400"></iframe>
+<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
   
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
