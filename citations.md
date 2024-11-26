@@ -6,7 +6,7 @@ title: Cited Works
 
 * [University of Buffalo's Department of Industrial and Systems Engineering](https://www.popsci.com/story/environment/why-us-lose-power-storms/)
   * Description 
-* Citation 2
+* [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f)
   * Description 
 * Citation 3
   * Description
