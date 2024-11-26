@@ -192,7 +192,8 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
   <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
-
+  
+  <p></p>
 
 
 ------
@@ -212,21 +213,21 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
   
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
-
+ <p></p>
 ---
 
 ### Hypothesis Testing
 [Content for Hypothesis Testing]
-
+ <p></p>
 ---
 
 ### Final Model
 [Content for Final Model]
-
+ <p></p>
 ---
 
 ### Fairness Analysis
 [Content for Fairness Analysis]
-
+ <p></p>
 ---
 
