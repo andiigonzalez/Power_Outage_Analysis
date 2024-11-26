@@ -184,13 +184,13 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 #### Interesting Aggregates
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
+  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 
 
