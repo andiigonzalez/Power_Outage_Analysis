@@ -73,7 +73,9 @@ It is important to note that the abstract of our dataset determines that "A majo
 We investigated the [source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
 
 As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
-   
+<p></p>
+
+####### Visual of our dataset
 <iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
 <p></p>
 
@@ -185,13 +187,13 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 #### Interesting Aggregates
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
+  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0"> </iframe>
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 
 
