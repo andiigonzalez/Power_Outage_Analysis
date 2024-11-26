@@ -73,7 +73,7 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 <p></p>
 
 ###### Visual of our dataset
-<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
+<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
 <p></p>
 
 #### Univariate Analysis
