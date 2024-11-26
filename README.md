@@ -73,7 +73,7 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 <p></p>
 
 ###### Visual of our dataset
-<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
+<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
 <p></p>
 
 #### Univariate Analysis
@@ -183,15 +183,14 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 
 #### Interesting Aggregates
-<h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
-<h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
-<h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
   <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
-
 
 
 ------
@@ -201,16 +200,22 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 #### NMAR Analysis
 One of the types of missing data that exists is NMAR which stands for **N**ot **M**issing **A**t **R**andom. This instance of missingness in data occurs when the values of the data itself is not disclosed. It depends only on the values themselves and not on other variables (columns). Because NMAR data is unobservable, it has to be analyzed by either collecting more data or reasoning about the data generating 
 process. 
-<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
+
+As mentioned above, regulatory requirements have fluctuated over the time period. One column that might be NMAR could be the `CAUSE.CATEGORY.DETAIL`. Resons for this include:
+1. When the cause is due to something they might get public criticism entities in charge of the electricity might choose not to disclose the specific reason and hide under a mroe vague umbrella such as "system operability disruption".
+2. Reporting agencies or electric companies who report the outage may use another affecting reason as the cause and cannot give proper details about the cause. i.e gridlines were old and vulnerable to weather and there was 'extreme weather' that day. 
+3. Some categories do not have specific details to provide. i.e public appeals.
+  
+#### Missingness Dependencies
+
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
 - Observed TVD statistic: 0.405
 - P-value: 0.0
 
-
 <iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
-  
-#### Missingness Dependencies
-[Content for Missingness Dependencies]
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency #2:</h5>
+
 
 ---
 
