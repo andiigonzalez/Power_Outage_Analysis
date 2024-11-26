@@ -205,12 +205,12 @@ process.
 
 #### Analyze the missingness dependency of `OUTAGE.DURATION` on `CAUSE.CATEGORY` 
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
-Our observed TVD statistic was  0.405 and our p-value was 0.0
+- Observed TVD statistic: 0.405
+- P-value: 0.0
 
-<iframe src="assets/images/NMAR_Cause_vs_Duration.html"></iframe>
 
- <div style="flex: 1; margin-left: 10px;">
-   <iframe src="assets/images/NMAR_Cause_vs_Duration.html" style="border: none;"></iframe>
+ 
+   <iframe src="assets/images/NMAR_Cause_vs_Duration.html" width="500" height="500" border: "none;"></iframe>
  </div>
 
 #### Missingness Dependencies
