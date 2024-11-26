@@ -8,7 +8,7 @@ title: Cited Works
   * Description 
 * [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f)
   * Description 
-* Citation 3
+* [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767)
   * Description
 * Citation 4
   * Description
