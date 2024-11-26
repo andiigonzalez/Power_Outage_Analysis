@@ -58,10 +58,21 @@ Below is a table with the variables we maintained and a description of what they
 #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
+As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S] ur data contains reporting errors and missing values due to (https://www.sciencedirect.com/science/article/pii/S0951832017307767):
+- Inadequate reporting causing underreported incidents.
+- Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
+  
 Once we narrowed down the variables for our analysis, made some adjustments to the variables:
 
 - Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`.
-- We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis. 
+- We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis.
+- We also removed extra spaces from categorical columns using `str.strip()`
+
+It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
+
+We investigated the [source]( https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
+
+As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
    
 <iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
 <p></p>
@@ -187,22 +198,18 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ------
 
 ### Assessment of Missingness
-#### Data Validation
-As mentioned in the artile [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767):
-- Inadequate reporting caused underreported incidents.
-- Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
 
 #### NMAR Analysis
 One of the types of missing data that exists is NMAR which stands for **N**ot **M**issing **A**t **R**andom. This instance of missingness in data occurs when the values of the data itself is not disclosed. It depends only on the values themselves and not on other variables (columns). Because NMAR data is unobservable, it has to be analyzed by either collecting more data or reasoning about the data generating 
 process. 
-It is important to note that the Abstract of our dataset determines: 
-- A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
 
-We investigated the [source]( https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
+#### Analyze the missingness dependency of `OUTAGE.DURATION` on `CAUSE.CATEGORY` 
+We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
+Our observed TVD statistic was  0.405 and our p-value was 0.0
+
+<iframe src="assets/images/NMAR_Cause_vs_Duration.html"></iframe>
 
 
-
-   
 
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
