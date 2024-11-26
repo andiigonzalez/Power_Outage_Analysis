@@ -15,7 +15,7 @@ body {
   display: none;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, h7 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
@@ -77,19 +77,19 @@ p, ul, ol, li {
 /* Custom Banner Styles */
 .custom-banner {
   background-image: url("https://andiigonzalez.github.io/Power_Outage_Analysis/assets/images/header_image.jpeg");
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  height: 400px; /* Adjust the height to your preference */
+  background-size: cover; 
+  background-position: center; 
+  height: 400px; 
   min-height: 400px;
   color: white; /* Text color */
   text-align: center; /* Center the text horizontally */
-  padding-top: 120px; /* Space at the top for content */
-  margin: 0; /* Remove default margin */
+  padding-top: 120px;
+  margin: 0; 
   position: relative; /* Fix it to the top of the screen */
   top: 0; /* Ensure it starts at the very top */
-  left: 0; /* Align with the left edge */
-  right: 0; /* Ensure it spans the full width */
-  width: 100%; /* Span the entire width of the page */
+  left: 0;
+  right: 0;
+  width: 100%; 
   z-index: 1; /* Ensure it stays on top of other elements */
 }
 .custom-banner h1 {
@@ -106,7 +106,7 @@ p, ul, ol, li {
   font-family: serif;
   color: white !important; /* Keep white color for banner subtitle */
   margin-top: 90px ;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Optional: add text shadow for better contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
 }
 
 /* Hide the default title */
@@ -118,9 +118,9 @@ p, ul, ol, li {
 nav {
   background-color: transparent !important; 
   position: absolute; /* Place the nav inside the banner */
-  bottom: 0; /* Position it near the bottom of the banner */
+  bottom: 0; 
   width: 100%; /* Make it span the full width of the banner */
-  display: flex; /* Horizontal layout */
+  display: flex;
   justify-content: center; /* Center the navigation links */
   z-index: 2; /* Ensure it appears above the banner */
 }
@@ -167,18 +167,19 @@ table, th, td {
 }
 
 th {
-  font-family: serif;            /* Serif font for headers */
-  font-weight: bold;              /* Make headers bold */
-  text-transform: uppercase;      /* Make headers uppercase */
+  font-family: serif;  
+  font-weight: bold;            
+  text-transform: uppercase;     
   padding: 8px;
   text-align: center;
-  background-color: #f8f8f8;     /* Light background for headers */
-  color: #3c434a;                /* Dark color for header text */
+  background-color: #f8f8f8;     
+  color: #3c434a;              
 }
 
 td {
   color: #3c434a;
   font-weight: normal;
+  text-align: center;
 }
 
 td.description {
@@ -214,40 +215,40 @@ td.description {
   line-height: 1.6;
 }
 .scrollable-image-container {
-  width: 70%;                /* Adjust the width to fit the text area, 80% is an example */
-  max-width: 70%;            /* Ensures it doesn't exceed the width of the parent container */
+  width: 70%;               
+  max-width: 70%;            
   padding: 2px 6px 6px 2px;
-  overflow-x: auto;      /* Enables horizontal scrolling */ 
-  margin: 20px auto;              /* Centers the container horizontally */
-  padding: 0;             /* Adds some padding inside the container */
-  text-align: center;        /* Centers the image inside the container */
+  overflow-x: auto;    
+  margin: 20px auto;     
+  padding: 0;       
+  text-align: center;
 }
 
 .scrollable-image-img {
-  width: 100%;               /* Image will scale to fit within the container's width */
-  height: 100%;            /* Allows the image to grow up to 20000px wide */
-  max-height: 15000px;       /* Allows the image to grow up to 10000px tall */
-  height: 100%;             /* Maintains the aspect ratio of the image */
-  display: block;            /* Ensures the image is displayed as a block element */
+  width: 100%;              
+  height: 100%;          
+  max-height: 15000px;  
+  height: 100%;      
+  display: block;          
 }    
 .scrollable-plot-container {
-  width: 100%;                /* Full width */
-  height: auto;               /* Auto height based on content */
-  max-height: 50vh;           /* Adjust to a reasonable maximum height */
-  overflow-x: auto;           /* Prevent unnecessary scrolling inside container */
-  margin: 0 auto 20px;        /* Reduced bottom margin to limit the space below the plot */
-  padding: 0;                 /* Remove any extra padding inside container */
-  text-align: left;         /* Center content inside container */
+  width: 100%;               
+  height: auto;              
+  max-height: 50vh;          
+  overflow-x: auto;     
+  margin: 0 auto 20px;       
+  padding: 0;              
+  text-align: left;   
 }
 
 /* Styling for iframe to make it responsive */
 .scrollable-plot-iframe {
-  width: 100%;                /* Full width */
-  height: 100%;               /* Full height of container */
-  border: none !important;               /* Remove iframe border */
-  display: block;             /* Block-level element */
+  width: 100%;              
+  height: 100%;             
+  border: none !important;               
+  display: block;            
   object-fit: contain; 
-  /* Maintain aspect ratio */
+
 }
 /* Footer Styles */
 footer {
