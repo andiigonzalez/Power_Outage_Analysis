@@ -4,7 +4,7 @@ title: Cited Works
 ---
 ## Cited Works
 
-* Citation 1
+* [University of Buffalo's Department of Industrial and Systems Engineering](https://www.popsci.com/story/environment/why-us-lose-power-storms/)
   * Description 
 * Citation 2
   * Description 
