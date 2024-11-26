@@ -203,13 +203,7 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 #### NMAR Analysis
 One of the types of missing data that exists is NMAR which stands for **N**ot **M**issing **A**t **R**andom. This instance of missingness in data occurs when the values of the data itself is not disclosed. It depends only on the values themselves and not on other variables (columns). Because NMAR data is unobservable, it has to be analyzed by either collecting more data or reasoning about the data generating 
 process. 
-<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
-We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
-- Observed TVD statistic: 0.405
-- P-value: 0.0
 
-
-<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
   
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
