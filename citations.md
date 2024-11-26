@@ -10,7 +10,7 @@ title: Cited Works
   * Description 
 * [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767)
   * Description
-* Citation 4
+* [Power Outage Reports Source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx)
   * Description
 * Citation 5
   * Description
