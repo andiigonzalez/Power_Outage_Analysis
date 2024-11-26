@@ -163,7 +163,7 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
          </div>
     </div>
     
-</div>>
+</div>
 <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
         Number Power Outages Per State and The Cause:
@@ -179,7 +179,7 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
            <iframe src="assets/images/bivariate_stacked_barplot_by_state.html" style="width: 105%; height: 400px; border: none;"></iframe>
          </div>
     </div>
-</div>>
+</div>
 
 
 
