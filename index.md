@@ -209,7 +209,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 - P-value: 0.0
 
 
-<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="300"></iframe>
+<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400"></iframe>
   
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
