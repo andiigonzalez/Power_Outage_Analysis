@@ -222,7 +222,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 ### Hypothesis Testing
 **Null Hypothesis**: The number of power outages is uniformly distributed across all months of the year
 **Alternative Hypothesis**: The number of outages is not uniformly distributed across all months of the year
-**Test Statistic**: 
+**Test Statistic**: K2 Statistic
 **Significance Level**: 
 
 #### Justification: 
