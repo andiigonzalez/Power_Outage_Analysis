@@ -58,7 +58,7 @@ Below is a table with the variables we maintained and a description of what they
 #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
-As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S] ur data contains reporting errors and missing values due to (https://www.sciencedirect.com/science/article/pii/S0951832017307767):
+As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767), our data contains reporting errors and missing values due to:
 - Inadequate reporting causing underreported incidents.
 - Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
   
@@ -70,7 +70,7 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 
 It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
 
-We investigated the [source]( https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
+We investigated the [source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
 
 As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
    
