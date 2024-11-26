@@ -229,7 +229,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 
 ---
-### Prediction Problem
+### Prediction Problem: Predicting the Cause Category
 
 ---
 
