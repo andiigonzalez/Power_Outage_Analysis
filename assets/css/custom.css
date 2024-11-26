@@ -243,9 +243,10 @@ td.description {
 .scrollable-plot-iframe {
   width: 100%;                /* Full width */
   height: 100%;               /* Full height of container */
-  border: none;               /* Remove iframe border */
+  border: none !important;               /* Remove iframe border */
   display: block;             /* Block-level element */
-  object-fit: contain;        /* Maintain aspect ratio */
+  object-fit: contain; 
+  /* Maintain aspect ratio */
 }
 /* Footer Styles */
 footer {
