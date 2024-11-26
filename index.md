@@ -208,7 +208,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 - Observed TVD statistic: 0.405
 - P-value: 0.0
 
-  <iframe src="assets/images/NMAR_Cause_vs_Duration.html" width="500" height="700"></iframe>
+  <iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="500" height="700"></iframe>
   
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
