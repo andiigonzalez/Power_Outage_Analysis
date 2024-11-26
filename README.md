@@ -58,12 +58,25 @@ Below is a table with the variables we maintained and a description of what they
 #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
+As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767), our data contains reporting errors and missing values due to:
+- Inadequate reporting causing underreported incidents.
+- Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
+  
 Once we narrowed down the variables for our analysis, made some adjustments to the variables:
 
 - Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`.
-- We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis. 
-   
-<iframe src="assets/images/outages_head.html" width="100%" height="200"></iframe>
+- We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis.
+- We also removed extra spaces from categorical columns using `str.strip()`
+
+It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
+
+We investigated the [source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
+
+As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
+<p></p>
+
+####### Visual of our dataset
+<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
 <p></p>
 
 #### Univariate Analysis
@@ -95,6 +108,22 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
             
                
                Our second univariate analysis was the total number of power outages by state. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; margin-right: 10px">
+    <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Distribution of Power Outage Causes:</h5>
+    <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+        <div style="flex: 1; margin-right: 10px;">
+            <iframe src="assets/images/distribution_of_power_outage_cause.html" style="width: 105%; height: 350px; border: none; margin-right: 2px"></iframe>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+            <p style="margin: 10px; text-align: justify;"> 
+            
+               
+               Our last univariate analysis was to understand the distribution of causes for reported power outages from 2000 to 2016. From this pie chart we can observe that during this time the two most frequent causes of power outages were intentional attacks with a over a quarter of the power outages and extreme weather with almost half of the power outages resulting from it.
             </p>
         </div>
     </div>
@@ -135,19 +164,36 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
            <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 105%; height: 400px; border: none;"></iframe>
          </div>
     </div>
-</div>>
+    
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+    <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
+        Number Power Outages Per State and The Cause:
+    </h5>
+    <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; margin-right: 10px;">
+            <p style="margin: 0; text-align: justify;"> 
+               
+              Lastly, and similar to the graph above, we calculated the total number of power outages reported during this time by each state and the cause. As you might see, there is a notoriously large amount of the power outages throughout the different states caused by extreme weather. This could indicate a relationship between extreme weather and weather patterns with power outages. 
+               </p>
+                </div>
+        <div style="flex: 1; margin-left: 10px;">
+           <iframe src="assets/images/bivariate_stacked_barplot_by_state.html" style="width: 105%; height: 400px; border: none;"></iframe>
+         </div>
+    </div>
+</div>
 
 
 
 #### Interesting Aggregates
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes"> </iframe>
+  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" align="center"> </iframe>
 
 
 
@@ -156,8 +202,16 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ### Assessment of Missingness
 
 #### NMAR Analysis
-[Content for NMAR Analysis]
+One of the types of missing data that exists is NMAR which stands for **N**ot **M**issing **A**t **R**andom. This instance of missingness in data occurs when the values of the data itself is not disclosed. It depends only on the values themselves and not on other variables (columns). Because NMAR data is unobservable, it has to be analyzed by either collecting more data or reasoning about the data generating 
+process. 
+<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
+We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
+- Observed TVD statistic: 0.405
+- P-value: 0.0
 
+
+<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
+  
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
 
