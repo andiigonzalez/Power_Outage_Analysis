@@ -100,6 +100,22 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
     </div>
 </div>
 
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; margin-right: 10px">
+    <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Distribution of Power Outage Causes:</h5>
+    <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+        <div style="flex: 1; margin-right: 10px;">
+            <iframe src="assets/images/distribution_of_power_outage_cause.html" style="width: 105%; height: 350px; border: none; margin-right: 2px"></iframe>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+            <p style="margin: 10px; text-align: justify;"> 
+            
+               
+               Our last univariate analysis was to understand the distribution of causes for reported power outages from 2000 to 2016. From this pie chart we can observe that during this time the two most frequent causes of power outages were intentional attacks with a over a quarter of the power outages and extreme weather with almost half of the power outages resulting from it.
+            </p>
+        </div>
+    </div>
+</div>
+
 
 #### Bivariate Analysis
 
@@ -154,9 +170,19 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 ------
 
 ### Assessment of Missingness
+#### Data Validation
+As mentioned in the artile [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767):
+- Inadequate reporting caused underreported incidents.
+- Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
 
 #### NMAR Analysis
-[Content for NMAR Analysis]
+One of the types of missing data that exists is NMAR which stands for **N**ot **M**issing **A**t **R**andom. This instance of missingness in data occurs when the values of the data itself is not disclosed. It depends only on the values themselves and not on other variables (columns). Because NMAR data is unobservable, it has to be analyzed by either collecting more data or reasoning about the data generating 
+process. 
+It is important to note that the Abstract of our dataset determines: 
+- A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
+- 
+1. We investigated the source of the power outage reports https://www.oe.netl.doe.gov/oe417_annual_summary.aspx.
+   Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected. 
 
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
