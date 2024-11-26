@@ -151,6 +151,23 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
            <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 105%; height: 400px; border: none;"></iframe>
          </div>
     </div>
+    
+</div>>
+<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+    <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
+        Number Power Outages Per State and The Cause:
+    </h5>
+    <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-start; margin-right: 10px;">
+            <p style="margin: 0; text-align: justify;"> 
+               
+              Lastly, and similar to the graph above, we calculated the total number of power outages reported during this time by each state and the cause. As you might see, there is a notoriously large amount of the power outages throughout the different states caused by extreme weather. This could indicate a relationship between extreme weather and weather patterns with power outages. 
+               </p>
+                </div>
+        <div style="flex: 1; margin-left: 10px;">
+           <iframe src="assets/images/bivariate_stacked_barplot_by_state.html" style="width: 105%; height: 400px; border: none;"></iframe>
+         </div>
+    </div>
 </div>>
 
 
@@ -180,9 +197,12 @@ One of the types of missing data that exists is NMAR which stands for **N**ot **
 process. 
 It is important to note that the Abstract of our dataset determines: 
 - A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
-- 
-1. We investigated the source of the power outage reports https://www.oe.netl.doe.gov/oe417_annual_summary.aspx.
-   Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected. 
+
+We investigated the [source]( https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
+
+
+
+   
 
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
