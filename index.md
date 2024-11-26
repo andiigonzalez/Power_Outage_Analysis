@@ -209,7 +209,9 @@ Our observed TVD statistic was  0.405 and our p-value was 0.0
 
 <iframe src="assets/images/NMAR_Cause_vs_Duration.html"></iframe>
 
-
+ <div style="flex: 1; margin-left: 10px;">
+   <iframe src="assets/images/NMAR_Cause_vs_Duration.html" style="border: none;"></iframe>
+ </div>
 
 #### Missingness Dependencies
 [Content for Missingness Dependencies]
