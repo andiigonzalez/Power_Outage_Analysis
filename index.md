@@ -218,7 +218,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
-
+<p></p>
 
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
@@ -227,7 +227,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
   
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
-
+<p></p>
 
 ---
 
