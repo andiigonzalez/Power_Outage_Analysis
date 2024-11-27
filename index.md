@@ -181,11 +181,11 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 #### Interesting Aggregates
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-*INSERT EXPLANATION*
+**INSERT EXPLANATION**
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-*INSERT EXPLANATION*
+**INSERT EXPLANATION**
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
@@ -214,7 +214,7 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
-*INSERT EXPLANATION*
+**INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <p></p>
@@ -224,7 +224,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
-  *INSERT EXPLANATION*
+**INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
