@@ -65,11 +65,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 - We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis.
 - We also removed extra spaces from categorical columns using `str.strip()`
 
-It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
+It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW." However, out dataset contains several rows where both `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED` are NA or 0 which seems alarming given that these ar ethe two characteristics by which the event was reported. As such, we have decided to replace all values of 0 in these columns with `NaN` as well as the values of 0 in `OUTAGE.DURATION`
 
-We investigated the [source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
-
-As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
 <p></p>
 
 ###### Visual of our dataset
