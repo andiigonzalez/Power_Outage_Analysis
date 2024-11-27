@@ -216,8 +216,8 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
 
-<iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" margin="2"></iframe>
-<iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" margin="2"></iframe>
+<iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
+<iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <p></p>
 <p></p>
 
