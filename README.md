@@ -211,13 +211,18 @@ As mentioned above, regulatory requirements have fluctuated over the time period
   
 #### Missingness Dependencies
 
-<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
-We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
-- Observed TVD statistic: 0.405
-- P-value: 0.0
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
+We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
+- Observed TVD statistic: 0.1435
+- P-value: 0.153
 
-<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
-<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency #2:</h5>
+<iframe src= "assets/images/OutageDuration_vs_Month" width="700" height="400" frameBorder="0"></iframe>
+
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
+- Observed TVD statistic: 0.3874
+- P-value: 0.0
+<iframe src= "assets/images/OutageDuration_vs_Year" width="700" height="400" frameBorder="0"></iframe>
+
 
 
 ---
