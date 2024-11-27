@@ -189,9 +189,11 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
-<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: </h5>
-  <iframe src="assets/images/pivot_table_consumption_vs_outages_per_state.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
+The overarching idea of this project is to understand patterns in when, why, and perhaps where power outages occured from January 2000 to July 2016. In this pivot table, we are calculating the total number of outages that occured due to a specific cause in a specific month. The goal was to see if certain months are more likely to suffer certain power outages whether it be due to severe weather and seasonality or due to other causes such as vandalism, public appeal...etc. 
 
+While we did not separate by State which is relevant in terms of climate, we can observe that vandalism is a constant cause of power outages throughout the months. Another detail to highlight is that thunderstorms amass the largest number of outages within the severe weather category and occured substantially more often in May, June, and July whilst winterstorms - the second largest severe weather contributor to the outages- occurred most prominently in January and February. 
+  <iframe src="assets/images/outages_by_month" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 
 ------
@@ -209,18 +211,40 @@ As mentioned above, regulatory requirements have fluctuated over the time period
   
 #### Missingness Dependencies
 
-<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Cause Category:</h5>
-We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution of `CAUSE.CATEGORY` when `OUTAGE.DURATION` was missing versus when it was not missing. 
-- Observed TVD statistic: 0.405
-- P-value: 0.0
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
+We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
+- Observed TVD statistic: 0.1435
+- P-value: 0.153
 
-<iframe src= "assets/images/NMAR_Cause_vs_Duration.html" width="700" height="400" frameBorder="0"></iframe>
-[Content for Missingness Dependencies]
+<iframe src= "assets/images/OutageDuration_vs_Month" width="700" height="400" frameBorder="0"></iframe>
+
+<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
+
+- Observed TVD statistic: 0.3874
+- P-value: 0.0
+  
+<iframe src= "assets/images/OutageDuration_vs_Year" width="700" height="400" frameBorder="0"></iframe>
+
+
 
 ---
 
 ### Hypothesis Testing
-[Content for Hypothesis Testing]
+**Null Hypothesis**: The number of power outages is uniformly distributed across all months of the year
+**Alternative Hypothesis**: The number of outages is not uniformly distributed across all months of the year
+**Test Statistic**: K2 Statistic
+**Significance Level**: 
+
+#### Justification: 
+
+
+---
+### Prediction Problem: Predicting the Cause Category
+
+---
+
+### Baseline Model
+
 
 ---
 
