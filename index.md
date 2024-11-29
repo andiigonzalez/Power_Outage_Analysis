@@ -216,6 +216,7 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+
 **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
@@ -226,6 +227,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
+
 **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
