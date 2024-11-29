@@ -25,36 +25,36 @@ h2, h3, h4, h5, h6, h7 {
 /* Specific font sizes for each header */
 h1 {
   font-family: serif;
-  font-size: 2.5em !important; /* Larger size for h1 */
+  font-size: 2.8em !important; /* Larger size for h1 */
   text-align: center;
 }
 
 h2 {
   font-family: serif;
-  font-size: 2.1em !important; /* Slightly larger size for h2 */
+  font-size: 2.3em !important; /* Slightly larger size for h2 */
   text-align: center;
 }
 
 h3 {
   font-family: serif;
-  font-size: 1.85em !important;   /* Larger size for h3 */
+  font-size: 2em !important;   /* Larger size for h3 */
   text-align: center;
 }
 h4 {
   text-decoration: underline;
   font-family: serif;
-  font-size: 1.65em !important;   /* Larger size for h4 */
+  font-size: 1.7em !important;   /* Larger size for h4 */
   text-align: justify;
 }
 h5 {
   font-family: serif;
-  font-size: 1.35em !important;   /* Larger size for h5 */
+  font-size: 1.5em !important;   /* Larger size for h5 */
   text-align: justify;
   padding-right: 1.95px;
 }
 h6 {
   font-family: serif;
-  font-size: 1.18em !important;   /* Larger size for h5 */
+  font-size: 1.25em !important;   /* Larger size for h5 */
   text-align: justify;
   padding-right: 1.95px;
 }
@@ -62,6 +62,7 @@ h6 {
 .content {
   padding: 1px 6px 6px 1px; 
   text-align: center;
+  font-size: 1em
   max-width: 90%; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
 }
