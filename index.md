@@ -189,9 +189,11 @@ It is important to note that the abstract of our dataset determines that "A majo
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
+
 The overarching idea of this project is to understand patterns in when, why, and perhaps where power outages occured from January 2000 to July 2016. In this pivot table, we are calculating the total number of outages that occured due to a specific cause in a specific month. The goal was to see if certain months are more likely to suffer certain power outages whether it be due to severe weather and seasonality or due to other causes such as vandalism, public appeal...etc. 
 
 While we did not separate by State which is relevant in terms of climate, we can observe that vandalism is a constant cause of power outages throughout the months. Another detail to highlight is that thunderstorms amass the largest number of outages within the severe weather category and occured substantially more often in May, June, and July whilst winterstorms - the second largest severe weather contributor to the outages- occurred most prominently in January and February. 
+
   <iframe src="assets/images/outages_by_month.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 
@@ -243,7 +245,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 #### Justification: 
 
-For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the CLIMATE.CATEGORY that describes the weather at the moment of the outage and the OUTAGE.DURATION column that describes the length of the power outage. 
+For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
 We performed 10,000 permutations and in order to have a representative sample to analyze. 
 
