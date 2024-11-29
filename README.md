@@ -243,11 +243,11 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 #### Justification: 
 
-For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the CLIMATE.CATEGORY that describes the weather at the moment of the outage and the OUTAGE.DURATION column that describes the length of the power outage. 
+For this part we tested whether the outage duration distributions differ when the climate category is cold vs warm at the time of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` which represents the climate episode at the time of the outage and `OUTAGE.DURATION` which contains the length of duration for each power outage. 
 
-We performed 10,000 permutations and in order to have a representative sample to analyze. 
+First we calculated our observed K2 statistic, with a value of 0.077. Then, we performed 10,000 permutations in order to have a representative sample to analyze, where we tested the K2 statistic for each. Then, all the sample statistics where compared with ours to conclude a p-value of 0.2306. 
 
-With these permutations we got an observed statistic of 0.077 and a p-value of 0.2306. These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
 
 The plot below shows the permutations carried out and the observed statistics. 
 
