@@ -50,6 +50,7 @@ h5 {
   font-family: serif;
   font-size: 1.75em !important;   /* Larger size for h5 */
   text-align: justify;
+  color: darkblue;
   padding-right: 1.95px;
 }
 h6 {
