@@ -62,6 +62,7 @@ h6 {
 .content {
   padding: 1px 6px 6px 1px; 
   text-align: center;
+  font-size: 1.1em;
   max-width: 90%; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
 }
