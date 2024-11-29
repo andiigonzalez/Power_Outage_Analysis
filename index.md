@@ -181,11 +181,15 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 #### Interesting Aggregates
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
+
 **INSERT EXPLANATION**
+
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
+
 **INSERT EXPLANATION**
+
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
