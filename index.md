@@ -252,7 +252,6 @@ With these permutations we got an observed statistic of 0.077 and a p-value of 0
 The plot below shows the permutations carried out and the observed statistics. 
 
 
-
 ---
 ### Prediction Problem: Predicting the Cause Category
 This predictive model attempts to predict the cause of a major power outage. We have used a binary classification model that will predict whether a major power outage was caused by weather conditions or a different cause. The specific variable predicted is `CAUSE.CATEGORY` because given that the most common power outages from our historic data are due to either weather conditions or intentional attacks, we wanted to see if the increasing number of extreme weather events would lead to an increase in power outages over time.  The issue draws onto the importance of our current environmental state and the effects of climate change. 
@@ -274,6 +273,8 @@ Information Known Before the Outage:
 - Population Density in the state
 - Urban population density in the state
 - Rural population density in the state
+
+  
 ---
 
 ### Baseline Model
