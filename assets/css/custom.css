@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: serif !important;
-  margin: 1px;
+  margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   color: #3c434a;
@@ -19,7 +19,7 @@ h2, h3, h4, h5, h6, h7 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
-  padding-right: 2px;
+  padding-right: 1.8px;
 }
 
 /* Specific font sizes for each header */
@@ -31,41 +31,52 @@ h1 {
 
 h2 {
   font-family: serif;
-  font-size: 2.3em !important; /* Slightly larger size for h2 */
+  font-size: 2.1em !important; /* Slightly larger size for h2 */
   text-align: center;
 }
 
 h3 {
   font-family: serif;
-  font-size: 2.05em !important;   /* Larger size for h3 */
+  font-size: 1.85em !important;   /* Larger size for h3 */
   text-align: center;
 }
 h4 {
   text-decoration: underline;
   font-family: serif;
-  font-size: 1.85em !important;   /* Larger size for h4 */
+  font-size: 1.65em !important;   /* Larger size for h4 */
   text-align: justify;
 }
 h5 {
   font-family: serif;
-  font-size: 1.65em !important;   /* Larger size for h5 */
+  font-size: 1.35em !important;   /* Larger size for h5 */
   text-align: justify;
-  color: darkblue;
   padding-right: 1.95px;
 }
 h6 {
   font-family: serif;
-  font-size: 1.4 em !important;   /* Larger size for h5 */
+  font-size: 1.18em !important;   /* Larger size for h5 */
   text-align: justify;
   padding-right: 1.95px;
 }
 
 .content {
-  padding: 1.5px 6px 6px 1.5px; 
+  padding: 1px 6px 6px 1px; 
   text-align: center;
-  font-size: 1.2em
   max-width: 90%; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
+}
+
+p, ul, ol, li {
+  padding: 2px 2px 2px 2px;
+  font-size: 1.1em;
+  font-family: serif;
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 
@@ -147,7 +158,7 @@ code {
 
 /* Table Styling */
 table {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: serif;
   width: 70%;
   margin: 20px auto;
@@ -196,6 +207,9 @@ td.description {
   flex: 1;
 }
 
+.author-section .author-info h2 {
+  font-size: 1.8em;
+}
 
 .author-section .author-bio {
   flex: 2;
@@ -203,7 +217,7 @@ td.description {
 }
 
 .author-section .author-bio p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.6;
 }
 .scrollable-image-container {
