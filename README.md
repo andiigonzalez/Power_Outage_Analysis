@@ -65,11 +65,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 - We actively decided to maintain missing variables as `NaN` or `NaT` until we complete our Missingness Analysis.
 - We also removed extra spaces from categorical columns using `str.strip()`
 
-It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW."
+It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW." However, out dataset contains several rows where both `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED` are NA or 0 which seems alarming given that these ar ethe two characteristics by which the event was reported. As such, we have decided to replace all values of 0 in these columns with `NaN` as well as the values of 0 in `OUTAGE.DURATION`
 
-We investigated the [source](https://www.oe.netl.doe.gov/oe417_annual_summary.aspx) of the power outage reports. Here we noticed that the data contained both NA and 0 for data that is unaccounted for. However, we do not want to assume that all 0 values in numerical variables are null yet given the description above for a major power outage, it seems unlikely that certain outages had 0 megawatt loss **and** 0 customers affected.
-
-As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well as and values of 0 in `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED`.
 <p></p>
 
 ###### Visual of our dataset
@@ -184,9 +181,11 @@ As such, we have replaced values of 0 in the `OUTAGE.DURATION` to `NaN` as well 
 
 #### Interesting Aggregates
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
+**INSERT EXPLANATION**
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
+**INSERT EXPLANATION**
   <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
@@ -211,44 +210,83 @@ As mentioned above, regulatory requirements have fluctuated over the time period
   
 #### Missingness Dependencies
 
-<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
+<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+**INSERT EXPLANATION**
+<iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
+<iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
+<p></p>
+<p></p>
 
-<iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0"></iframe>
-<iframe src= "assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 
-<h5 style="margin: 0 2px 20px 0; text-align: left; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
+<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
-  
+**INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
-
-
+<iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
+<p></p>
+<p></p>
 
 ---
 
 ### Hypothesis Testing
 **Null Hypothesis**: The number of power outages is uniformly distributed across all months of the year
+<p></p>
 **Alternative Hypothesis**: The number of outages is not uniformly distributed across all months of the year
+<p></p>
 **Test Statistic**: K2 Statistic
+<p></p>
 **Significance Level**: 
 
 #### Justification: 
 
+For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the CLIMATE.CATEGORY that describes the weather at the moment of the outage and the OUTAGE.DURATION column that describes the length of the power outage. 
+
+We performed 10,000 permutations and in order to have a representative sample to analyze. 
+
+With these permutations we got an observed statistic of 0.077 and a p-value of 0.2306. These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+
+The plot below shows the permutations carried out and the observed statistics. 
+
 
 ---
 ### Prediction Problem: Predicting the Cause Category
+This predictive model attempts to predict the cause of a major power outage. We have used a binary classification model that will predict whether a major power outage was caused by weather conditions or a different cause. The specific variable predicted is `CAUSE.CATEGORY` because given that the most common power outages from our historic data are due to either weather conditions or intentional attacks, we wanted to see if the increasing number of extreme weather events would lead to an increase in power outages over time.  The issue draws onto the importance of our current environmental state and the effects of climate change. 
 
+The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
+
+Information Known Before the Outage: 
+- State
+- Date the outage started (Month, Year)
+- NERC Region
+- Climate Region
+- Anomaly level
+- Urban electricity sales
+- Industrial electricity sales
+- Commercial electricity sales
+- Total electricity sales
+- Population in the state
+- ​​Previous Outage History
+- Population Density in the state
+- Urban population density in the state
+- Rural population density in the state
+
+  
 ---
 
 ### Baseline Model
-
+#### First Step: Preprocessing Data & Feature Engineering
+1. We Imputed missing values in the dataset using probabilistic imputation
+2. We One Hot encoded categorical variables such as Month, Nerc Region, State, and Climate Region
+3. We created a target binary variable called `Weather_Related` which takes a value of 1 when the outage is caused due to weather conditions and 0 otherwise. 
 
 ---
 
 ### Final Model
+To imporve our model we implemented hyperparameter tuning and cross-validations
 [Content for Final Model]
 
 ---
