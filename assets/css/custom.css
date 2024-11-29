@@ -31,30 +31,30 @@ h1 {
 
 h2 {
   font-family: serif;
-  font-size: 2.3em !important; /* Slightly larger size for h2 */
+  font-size: 2.5em !important; /* Slightly larger size for h2 */
   text-align: center;
 }
 
 h3 {
   font-family: serif;
-  font-size: 2em !important;   /* Larger size for h3 */
+  font-size: 2.25em !important;   /* Larger size for h3 */
   text-align: center;
 }
 h4 {
   text-decoration: underline;
   font-family: serif;
-  font-size: 1.7em !important;   /* Larger size for h4 */
+  font-size: 2em !important;   /* Larger size for h4 */
   text-align: justify;
 }
 h5 {
   font-family: serif;
-  font-size: 1.5em !important;   /* Larger size for h5 */
+  font-size: 1.75em !important;   /* Larger size for h5 */
   text-align: justify;
   padding-right: 1.95px;
 }
 h6 {
   font-family: serif;
-  font-size: 1.25em !important;   /* Larger size for h5 */
+  font-size: 1.55 em !important;   /* Larger size for h5 */
   text-align: justify;
   padding-right: 1.95px;
 }
