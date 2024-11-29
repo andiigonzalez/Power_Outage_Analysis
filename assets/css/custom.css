@@ -61,24 +61,11 @@ h6 {
 }
 
 .content {
-  padding: 1px 6px 6px 1px; 
+  padding: 1.5px 6px 6px 1.5px; 
   text-align: center;
   font-size: 1.2em
   max-width: 90%; /* Controls the text width */
   margin: 0 auto; /* Centers the content horizontally */
-}
-
-p, ul, ol, li {
-  padding: 2px 2px 2px 2px;
-  font-size: 1.2em;
-  font-family: serif;
-  text-align: justify;
-  line-height: 1.5;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3px;
-  margin-top: 3px;
 }
 
 
