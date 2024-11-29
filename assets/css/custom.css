@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: serif !important;
-  margin: 0;
+  margin: 1px;
   padding: 0;
   background-color: #f4f4f4;
   color: #3c434a;
@@ -19,7 +19,7 @@ h2, h3, h4, h5, h6, h7 {
   font-family: serif; /* Ensure all headers are black */
   font-weight: bold;         /* Make headers bold */
   color: #3c434a;
-  padding-right: 1.8px;
+  padding-right: 2px;
 }
 
 /* Specific font sizes for each header */
