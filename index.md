@@ -234,11 +234,23 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 ### Hypothesis Testing
 **Null Hypothesis**: The number of power outages is uniformly distributed across all months of the year
+<p></p>
 **Alternative Hypothesis**: The number of outages is not uniformly distributed across all months of the year
+<p></p>
 **Test Statistic**: K2 Statistic
+<p></p>
 **Significance Level**: 
 
 #### Justification: 
+
+For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the CLIMATE.CATEGORY that describes the weather at the moment of the outage and the OUTAGE.DURATION column that describes the length of the power outage. 
+
+We performed 10,000 permutations and in order to have a representative sample to analyze. 
+
+With these permutations we got an observed statistic of 0.077 and a p-value of 0.2306. These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+
+The plot below shows the permutations carried out and the observed statistics. 
+
 
 
 ---
