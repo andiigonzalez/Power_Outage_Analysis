@@ -52,7 +52,7 @@ Below is a table with the variables we maintained and a description of what they
 
 ### Data Cleaning and Exploratory Analysis
 
-#### Data Cleaning
+ #### Data Cleaning
 Our first step in data cleaning was to discern which columns in the dataset are necessary for the analysis. For example, we removed all the columns regarding regional economic outputs, electricity prices and land area such as; `PC.REALGSP.STATE`, `PC.REALGSP.USA`, `AREAPCT_URBAN`, `AREAPCT_UC.` Moreover, we removed certain colums about the percentage of electricity consumption because we want to use the absolute electricity usage. Another section of columns we found less relevant to our analysis were the customer served variables. However, we kept the states' population to understand how the changes in absolute electricity consumption relate to the population. You can scroll through the image below and look at what out dataset looks like.
 
 As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767), our data contains reporting errors and missing values due to:
@@ -69,13 +69,13 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 <p></p>
 
-###### Visual of our dataset
-<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
+ ##### Visual of our dataset
+ <iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
 <p></p>
 
-#### Univariate Analysis
+ #### Univariate Analysis
 
-<div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+ <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue;"> Total Outages per Year: </h5>
     <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
         <div style="flex: 1; margin-right: 10px;">
@@ -83,14 +83,11 @@ It is important to note that the abstract of our dataset determines that "A majo
         </div>
         <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
             <p style="margin: 0; text-align: justify;"> 
-
-               
-               Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. 
-            </p>
-        </div>
+             </div>
     </div>
 </div>
-
+ Our first univariate analysis was the number of outages per year. Our interest was to decipher if there was a trend in the number of outages over the years recorded. This was a way to see if the worsening of the extreme climate conditions or the increase in electricity consumption had an impact on the number of outages. 
+            
 <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; margin-right: 10px">
     <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Total Outages per State:</h5>
     <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
@@ -98,15 +95,11 @@ It is important to note that the abstract of our dataset determines that "A majo
             <iframe src="assets/images/outages_by_state.html" style="width: 105%; height: 350px; border: none; margin-right: 2px"></iframe>
         </div>
         <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-            <p style="margin: 10px; text-align: justify;"> 
-            
-               
-               Our second univariate analysis was the total number of power outages by state. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
-            </p>
-        </div>
+            </div>
     </div>
 </div>
-
+Our second univariate analysis was the total number of power outages by state. In relation to our idea of increasing electricity demand and usage over time and population, we quantified these values. This is because over time, certain states have become more populated than others. We also wanted to see if certain states were more prone to power outages perhaps due to climate region, electricity usage, crime...etc.
+            
 <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; margin-right: 10px">
     <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Distribution of Power Outage Causes:</h5>
     <div style="display: flex; align-items: flex-start; width: 100%; margin-bottom: 20px;">
