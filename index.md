@@ -243,15 +243,37 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 ---
 ### Prediction Problem: Predicting the Cause Category
+This predictive model attempts to predict the cause of a major power outage. We have used a binary classification model that will predict whether a major power outage was caused by weather conditions or a different cause. The specific variable predicted is `CAUSE.CATEGORY` because given that the most common power outages from our historic data are due to either weather conditions or intentional attacks, we wanted to see if the increasing number of extreme weather events would lead to an increase in power outages over time.  The issue draws onto the importance of our current environmental state and the effects of climate change. 
 
+The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
+
+Information Known Before the Outage: 
+- State
+- Date the outage started (Month, Year)
+- NERC Region
+- Climate Region
+- Anomaly level
+- Urban electricity sales
+- Industrial electricity sales
+- Commercial electricity sales
+- Total electricity sales
+- Population in the state
+- ​​Previous Outage History
+- Population Density in the state
+- Urban population density in the state
+- Rural population density in the state
 ---
 
 ### Baseline Model
-
+#### First Step: Preprocessing Data & Feature Engineering
+1. We Imputed missing values in the dataset using probabilistic imputation
+2. We One Hot encoded categorical variables such as Month, Nerc Region, State, and Climate Region
+3. We created a target binary variable called `Weather_Related` which takes a value of 1 when the outage is caused due to weather conditions and 0 otherwise. 
 
 ---
 
 ### Final Model
+To imporve our model we implemented hyperparameter tuning and cross-validations
 [Content for Final Model]
 
 ---
