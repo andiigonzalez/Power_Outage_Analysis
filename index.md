@@ -243,7 +243,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 **Test Statistic**: K2 Statistic
 <p></p>
-**Significance Level**: 
+**Significance Level**: 5%
 
 #### Justification: 
 
@@ -251,7 +251,7 @@ For this part we will be testing whether the outage duration distributions diffe
 
 We performed 10,000 permutations and in order to have a representative sample to analyze. 
 
-With these permutations we got an observed statistic of 0.077 and a p-value of 0.2306. These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+With these permutations we got an **observed statistic** of **0.077** and a **p-value of 0.2306**. These findings lead us to say we fail to reject the null hypothesis since there is no statistical significance of our findings at the 5% level to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
 
 The plot below shows the permutations carried out and the observed statistics. 
 <iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
