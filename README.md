@@ -20,9 +20,27 @@ This study investigates the trends in power outages across the nation, identifie
 
 The data we have used comes from the scientific dataset [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
+## Table of Contents
+
+1. [Relevant Column & Descriptions](#relevant-columns)
+3. [Data Cleaning and Exploratory Analysis](#data-cleaning-and-exploratory-analysis)
+    - [Data Cleaning](#data-cleaning)
+    - [Univariate Analysis](#univariate-analysis)
+    - [Bivariate Analysis](#bivariate-analysis)
+    - [Interesting Aggregates](#interesting-aggregates)
+4. [Assessment of Missingness](#assessment-of-missingness)
+    - [NMAR Analysis](#nmar-analysis)
+    - [Missingness Dependency](#missingness-dependencies)
+5. [Hypothesis Testing](#hypothesis-testing)
+6. [Baseline Model](#baseline-model)
+7. [Final Model](#final-model)
+8. [Fairness Analysis](#fairness-analysis)
+
+---
+
 -------
 
-### Relevant Column Descriptions
+### Relevant Column & Descriptions
 The original dataset contained 1534 observations and 55 variables (columns).
 For our analysis we will be using a modified version of the dataframe composed of 1534 columns and 18 variables. 
 Below is a table with the variables we maintained and a description of what they describe.
@@ -58,7 +76,7 @@ Our first step in data cleaning was to discern which columns in the dataset are 
 As mentioned in the article [A multi-hazard approach to assess severe weather-induced major power outage risks in the U.S](https://www.sciencedirect.com/science/article/pii/S0951832017307767), our data contains reporting errors and missing values due to:
 - Inadequate reporting causing underreported incidents.
 - Changes in regulatory requirements over time, may have caused underestimation of the actual number of incidents that happened during the period.
-  
+
 Once we narrowed down the variables for our analysis, made some adjustments to the variables:
 
 - Combined `OUTAGE.START.DATE` and `OUTAGE.START.TIME` into a single variable named `OUTAGE.START' using `pd.to_datetime`.
@@ -68,6 +86,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW." However, out dataset contains several rows where both `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED` are NA or 0 which seems alarming given that these ar ethe two characteristics by which the event was reported. As such, we have decided to replace all values of 0 in these columns with `NaN` as well as the values of 0 in `OUTAGE.DURATION`
 
 <p></p>
+
+[Back to Top](#table-of-contents)
 
 ###### Visual of our dataset
 <iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
@@ -158,7 +178,7 @@ It is important to note that the abstract of our dataset determines that "A majo
            <iframe src="assets/images/bivariate_stacked_barplot.html" style="width: 105%; height: 400px; border: none;"></iframe>
          </div>
     </div>
-    
+
 </div>
 <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
@@ -181,20 +201,18 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 #### Interesting Aggregates
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
-**INSERT EXPLANATION**
-  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
+This first pivot table consists of the 9 different climate regions in the United States and the number of power outages that occured in those regions, separated by cause category. Essentially, this pivot table can help us visualize trends of power outage occurence and cause in the different climatic regions. For example, the Northeast region experienced the most outages during the years of our data with 350 outages over the course of 10 years. The majority of these were caused either by severe weather (176) or intentional attacks(135).
+  <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"> </iframe>
 
-<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-**INSERT EXPLANATION**
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: Total Number of Outages by Month Occurance and Cause </h5>
 
-<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
 The overarching idea of this project is to understand patterns in when, why, and perhaps where power outages occured from January 2000 to July 2016. In this pivot table, we are calculating the total number of outages that occured due to a specific cause in a specific month. The goal was to see if certain months are more likely to suffer certain power outages whether it be due to severe weather and seasonality or due to other causes such as vandalism, public appeal...etc. 
 
-While we did not separate by State which is relevant in terms of climate, we can observe that vandalism is a constant cause of power outages throughout the months. Another detail to highlight is that thunderstorms amass the largest number of outages within the severe weather category and occured substantially more often in May, June, and July whilst winterstorms - the second largest severe weather contributor to the outages- occurred most prominently in January and February. 
-  <iframe src="assets/images/outages_by_month.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto;"> </iframe>
+While we did not separate by State which is relevant in terms of climate, we wanted to observe if there were any cylcical trends in the outages. In this pivot table, we can observe that vandalism is a constant cause of power outages throughout the months. Another detail to highlight is that thunderstorms amass the largest number of outages within the severe weather category and occured substantially more often in May, June, and July whilst winterstorms - the second largest severe weather contributor to the outages- occurred most prominently in January and February. 
 
+  <iframe src="assets/images/outages_by_month.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto; text-align: center"> </iframe>
 
+  
 ------
 
 ### Assessment of Missingness
@@ -207,13 +225,14 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 1. When the cause is due to something they might get public criticism entities in charge of the electricity might choose not to disclose the specific reason and hide under a mroe vague umbrella such as "system operability disruption".
 2. Reporting agencies or electric companies who report the outage may use another affecting reason as the cause and cannot give proper details about the cause. i.e gridlines were old and vulnerable to weather and there was 'extreme weather' that day. 
 3. Some categories do not have specific details to provide. i.e public appeals.
-  
+
 #### Missingness Dependencies
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
 We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+
 **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
@@ -224,11 +243,16 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
+
 **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
+
+
+[Back to Top](#table-of-contents)
+
 
 ---
 
@@ -239,17 +263,20 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 **Test Statistic**: K2 Statistic
 <p></p>
-**Significance Level**: 
+**Significance Level**: 5%
 
-#### Justification: 
 
-For this part we tested whether the outage duration distributions differ when the climate category is cold vs warm at the time of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` which represents the climate episode at the time of the outage and `OUTAGE.DURATION` which contains the length of duration for each power outage. 
+For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
-First we calculated our observed K2 statistic, with a value of 0.077. Then, we performed 10,000 permutations in order to have a representative sample to analyze, where we tested the K2 statistic for each. Then, all the sample statistics where compared with ours to conclude a p-value of 0.2306. 
+We performed 10,000 permutations and in order to have a representative sample to analyze. 
 
-These findings lead us to say we fail to reject the null hypothesis since there is no statistically significant evidence to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+With these permutations we got an **observed statistic** of **0.077** and a **p-value of 0.2306**. These findings lead us to say we fail to reject the null hypothesis since there is no statistical significance of our findings at the 5% level to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
 
 The plot below shows the permutations carried out and the observed statistics. 
+<iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
+
+
+[Back to Top](#table-of-contents)
 
 
 ---
@@ -258,7 +285,8 @@ This predictive model attempts to predict the cause of a major power outage. We 
 
 The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
 
-Information Known Before the Outage: 
+
+**Information Known Before the Outage:**
 - State
 - Date the outage started (Month, Year)
 - NERC Region
@@ -274,7 +302,7 @@ Information Known Before the Outage:
 - Urban population density in the state
 - Rural population density in the state
 
-  
+
 ---
 
 ### Baseline Model
@@ -293,5 +321,7 @@ To imporve our model we implemented hyperparameter tuning and cross-validations
 
 ### Fairness Analysis
 [Content for Fairness Analysis]
+
+[Back to Top](#table-of-contents)
 
 ---
