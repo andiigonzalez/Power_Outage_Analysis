@@ -86,6 +86,11 @@ ul li, ol li {
   font-size: 1.1em; /* Ensure list items also use the same font size */
 }
 
+ul ul, ol ol,
+ul ol, ol ul {
+  font-size: 1.1em; /* Nested lists */
+}
+
 
 /* Custom Banner Styles */
 .custom-banner {
