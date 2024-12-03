@@ -71,7 +71,6 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 <p></p>
 
-[Back to Top](#table-of-contents)
 
 ###### Visual of our dataset
 <iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
@@ -235,7 +234,6 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 
 
-[Back to Top](#table-of-contents)
 
 
 ---
@@ -259,8 +257,6 @@ With these permutations we got an **observed statistic** of **0.077** and a **p-
 The plot below shows the permutations carried out and the observed statistics. 
 <iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
 
-
-[Back to Top](#table-of-contents)
 
 
 ---
@@ -306,6 +302,5 @@ To imporve our model we implemented hyperparameter tuning and cross-validations
 ### Fairness Analysis
 [Content for Fairness Analysis]
 
-[Back to Top](#table-of-contents)
 
 ---
