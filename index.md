@@ -23,27 +23,18 @@ The data we have used comes from the scientific dataset [Data on major power out
 ## Table of Contents
 
 1. [Relevant Column & Descriptions](#relevant-columns)
-3. [Cleaning and Exploratory Data Analysis](#cleaning-and-exploratory-data-analysis)
+3. [Data Cleaning and Exploratory Analysis](#data-cleaning-and-exploratory-analysis)
     - [Data Cleaning](#data-cleaning)
     - [Univariate Analysis](#univariate-analysis)
     - [Bivariate Analysis](#bivariate-analysis)
     - [Interesting Aggregates](#interesting-aggregates)
 4. [Assessment of Missingness](#assessment-of-missingness)
     - [NMAR Analysis](#nmar-analysis)
-    - [Missingness Dependency](#missingness-dependency)
+    - [Missingness Dependency](#missingness-dependencies)
 5. [Hypothesis Testing](#hypothesis-testing)
-    - [Framing a Prediction Problem](#framing-a-prediction-problem)
-        - [At the "Time of Prediction"](#at-the-time-of-prediction)
 6. [Baseline Model](#baseline-model)
-    - [Feature Engineering](#feature-engineering)
 7. [Final Model](#final-model)
-    - [Feature Selection](#feature-selection)
-    - [Modeling Selection](#modeling-selection)
-    - [Finding Hyperparameters](#finding-hyperparameters)
-    - [KFold Cross Validation](#kfold-cross-validation)
-    - [Comparison with Baseline Model](#comparison-with-baseline-model)
 8. [Fairness Analysis](#fairness-analysis)
-9. [References](#references)
 
 ---
 
