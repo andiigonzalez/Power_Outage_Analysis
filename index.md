@@ -184,12 +184,7 @@ It is important to note that the abstract of our dataset determines that "A majo
 This first pivot table consists of the 9 different climate regions in the United States and the number of power outages that occured in those regions, separated by cause category. Essentially, this pivot table can help us visualize trends of power outage occurence and cause in the different climatic regions. For example, the Northeast region experienced the most outages during the years of our data with 350 outages over the course of 10 years. The majority of these were caused either by severe weather (176) or intentional attacks(135).
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"> </iframe>
 
-<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: </h5>
-Building on the first pivot table, we have taken it one step further and separated the power outages not only by climate category and cause but also by year.
-**INSERT EXPLANATION**
-  <iframe src="assets/images/pivot_table_outages.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto; text-align: center;"> </iframe>
-
-<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #3: Total Number of Outages by Month Occurance and Cause </h5>
+<h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: Total Number of Outages by Month Occurance and Cause </h5>
 
 The overarching idea of this project is to understand patterns in when, why, and perhaps where power outages occured from January 2000 to July 2016. In this pivot table, we are calculating the total number of outages that occured due to a specific cause in a specific month. The goal was to see if certain months are more likely to suffer certain power outages whether it be due to severe weather and seasonality or due to other causes such as vandalism, public appeal...etc. 
 
