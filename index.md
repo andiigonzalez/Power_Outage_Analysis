@@ -263,7 +263,8 @@ This predictive model attempts to predict the cause of a major power outage. We 
 
 The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
 
-Information Known Before the Outage: 
+
+**Information Known Before the Outage:**
 - State
 - Date the outage started (Month, Year)
 - NERC Region
