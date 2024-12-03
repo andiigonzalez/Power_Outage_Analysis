@@ -210,13 +210,14 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 3. Some categories do not have specific details to provide. i.e public appeals.
 
 #### Missingness Dependencies
+Our selected non-trivial missingness is `OUTAGE.DURATION'
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
-We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
+For this analysis, we compared the distribution of outage duration missingness across months through a permutation test with 1000 permutations using TVD as the test statistic. During this permutation test we obtained the following values:
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+Using a 5% significance level, we find insufficient evidence to conclude that the missingness of outage duration depends on the month of occurrence. Therefore, we infer that the missingness of outage duration is not statistically significantly dependent on the month.
 
-**INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <p></p>
@@ -224,10 +225,13 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
+In this analysis,  we compared the distribution of outage duration missingness across the years in our dataset through a permutation test with 1000 permutations using TVD as the test statistic. During this permutation test we obtained the following values:
+
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
 
-**INSERT EXPLANATION**
+Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. 
+
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
