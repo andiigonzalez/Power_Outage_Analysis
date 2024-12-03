@@ -180,18 +180,18 @@ nav a:hover, .dropbtn:hover {
 
 /* Dropdown Container */
 .dropdown {
-  position: absolute;
-  display: inline-block;
+  position: relative; /* This ensures the dropdown content is positioned relative to this container */
+  display: inline-block; /* Keeps the button and dropdown inline */
 }
 
 /* Dropdown Content (Hidden by default) */
 .dropdown-content {
-  display: none;
+  display: none; /* Ensure it is hidden initially */
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black */
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 1000; /* Ensure it appears above other content */
   text-align: left;
 }
 
@@ -207,13 +207,14 @@ nav a:hover, .dropbtn:hover {
 }
 
 .dropdown-content a:hover {
-  background-color: #ff6347;
+  background-color: #ff6347; /* Highlight on hover */
 }
 
 /* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: block; /* Show when hovering over the dropdown container */
 }
+
 
 code {
   font-family: 'Roboto Mono', monospace;
