@@ -79,6 +79,12 @@ p, li {
   margin-bottom: 3px;
   margin-top: 3px;
 }
+ul, ol {
+  font-size: 1.1em; /* Same font size as your paragraph text */
+}
+ul li, ol li {
+  font-size: 1.1em; /* Ensure list items also use the same font size */
+}
 
 
 /* Custom Banner Styles */
