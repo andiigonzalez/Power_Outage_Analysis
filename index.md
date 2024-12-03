@@ -245,7 +245,6 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 **Significance Level**: 5%
 
-#### Justification: 
 
 For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
