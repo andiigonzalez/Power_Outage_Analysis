@@ -67,7 +67,7 @@ h6 {
   margin: 0 auto; /* Centers the content horizontally */
 }
 
-p, ul, ol, li {
+p, li {
   padding: 2px 2px 2px 2px;
   font-size: 1.1em;
   font-family: serif;
