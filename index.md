@@ -230,7 +230,7 @@ In this analysis,  we compared the distribution of outage duration missingness a
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
 
-Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. 
+Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. Thus, we can infer that outage duration misisngess if MAR on Year.
 
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
@@ -256,7 +256,7 @@ For this part we will be testing whether the outage duration distributions diffe
 
 We performed 10,000 permutations and in order to have a representative sample to analyze. 
 
-With these permutations we got an **observed statistic** of **0.077** and a **p-value of 0.2306**. These findings lead us to say we fail to reject the null hypothesis since there is no statistical significance of our findings at the 5% level to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
+With these permutations we got an **observed statistic** of **0.104** and a **p-value of 0.2306**. These findings lead us to state that we fail to reject the null hypothesis since there is no statistical significance of our findings at the 5% level to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
 
 The plot below shows the permutations carried out and the observed statistics. 
 <iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
