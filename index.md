@@ -20,9 +20,36 @@ This study investigates the trends in power outages across the nation, identifie
 
 The data we have used comes from the scientific dataset [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
+## Table of Contents
+
+1. [Relevant Column & Descriptions](#relevant-columns)
+3. [Cleaning and Exploratory Data Analysis](#cleaning-and-exploratory-data-analysis)
+    - [Data Cleaning](#data-cleaning)
+    - [Univariate Analysis](#univariate-analysis)
+    - [Bivariate Analysis](#bivariate-analysis)
+    - [Interesting Aggregates](#interesting-aggregates)
+4. [Assessment of Missingness](#assessment-of-missingness)
+    - [NMAR Analysis](#nmar-analysis)
+    - [Missingness Dependency](#missingness-dependency)
+5. [Hypothesis Testing](#hypothesis-testing)
+    - [Framing a Prediction Problem](#framing-a-prediction-problem)
+        - [At the "Time of Prediction"](#at-the-time-of-prediction)
+6. [Baseline Model](#baseline-model)
+    - [Feature Engineering](#feature-engineering)
+7. [Final Model](#final-model)
+    - [Feature Selection](#feature-selection)
+    - [Modeling Selection](#modeling-selection)
+    - [Finding Hyperparameters](#finding-hyperparameters)
+    - [KFold Cross Validation](#kfold-cross-validation)
+    - [Comparison with Baseline Model](#comparison-with-baseline-model)
+8. [Fairness Analysis](#fairness-analysis)
+9. [References](#references)
+
+---
+
 -------
 
-### Relevant Column Descriptions
+### Relevant Column & Descriptions
 The original dataset contained 1534 observations and 55 variables (columns).
 For our analysis we will be using a modified version of the dataframe composed of 1534 columns and 18 variables. 
 Below is a table with the variables we maintained and a description of what they describe.
@@ -68,6 +95,8 @@ Once we narrowed down the variables for our analysis, made some adjustments to t
 It is important to note that the abstract of our dataset determines that "A major power outage in this dataset refers to "those that impacted atleast 50,000 customers or caused an unplanned firm load loss of atleast 300 MW." However, out dataset contains several rows where both `DEMAND.LOSS.MW` and `CUSTOMERS.AFFECTED` are NA or 0 which seems alarming given that these ar ethe two characteristics by which the event was reported. As such, we have decided to replace all values of 0 in these columns with `NaN` as well as the values of 0 in `OUTAGE.DURATION`
 
 <p></p>
+
+[Back to Top](#table-of-contents)
 
 ###### Visual of our dataset
 <iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
@@ -192,7 +221,7 @@ While we did not separate by State which is relevant in terms of climate, we wan
 
   <iframe src="assets/images/outages_by_month.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; margin-left: auto; margin-right: auto; text-align: center"> </iframe>
 
-
+  
 ------
 
 ### Assessment of Missingness
@@ -230,6 +259,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 <p></p>
 
+[Back to Top](#table-of-contents)
 ---
 
 ### Hypothesis Testing
