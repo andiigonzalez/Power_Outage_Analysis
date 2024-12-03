@@ -159,31 +159,32 @@ nav a:hover {
   color: #ff6347; /* Highlight on hover */
 }
 
+nav a, .dropbtn {
+  font-size: 1.3em;
+  font-family: serif;
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* White for visibility on the banner */
+  text-align: center;
+  padding: 14px 20px; /* Clickable area */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect for nav links and drop button */
+nav a:hover, .dropbtn:hover {
+  color: #ff6347; /* Highlight on hover */
+}
+
 /* Dropdown Container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  font-size: 1.3em;
-  font-family: serif;
-  font-weight: bold;
-  color: white;
-  background-color: transparent;
-  border: none;
-  padding: 14px 20px;
-  text-align: center;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.dropbtn:hover {
-  color: #ff6347; /* Highlight on hover */
-}
-
-/* Dropdown Content */
+/* Dropdown Content (Hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -209,7 +210,7 @@ nav a:hover {
   background-color: #ff6347;
 }
 
-/* Show the dropdown content on hover */
+/* Show dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
