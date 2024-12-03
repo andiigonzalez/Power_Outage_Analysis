@@ -250,7 +250,10 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 <p></p>
 <p></p>
 
+
 [Back to Top](#table-of-contents)
+
+
 ---
 
 ### Hypothesis Testing
@@ -271,6 +274,9 @@ With these permutations we got an **observed statistic** of **0.077** and a **p-
 
 The plot below shows the permutations carried out and the observed statistics. 
 <iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
+
+
+[Back to Top](#table-of-contents)
 
 
 ---
@@ -315,5 +321,7 @@ To imporve our model we implemented hyperparameter tuning and cross-validations
 
 ### Fairness Analysis
 [Content for Fairness Analysis]
+
+[Back to Top](#table-of-contents)
 
 ---
