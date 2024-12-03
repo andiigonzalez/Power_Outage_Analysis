@@ -20,23 +20,7 @@ This study investigates the trends in power outages across the nation, identifie
 
 The data we have used comes from the scientific dataset [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
-## Table of Contents
 
-1. [Relevant Column & Descriptions](#relevant-columns)
-3. [Data Cleaning and Exploratory Analysis](#data-cleaning-and-exploratory-analysis)
-    - [Data Cleaning](#data-cleaning)
-    - [Univariate Analysis](#univariate-analysis)
-    - [Bivariate Analysis](#bivariate-analysis)
-    - [Interesting Aggregates](#interesting-aggregates)
-4. [Assessment of Missingness](#assessment-of-missingness)
-    - [NMAR Analysis](#nmar-analysis)
-    - [Missingness Dependency](#missingness-dependencies)
-5. [Hypothesis Testing](#hypothesis-testing)
-6. [Baseline Model](#baseline-model)
-7. [Final Model](#final-model)
-8. [Fairness Analysis](#fairness-analysis)
-
----
 
 -------
 
