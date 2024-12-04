@@ -48,7 +48,9 @@ Below is a table with the variables we maintained and a description of what they
 | `COM.SALES`                 | Electricity consumption in the commercial sector (megawatt-hour)            |
 | `IND.SALES`                 | Electricity consumption in the industrial sector (megawatt-hour)            |
 | `TOTAL.SALES`               | Total electricity consumption in the U.S. state (megawatt-hour)             |
-| `POPULATION`                | Population in the U.S. state in a year                                      |
+| `POPULATION`                | Population in the state                                                     |
+| `POP_DEN_URBAN`             | Urban Population Density the state                                          |
+| `POP_DEN_RURAL`             | Rural Population Density the state                                          |
 
 ---
 
@@ -362,5 +364,23 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 
 ### Fairness Analysis
 ### **INSTERT EXPLANATION**
+
+For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. Group Y is: Outages occurring in rural areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. 
+
+As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
+
+For our Hypothesis we chose: 
+
+**Group 1**: Urban 
+**Null hypothesis**: The model is fair. Its precision for urban and rural outages is the same, and any observed differences are due to random chance.
+
+**Alternative Hypothesis**: The model is unfair. The precision for urban outages is significantly different than that for rural outages.
+
+To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" column and used the absolute difference in precision between the two groups as our test statistic. 
+
+We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.0534, an observed precision for urban areas of 1.0, an observed precision of rural areas of 0.85. Making the observed precision difference of 0.15. 
+
+These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
+
 
 ---
