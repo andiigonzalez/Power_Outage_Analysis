@@ -224,8 +224,12 @@ Using a 5% significance level, we find insufficient evidence to conclude that th
 
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Year:</h5>
+In this analysis,  we compared the distribution of outage duration missingness across the years in our dataset through a permutation test with 1000 permutations using TVD as the test statistic. During this permutation test we obtained the following values:
+
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
+
+Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. Thus, we can infer that outage duration misisngess if MAR on Year.
 
 ## **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
