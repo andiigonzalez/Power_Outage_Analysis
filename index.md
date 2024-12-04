@@ -298,22 +298,22 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 - `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
 - `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable.
 
-  These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score **INSTER EXPLANATION**
+  These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score **INSTERT EXPLANATION**
   
   - F1 Score: 0.6827586206896552
   - Confusion Matrix
   - Cross-validation f1 score:
 
-###**INSTER EXPLANATION**
+### **INSTERT EXPLANATION**
 
-**INSTER EXPLANATION**
+
 
 ---
 
 ### Final Model
 **INSTER EXPLANATION**
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
-###**INSTER EXPLANATION**
+### **INSTER EXPLANATION**
 [Content for Final Model]
 ###**INSTER EXPLANATION**
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
