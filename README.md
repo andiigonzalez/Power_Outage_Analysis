@@ -334,7 +334,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 **INSTER EXPLANATION**
  
 - Best Hyperparameters:
-    - bootstrap: True
+-     bootstrap: True
     - max_depth: 10
     - max_features: sqrt
     - min_samples_split: 2
