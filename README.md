@@ -212,11 +212,11 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 #### Missingness Dependencies
 
 <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> Missingness Dependency of Outage Duration on Month:</h5>
-We carried out a permutation test with 1000 permutations using tvd as test statistic where we compared the distribution 
+For this analysis, we compared the distribution of outage duration missingness across months through a permutation test with 1000 permutations using TVD as the test statistic. During this permutation test we obtained the following values:
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+Using a 5% significance level, we find insufficient evidence to conclude that the missingness of outage duration depends on the month of occurrence. Therefore, we infer that the missingness of outage duration is not statistically significantly dependent on the month.
 
-**INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <iframe src="assets/images/OutageDuration_Month_Missingness.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
 <p></p>
