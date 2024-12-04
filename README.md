@@ -250,7 +250,7 @@ Using a 5% significance level, we can say that there is statistically significan
 **Test Statistic**: K2 Statistic
 <p></p>
 **Significance Level**: 5%
-
+<p></p>
 
 For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
