@@ -309,7 +309,7 @@ These features were chosen due to their direct relationship to weather. We belie
 | Predicted Negative (1)|       33          |        99         |
 
 
-#### Baseline Model Classification Report 
+###### Baseline Model Classification Report 
 
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
@@ -346,7 +346,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 | Predicted Positive (1)|       125         |        45         |
 | Predicted Negative (1)|       25          |        107        |
 
-#### Final Model Classification Report 
+###### Final Model Classification Report 
 
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
