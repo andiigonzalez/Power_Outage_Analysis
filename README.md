@@ -291,7 +291,7 @@ The model is evaluated using an F1 score to predict and recall how many weather-
 
 ### Baseline Model
 
-For our baseline model we created a target binary variable `Weather_Related` which determined if an outage was caused by severe weather or not. Below is the feature selection and transformations for each. 
+For our baseline model we created a target binary variable `Weather_Related` which determined if an outage was caused by severe weather or not. Below is the feature selection and transformations for each.
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 
 - `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
