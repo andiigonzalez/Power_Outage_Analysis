@@ -310,8 +310,8 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 | Predicted Negative(1)|       33         |        99        |
 
 
-### **INSTERT EXPLANATION**
 #### Baseline Model Classification Report 
+
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
 | False        | 0.77     | 0.66     | 0.71     |   172    |
