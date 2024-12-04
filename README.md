@@ -215,6 +215,7 @@ As mentioned above, regulatory requirements have fluctuated over the time period
 For this analysis, we compared the distribution of outage duration missingness across months through a permutation test with 1000 permutations using TVD as the test statistic. During this permutation test we obtained the following values:
 - Observed TVD statistic: 0.1435
 - P-value: 0.153
+
 Using a 5% significance level, we find insufficient evidence to conclude that the missingness of outage duration depends on the month of occurrence. Therefore, we infer that the missingness of outage duration is not statistically significantly dependent on the month.
 
 <iframe src= "assets/images/OutageDuration_vs_Month.html" width="700" height="400" frameBorder="0" padding="2" ></iframe>
@@ -292,13 +293,14 @@ The model is evaluated using an F1 score to predict and recall how many weather-
 ### Baseline Model
 
 For our baseline model we created a target binary variable `Weather_Related` which determined if an outage was caused by severe weather or not. Below is the feature selection and transformations for each.
-- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 
+- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 - `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
 - `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
 - `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable.
 
 These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score 
+
 ### **INSTERT EXPLANATION**
   
 - F1 Score: 0.6827586206896552
@@ -310,7 +312,7 @@ These features were chosen due to their direct relationship to weather. We belie
 | Predicted Negative (1)|       33          |        99         |
 
 
-###### Baseline Model Classification Report 
+##### Baseline Model Classification Report 
 
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
@@ -325,9 +327,9 @@ These features were chosen due to their direct relationship to weather. We belie
 ---
 
 ### Final Model
-**INSTER EXPLANATION**
+
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
-### **INSTER EXPLANATION**
+### **INSTERT EXPLANATION**
 
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
  
@@ -345,7 +347,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 | Predicted Positive (1)|       125         |        45         |
 | Predicted Negative (1)|       25          |        107        |
 
-###### Final Model Classification Report 
+##### Final Model Classification Report 
 
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
@@ -359,6 +361,6 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ---
 
 ### Fairness Analysis
-### **INSTER EXPLANATION**
+### **INSTERT EXPLANATION**
 
 ---
