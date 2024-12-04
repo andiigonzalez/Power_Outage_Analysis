@@ -328,10 +328,8 @@ These features were chosen due to their direct relationship to weather. We belie
 **INSTER EXPLANATION**
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
 ### **INSTER EXPLANATION**
-[Content for Final Model]
-###**INSTER EXPLANATION**
+
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
-**INSTER EXPLANATION**
  
 - Best Hyperparameters:
     - bootstrap: True
@@ -361,8 +359,6 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ---
 
 ### Fairness Analysis
-[Content for Fairness Analysis]
 ### **INSTER EXPLANATION**
-##**INSTER EXPLANATION**
 
 ---
