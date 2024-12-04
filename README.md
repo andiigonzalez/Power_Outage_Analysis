@@ -359,8 +359,6 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ---
 
 ### Fairness Analysis
-[Content for Fairness Analysis]
 ### **INSTER EXPLANATION**
-##**INSTER EXPLANATION**
 
 ---
