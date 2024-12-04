@@ -290,23 +290,39 @@ The model is evaluated using an F1 score to predict and recall how many weather-
 ---
 
 ### Baseline Model
-#### First Step: Preprocessing Data & Feature Engineering
-1. We Imputed missing values in the dataset using probabilistic imputation
-2. We One Hot encoded categorical variables such as Month, Nerc Region, State, and Climate Region
-3. We created a target binary variable called `Weather_Related` which takes a value of 1 when the outage is caused due to weather conditions and 0 otherwise. 
+
+For our baseline model we created a target binary variable `Weather_Related` which determined if an outage was caused by severe weather or not. Below is the feature selection and transformations for each. 
+- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
+  
+- `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
+- `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
+- `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable.
+
+  These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score **INSTER EXPLANATION**
+  
+  - F1 Score: 0.6827586206896552
+  - Confusion Matrix
+  - Cross-validation f1 score:
+
+###**INSTER EXPLANATION**
+
+**INSTER EXPLANATION**
 
 ---
 
 ### Final Model
-To imporve our model we implemented hyperparameter tuning and cross-validations
+**INSTER EXPLANATION**
+To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
+###**INSTER EXPLANATION**
 [Content for Final Model]
-
+###**INSTER EXPLANATION**
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
-
+**INSTER EXPLANATION**
 ---
 
 ### Fairness Analysis
 [Content for Fairness Analysis]
-
+##**INSTER EXPLANATION**
+##**INSTER EXPLANATION**
 
 ---
