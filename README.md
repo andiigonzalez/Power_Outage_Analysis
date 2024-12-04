@@ -303,7 +303,6 @@ For our baseline model we created a target binary variable `Weather_Related` whi
   - F1 Score: 0.6827586206896552
   - Confusion Matrix:
 
-
 |                      |Actual Positive (1)|Actual Negative (0)|
 |----------------------|-------------------|-------------------|
 | Predicted Positive(1)|       113         |        59         |
@@ -334,14 +333,14 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 **INSTER EXPLANATION**
  
  - Best Hyperparameters:
-     - classifier__bootstrap: True
-     - classifier__max_depth: 10
-     - classifier__max_features: sqrt
-     - classifier__min_samples_split: 2
-     - classifier__n_estimators: 70
+     - bootstrap: True
+     - max_depth: 10
+     - max_features: sqrt
+     - min_samples_split: 2
+     - n_estimators: 70
  - F1 Score: 0.7535211267605634
  - Confusion Matrix:
- - 
+
 |                      |Actual Positive (1)|Actual Negative( 0)|
 |----------------------|-------------------|-------------------|
 | Predicted Positive(1)|       125         |        45         |
