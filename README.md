@@ -231,7 +231,6 @@ In this analysis,  we compared the distribution of outage duration missingness a
 
 Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. Thus, we can infer that outage duration misisngess if MAR on Year.
 
-## **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
@@ -270,18 +269,18 @@ This predictive model attempts to predict the cause of a major power outage. We 
 The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
 
 
-**Information Known Before the Outage:**
+**Information Known Before the Cause of the Outage is Determined:**
 - State
 - Date the outage started (Month, Year)
 - NERC Region
 - Climate Region
+- Climate Category
 - Anomaly level
 - Urban electricity sales
 - Industrial electricity sales
 - Commercial electricity sales
 - Total electricity sales
 - Population in the state
-- ​​Previous Outage History
 - Population Density in the state
 - Urban population density in the state
 - Rural population density in the state
@@ -302,8 +301,12 @@ For our baseline model we created a target binary variable `Weather_Related` whi
   These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score ### **INSTERT EXPLANATION**
   
   - F1 Score: 0.6827586206896552
-  - Confusion Matrix
-  - Cross-validation f1 score:
+  - Confusion Matrix:
+|                      |Actual Positive(1)|Actual Negative(0)|
+|----------------------|------------------|------------------|
+| Predicted Positive(1)|       113        |        59        |
+| Predicted Negative(1)|       33         |        99        |
+
 
 ### **INSTERT EXPLANATION**
 #### Baseline Model Classification Report 
@@ -327,6 +330,20 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ###**INSTER EXPLANATION**
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
 **INSTER EXPLANATION**
+ 
+ - Best Hyperparameters:
+     - classifier__bootstrap: True
+     - classifier__max_depth: 10
+     - classifier__max_features: sqrt
+     - classifier__min_samples_split: 2
+     - classifier__n_estimators: 70
+ - F1 Score: 0.7535211267605634
+ - Confusion Matrix:
+ - 
+|                      |Actual Positive(1)|Actual Negative(0)|
+|----------------------|------------------|------------------|
+| Predicted Positive(1)|       125        |        45        |
+| Predicted Negative(1)|       25         |        107       |
 
 #### Final Model Classification Report 
 
@@ -337,6 +354,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 | Accuracy     |          |          | 0.77     |   302    |
 | macro avg    | 0.77     | 0.77     | 0.77     |   302    |
 | weighted avg | 0.78     | 0.77     | 0.77     |   302    |
+
 
 ---
 
