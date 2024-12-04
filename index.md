@@ -73,7 +73,7 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 
 ###### Visual of our dataset
-<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0" ></iframe>
+<iframe src="assets/images/outages_head.html" width="100%" height="200" frameBorder="0"></iframe>
 <p></p>
 
 #### Univariate Analysis
