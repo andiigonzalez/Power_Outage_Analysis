@@ -303,13 +303,11 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 
 ### **INSTERT EXPLANATION**
 #### Baseline Model Classification Report 
-
-
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
 | False        | 0.77     | 0.66     | 0.71     |   172    |
 | True         | 0.63     | 0.75     | 0.68     |   132    |
-| accuracy     |          |          | 0.70     |   304    |
+| Accuracy     |          |          | 0.70     |   304    |
 | macro avg    | 0.70     | 0.70     | 0.70     |   304    |
 | weighted avg | 0.71     | 0.70     | 0.70     |   304    |
 
