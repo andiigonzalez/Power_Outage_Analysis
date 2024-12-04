@@ -227,7 +227,7 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 - Observed TVD statistic: 0.3874
 - P-value: 0.0
 
-**INSERT EXPLANATION**
+## **INSERT EXPLANATION**
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
@@ -235,10 +235,10 @@ We carried out a permutation test with 1000 permutations using tvd as test stati
 
 
 
-
 ---
 
 ### Hypothesis Testing
+
 **Null Hypothesis**: The number of power outages is uniformly distributed across all months of the year
 <p></p>
 **Alternative Hypothesis**: The number of outages is not uniformly distributed across all months of the year
