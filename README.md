@@ -302,6 +302,8 @@ For our baseline model we created a target binary variable `Weather_Related` whi
   
   - F1 Score: 0.6827586206896552
   - Confusion Matrix:
+
+
 |                      |Actual Positive(1)|Actual Negative(0)|
 |----------------------|------------------|------------------|
 | Predicted Positive(1)|       113        |        59        |
