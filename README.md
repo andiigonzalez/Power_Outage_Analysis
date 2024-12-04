@@ -300,8 +300,8 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 
   These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score ### **INSTERT EXPLANATION**
   
-  - F1 Score: 0.6827586206896552
-  - Confusion Matrix:
+- F1 Score: 0.6827586206896552
+- Confusion Matrix:
 
 |                      |Actual Positive (1)|Actual Negative (0)|
 |----------------------|-------------------|-------------------|
@@ -332,14 +332,14 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
 **INSTER EXPLANATION**
  
- - Best Hyperparameters:
-     - bootstrap: True
-     - max_depth: 10
-     - max_features: sqrt
-     - min_samples_split: 2
-     - n_estimators: 70
- - F1 Score: 0.7535211267605634
- - Confusion Matrix:
+- Best Hyperparameters:
+    - bootstrap: True
+    - max_depth: 10
+    - max_features: sqrt
+    - min_samples_split: 2
+    - n_estimators: 70
+- F1 Score: 0.7535211267605634
+- Confusion Matrix:
 
 |                      |Actual Positive (1)|Actual Negative( 0)|
 |----------------------|-------------------|-------------------|
