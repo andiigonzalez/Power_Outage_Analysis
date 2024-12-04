@@ -325,6 +325,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 **INSTER EXPLANATION**
 
 #### Final Model Classification Report 
+
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
 | False        | 0.83     | 0.74     | 0.78     |   170    |
@@ -332,6 +333,7 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 | Accuracy     |          |          | 0.77     |   302    |
 | macro avg    | 0.77     | 0.77     | 0.77     |   302    |
 | weighted avg | 0.78     | 0.77     | 0.77     |   302    |
+
 ---
 
 ### Fairness Analysis
