@@ -87,7 +87,7 @@ ul li, ol li {
 }
 
 ul ul, ol ol,
-ul ol, ol ul {
+ul ol, ol ul, ul li, ol li {
   font-size: 1.1em; /* Nested lists */
 }
 
