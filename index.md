@@ -301,6 +301,8 @@ The model is evaluated using an F1 score to predict and recall how many weather-
 To imporve our model we implemented hyperparameter tuning and cross-validations
 [Content for Final Model]
 
+<iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
+
 ---
 
 ### Fairness Analysis
