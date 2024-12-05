@@ -384,7 +384,11 @@ To analyze the fairness of the model we split the data into our two groups using
 We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.0534, an observed precision for urban areas of 1.0, an observed precision of rural areas of 0.85. Making the observed precision difference of 0.15. 
 
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
-
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 
 
 
