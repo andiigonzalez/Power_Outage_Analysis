@@ -271,7 +271,7 @@ The plot below shows the permutations carried out and the observed statistics.
 ---
 ### Prediction Problem: Predicting the Cause Category
 <p></p>
-Our prediction model attempts to determine ***whether a major power outage is caused by weather during the outage using a binary classification model that predicts whether a major power outage was caused by weather conditions or a different cause using `Weather_Related` as our response variable. `Weather_Related` takes a value of one when the outage cause is weather related and zero otherwise. 
+Our prediction model attempts to determine ***whether a major power outage is caused by weather during the outage*** using a binary classification model that predicts whether a major power outage was caused by weather conditions or a different cause using `Weather_Related` as our response variable. `Weather_Related` takes a value of one when the outage cause is weather related and zero otherwise. 
 
 To evaluate our models performance we use several metrics. The first is an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This metric was chosen over accuracy due to the imbalance in outage cause observations in our data to balance precision and recall. Additionally, we added a classification report. This report gives a more in depth analysis of the metrics within each class (weather cause outages and non-weather outage causes) as it includes the scores for F1, Accuracy, Recall, Support for each. Support, for example shows us the true instances of each event. The report also gives us the accuracy with which each event was correctly predicted however this is a misleading statistic by itself. The macro average computes the unweighted mean of F1, precision and, accuracy giving us a measure of how well our model performs across all these metrics. On the overhand, the weighted average gives us the same measurement except it takes into account the imbalance of each class.
 
@@ -355,28 +355,41 @@ Through our macro and weighted average we see that our model is fairly balanced 
 
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
 Improvements: 
+<p></p>
 **1.** Included more features (normal and engineered):
 data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"], 
 data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION'], 
 data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna(), 
 data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna(), 
-**Included Features**:
 
+<p></p>
+- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
+  
+**CATEGORICAL FEATURES**:
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 - `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
 - `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
+
+**NUMERICAL FEATURES**:
 - `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `POPULATION`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `URBAN_DENSITY_NORMALIZED`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `AVG_MW_PER_PERSON`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
-- `MONTH_SIN` & `MONTH_COS`: Quantitative numerical continuous variables (cyclic representation of months). We derived them from the MONTH column using sin and cos transformations.
--  `YEAR`: Quantitative numerical discrete variable. Standardized using StandardScaler().
--  `TOTAL.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
-- `IND.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
-- `COM.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
-- `RES.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
+- `MONTH_SIN` & `MONTH_COS`: Quantitative (Numerical) continuous variables (cyclic representation of months). We derived them from the MONTH column using sin and cos transformations.
+-  `YEAR`: Quantitative (Numerical) discrete variable. Standardized using StandardScaler().
+-  `TOTAL.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
+- `IND.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
+- `COM.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
+- `RES.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
 
-The features we engineered we believe are important beacuse we believe they 
+#### Justification 
+The features we engineered we believe are important beacuse we believe they imporve how the model does predictions making it more accurate. 
+- `URBAN_DENSITY_NORMALIZED`: This feature helps compare areas with different populations more effectively.
+-  `AVG_MW_PER_PERSON`: This feature helps compare the demand of electricity per person so that each regions is comparable.
+-  `MONTH_SIN` & `MONTH_COS`: Since most weather related phenomens are cyclical this feature helps ensure the model understands cyclical patterns.
+-  `POPULATION`: We believe population size has a direct correlation with outages hence adding population as a feature we believe helps imporve the predictive capabilities of the model.
+-  `YEAR`: The variable Year we beleive captures important patterns in long term weather related events which can help improve the model predictions.
+-  `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the sales, this provides valuable economic data that correlat with weather related events as if changes in sales exist. By analyzing these factors we believe the model could imporve its predictions capabilities. 
 
 
 
@@ -410,9 +423,8 @@ The features we engineered we believe are important beacuse we believe they
 ---
 
 ### Fairness Analysis
-### *INSTERT EXPLANATION*
 
-For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: ⁠ URBAN_DENSITY_NORMALIZED ⁠ outages, focusing on the datapoints where the density is higher than the median of the 'URBAN_DENSITY_NORMALIZED' column. Group Y is: ⁠ URBAN_DENSITY_NORMALIZED ⁠ outages, focusing on the data points that are samller than the median 'URBAN_DENSITY_NORMALIZED' column as urban density and rural density are inversely related. 
+For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: ⁠ `URBAN_DENSITY_NORMALIZED` ⁠ outages, focusing on the datapoints where the density is higher than the median of the `URBAN_DENSITY_NORMALIZED` column. Group Y is: ⁠ `URBAN_DENSITY_NORMALIZED` ⁠ outages, focusing on the data points that are samller than the median `URBAN_DENSITY_NORMALIZED` column as urban density and rural density are inversely related. 
 
 As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
 We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
@@ -429,7 +441,7 @@ For our Hypothesis we chose:
 
 *Alternative Hypothesis*: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
 
-To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" and "RURAL_DENSITY_NORMALIZED" columns and used the absolute difference in precision between the two groups as our test statistic. 
+To analyze the fairness of the model we split the data into our two groups using the `URBAN_DENSITY_NORMALIZED` and `RURAL_DENSITY_NORMALIZED` columns and used the absolute difference in precision between the two groups as our test statistic. 
 
 We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
 
