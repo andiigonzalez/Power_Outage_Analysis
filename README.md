@@ -352,7 +352,30 @@ Through our macro and weighted average we see that our model is fairly balanced 
 ### Final Model
 
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
-### **INSTERT EXPLANATION**
+Improvements: 
+**1.** Included more features (normal and engineered):
+data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"]
+data["RURAL_DENSITY_NORMALIZED"] = data["POPDEN_RURAL"] / data["POPULATION"]
+data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION']
+data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna() 
+data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna() 
+**Included Features**:
+
+- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
+- `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
+- `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
+- `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
+- `POPULATION`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
+- `URBAN_DENSITY_NORMALIZED`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
+- `AVG_MW_PER_PERSON`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
+- `MONTH_SIN` & `MONTH_COS`:
+-  YEAR`:
+-  `TOTAL.SALES`:
+- `IND.SALES`:
+- `COM.SALES`:
+- `RES.SALES`:
+
+
 
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
  
@@ -384,61 +407,47 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ---
 
 ### Fairness Analysis
-### **INSTERT EXPLANATION**
+### *INSTERT EXPLANATION*
 
-For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. Group Y is: Outages occurring in rural areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. 
+For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: ⁠ URBAN_DENSITY_NORMALIZED ⁠ outages, focusing on the datapoints where the density is higher than the median of the 'URBAN_DENSITY_NORMALIZED' column. Group Y is: ⁠ URBAN_DENSITY_NORMALIZED ⁠ outages, focusing on the data points that are samller than the median 'URBAN_DENSITY_NORMALIZED' column as urban density and rural density are inversely related. 
 
 As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
+We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
 
 For our Hypothesis we chose: 
 
-**Group 1**: Urban 
-**Null hypothesis**: The model is fair. Its precision for urban and rural outages is the same, and any observed differences are due to random chance.
+*Group 1*: Normalized Urban State Population Density 
+*Null hypothesis*: The model is fair. Its precision for urban density (group 1) and rural density (group 2) outages is the same, and any observed differences are due to random chance.
 
-**Alternative Hypothesis**: The model is unfair. The precision for urban outages is significantly different than that for rural outages.
+*Alternative Hypothesis*: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
 
-To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" column and used the absolute difference in precision between the two groups as our test statistic. 
+*Group 2*: Normalized Rural State Population Density
+*Null hypothesis*: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
 
-We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.0534, an observed precision for urban areas of 1.0, an observed precision of rural areas of 0.85. Making the observed precision difference of 0.15. 
+*Alternative Hypothesis*: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
+
+To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" and "RURAL_DENSITY_NORMALIZED" columns and used the absolute difference in precision between the two groups as our test statistic. 
+
+We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
 
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
 
 <iframe src= "assets/images/FairnessAnalysis.html" width="700" height="400" frameBorder="0"></iframe>
 
-
 <p></p>
 <p></p>
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe> ##### Urban Classification Report 
-
-|              | precision |   recall | f1-score |  support   |
-|--------------|-----------|----------|-----------|-----------|          
-|          0   |   0.85    |   0.87   |   0.86    |    54     |
-|          1   |   0.77    |  0.73    |   0.75    |    56     |
-|              |           |          |           |           |
-|   accuracy   |           |          |  0.82     |   150     |
-|  macro avg   |   0.81    |   0.80   |   0.81    |   150     |
-| weighted avg |   0.82    |   0.82   |  0.82     |   150     |
-
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe> ##### Rural Classification Report 
-
-|              | precision |   recall | f1-score |  support   |
-|--------------|-----------|----------|-----------|-----------|          
-|          0   |   0.80    |   0.63   |   0.86    |    54     |
-|          1   |   0.70    |  0.84    |   0.75    |    56     |
-|              |           |          |           |           |
-|   accuracy   |           |          |  0.82     |   150     |
-|  macro avg   |   0.75    |   0.74   |   0.81    |   150     |
-| weighted avg |   0.75    |   0.74   |  0.82     |   150     |
-
+<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
 <p></p>
-
 
 
 
 
 ---
+
+
 
 
 
