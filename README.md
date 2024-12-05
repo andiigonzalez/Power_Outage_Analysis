@@ -281,23 +281,23 @@ Moreover, and for visual aid, we have a confusion matrix that quantifies the num
 **Information Known At Time of Prediction**
 Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demand loss, and customers affected)
 
-
-|Unknown        | 
-|---------------|
-| 'STATE`        | 
-|  `CLIMATE.REGION` |                         
+|   Unknown       | 
+|-----------------|
+| 'STATE`         | 
+| `CLIMATE.REGION`|                         
 | `CLIMATE.CATEGORY|                          
-|`ANOMALY.LEVEL`|       
-| `OUTAGE.START`|            
-| `YEAR`        |   
-| `NERC.REGION`|  
-| `RES.SALES`  | 
-| `COM.SALES`  |  
-| `IND.SALES`   | 
+|`ANOMALY.LEVEL`  |       
+| `OUTAGE.START`  |            
+| `YEAR`          |   
+| `NERC.REGION`   |  
+| `RES.SALES`     | 
+| `COM.SALES`     |  
+| `IND.SALES`     | 
 | `TOTAL.SALES`   |  
-| `POPULATION`   |
-| `POPDEN_URBAN`   |
-| `POPDEN_RURAL`   |
+| `POPULATION`    |
+| `POPDEN_URBAN`  |
+| `POPDEN_RURAL`  |
+
 
 
 ---
@@ -327,6 +327,7 @@ These features were chosen due to their direct relationship to weather. We belie
 | Accuracy     |          |          | 0.70     |   304    |
 | macro avg    | 0.70     | 0.70     | 0.70     |   304    |
 | weighted avg | 0.71     | 0.70     | 0.70     |   304    |
+
 <p></p>
 
 ###### Performance Metric 3: Confusion matrix
@@ -335,6 +336,7 @@ These features were chosen due to their direct relationship to weather. We belie
 |-----------------------|-------------------|-------------------|
 | Predicted Positive (1)|       113         |        59         |
 | Predicted Negative (1)|       33          |        99         |
+
 <p></p>
 
 #### Performance Analysis: 
