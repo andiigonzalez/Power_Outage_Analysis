@@ -319,7 +319,7 @@ These features were chosen due to their direct relationship to weather. We belie
 <p></p>
 
 ###### Performance Metric 2: Classification Report
-<iframe src= "assets/images/BaseClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src="assets/images/BaseClassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
 
 <p></p>
 
@@ -385,7 +385,6 @@ The features we engineered we believe are important beacuse we believe they impo
 - `YEAR`: The variable Year we beleive captures important patterns in long term weather related events which can help improve the model predictions.
 - `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the sales, this provides valuable economic data that correlat with weather related events as if changes in sales exist. By analyzing these factors we believe the model could imporve its predictions capabilities. 
 
-
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
  
 - Best Hyperparameters:
@@ -404,7 +403,9 @@ The features we engineered we believe are important beacuse we believe they impo
 
 ##### Final Model Classification Report 
 
-<iframe src= "assets/images/FinalClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src="assets/images/FinalClassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+
+
 
 ---
 
@@ -436,9 +437,9 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Precision_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
-<iframe src= "assets/images/UrbanClassification_report.html" width="500" height="400" frameBorder="0"></iframe>
 
-<iframe src= "assets/images/RuralClassification_report.html" width="500" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/UrbanClassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<iframe src= "assets/images/RuralClassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
 <p></p>
 <p></p>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
