@@ -404,6 +404,7 @@ The features we engineered we believe are important beacuse we believe they impo
 | Predicted Negative (1)|       25          |        107        |
 
 ##### Final Model Classification Report 
+
 <iframe src= "assets/images/FinalClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 
 ---
@@ -434,11 +435,14 @@ We performed 10,000 permutations and set a significance level of 0.05. Getting a
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
 
 <iframe src= "assets/images/FairnessAnalysis.html" width="700" height="400" frameBorder="0"></iframe>
+
 <iframe src= "assets/images/UrbanClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+
 <iframe src= "assets/images/RuralClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
 <iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe>
+
 <iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
