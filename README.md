@@ -404,7 +404,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 ##### Final Model Classification Report 
 
-<iframe src= "assets/images/FinalClassification_report.png" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/FinalClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 
 ---
 
@@ -441,9 +441,8 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/RuralClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe>
-
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" alt= "Confusion Matrix Rural" </img>
 <p></p>
 <p></p>
 <p></p>
