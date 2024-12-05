@@ -354,11 +354,10 @@ Through our macro and weighted average we see that our model is fairly balanced 
 To improve our model we implemented hyperparameter tuning and adding as well as GridSearchVC to find the best parameters for our model. 
 Improvements: 
 **1.** Included more features (normal and engineered):
-data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"]
-data["RURAL_DENSITY_NORMALIZED"] = data["POPDEN_RURAL"] / data["POPULATION"]
-data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION']
-data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna() 
-data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna() 
+data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"], 
+data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION'], 
+data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna(), 
+data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna(), 
 **Included Features**:
 
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
@@ -368,12 +367,14 @@ data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 - `POPULATION`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `URBAN_DENSITY_NORMALIZED`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `AVG_MW_PER_PERSON`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
-- `MONTH_SIN` & `MONTH_COS`:
--  YEAR`:
--  `TOTAL.SALES`:
-- `IND.SALES`:
-- `COM.SALES`:
-- `RES.SALES`:
+- `MONTH_SIN` & `MONTH_COS`: Quantitative numerical continuous variables (cyclic representation of months). We derived them from the MONTH column using sin and cos transformations.
+-  `YEAR`: Quantitative numerical discrete variable. Standardized using StandardScaler().
+-  `TOTAL.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
+- `IND.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
+- `COM.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
+- `RES.SALES`: Quantitative numerical continuous variable. Standardized using StandardScaler().
+
+The features we engineered we believe are important beacuse we believe they 
 
 
 
