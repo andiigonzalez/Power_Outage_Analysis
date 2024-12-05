@@ -257,7 +257,7 @@ Using a 5% significance level, we can say that there is statistically significan
 **Significance Level**: 5%
 <p></p>
 
-For this part we will be testing whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
+For this part we tested whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
 We performed 10,000 permutations and in order to have a representative sample to analyze. 
 
@@ -270,26 +270,34 @@ The plot below shows the permutations carried out and the observed statistics.
 
 ---
 ### Prediction Problem: Predicting the Cause Category
-This predictive model attempts to predict the cause of a major power outage. We have used a binary classification model that will predict whether a major power outage was caused by weather conditions or a different cause. The specific variable predicted is `CAUSE.CATEGORY` because given that the most common power outages from our historic data are due to either weather conditions or intentional attacks, we wanted to see if the increasing number of extreme weather events would lead to an increase in power outages over time.  The issue draws onto the importance of our current environmental state and the effects of climate change. 
+<p></p>
+Our prediction model attempts to determine ***whether a major power outage is caused by weather during the outage using a binary classification model that predicts whether a major power outage was caused by weather conditions or a different cause using `Weather_Related` as our response variable. `Weather_Related` takes a value of one when the outage cause is weather related and zero otherwise. 
 
-The model is evaluated using an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This was chosen due to the imbalance in outage cause observations in our data. Moreover, we will include a confusion matrix in order to see the number of Type I and Type II Errors made by our model. 
+To evaluate our models performance we use several metrics. The first is an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This metric was chosen over accuracy due to the imbalance in outage cause observations in our data to balance precision and recall. Additionally, we added a classification report. This report gives a more in depth analysis of the metrics within each class (weather cause outages and non-weather outage causes) as it includes the scores for F1, Accuracy, Recall, Support for each. Support, for example shows us the true instances of each event. The report also gives us the accuracy with which each event was correctly predicted however this is a misleading statistic by itself. The macro average computes the unweighted mean of F1, precision and, accuracy giving us a measure of how well our model performs across all these metrics. On the overhand, the weighted average gives us the same measurement except it takes into account the imbalance of each class.
+
+Moreover, and for visual aid, we have a confusion matrix that quantifies the number of Type I and Type II Errors made by our model. This allows us to understand if our model is over or underestimating the response variable and how well it performs in classifying each group instance. This can be a helpful measure when Type I error is costly due to unnecessary resource allocation.
 
 
-**Information Known Before the Cause of the Outage is Determined:**
-- State
-- Date the outage started (Month, Year)
-- NERC Region
-- Climate Region
-- Climate Category
-- Anomaly level
-- Urban electricity sales
-- Industrial electricity sales
-- Commercial electricity sales
-- Total electricity sales
-- Population in the state
-- Population Density in the state
-- Urban population density in the state
-- Rural population density in the state
+**Information Known At Time of Prediction**
+Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demad loss, and customers affected)
+
+
+|Unknown        | 
+|---------------|
+| 'STATE`        | 
+|  `CLIMATE.REGION` |                         
+| `CLIMATE.CATEGORY|                          
+|`ANOMALY.LEVEL`|       
+| `OUTAGE.START`|            
+| `YEAR`        |   
+| `NERC.REGION`|  
+| `RES.SALES`  | 
+| `COM.SALES`  |  
+| `IND.SALES`   | 
+| `TOTAL.SALES`   |  
+| `POPULATION`   |
+| `POPDEN_URBAN`   |
+| `POPDEN_RURAL`   |
 
 
 ---
