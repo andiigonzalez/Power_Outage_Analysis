@@ -319,7 +319,7 @@ These features were chosen due to their direct relationship to weather. We belie
 <p></p>
 
 ###### Performance Metric 2: Classification Report
-<iframe src="assets/images/Baseclassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<iframe src="assets/images/Baseclassification_report.html" width="200%" height="200%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
 
 <p></p>
 
@@ -403,7 +403,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 ##### Final Model Classification Report 
 
-<iframe src="assets/images/Finalclassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<iframe src="assets/images/Finalclassification_report.html" width="200%" height="200%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
 
 
 
@@ -438,8 +438,8 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
 
-<iframe src= "assets/images/Urbanclassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
-<iframe src= "assets/images/Ruralclassification_report.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<iframe src= "assets/images/Urbanclassification_report.html" width="200%" height="200%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<iframe src= "assets/images/Ruralclassification_report.html" width="200%" height="200%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
 <p></p>
 <p></p>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
