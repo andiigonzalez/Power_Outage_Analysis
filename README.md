@@ -376,20 +376,26 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 ### Fairness Analysis
 ### **INSTERT EXPLANATION**
 
-For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. Group Y is: Outages occurring in rural areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. 
+For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED`, column we created in the final model. Group Y is: Outages occurring in rural areas and the, using the `RURAL_DENSITY_NORMALIZED` column we created in the final model. 
 
 As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
+We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
 
 For our Hypothesis we chose: 
 
-**Group 1**: Urban 
-**Null hypothesis**: The model is fair. Its precision for urban and rural outages is the same, and any observed differences are due to random chance.
+**Group 1**: Normalized Urban State Population Density 
+**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural density (group 2) outages is the same, and any observed differences are due to random chance.
 
-**Alternative Hypothesis**: The model is unfair. The precision for urban outages is significantly different than that for rural outages.
+**Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
 
-To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" column and used the absolute difference in precision between the two groups as our test statistic. 
+**Group 2**: Normalized Rural State Population Density
+**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
 
-We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.0534, an observed precision for urban areas of 1.0, an observed precision of rural areas of 0.85. Making the observed precision difference of 0.15. 
+**Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
+
+To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" and "RURAL_DENSITY_NORMALIZED" columns and used the absolute difference in precision between the two groups as our test statistic. 
+
+We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
 
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
 
