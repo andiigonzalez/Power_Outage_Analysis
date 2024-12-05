@@ -279,7 +279,7 @@ Moreover, and for visual aid, we have a confusion matrix that quantifies the num
 
 
 **Information Known At Time of Prediction**
-Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demad loss, and customers affected)
+Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demand loss, and customers affected)
 
 
 |Unknown        | 
@@ -310,22 +310,15 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 - `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
 - `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
-- `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable.
+- `ANOMALY.LEVEL`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 
 These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score 
 
-### **INSTERT EXPLANATION**
-  
-- F1 Score: 0.6827586206896552
-- Confusion Matrix:
+###### Performance Metric 1: F1 Score
+- F1 Score: 0.682
+<p></p>
 
-|                       |Actual Positive (1)|Actual Negative (0)|
-|-----------------------|-------------------|-------------------|
-| Predicted Positive (1)|       113         |        59         |
-| Predicted Negative (1)|       33          |        99         |
-
-
-##### Baseline Model Classification Report 
+###### Performance Metric 2: Classification Report
 
 |              | Precision| Recall   | f1-score | Support  |
 |--------------|----------|----------|----------|----------|
@@ -334,8 +327,25 @@ These features were chosen due to their direct relationship to weather. We belie
 | Accuracy     |          |          | 0.70     |   304    |
 | macro avg    | 0.70     | 0.70     | 0.70     |   304    |
 | weighted avg | 0.71     | 0.70     | 0.70     |   304    |
+<p></p>
 
+###### Performance Metric 3: Confusion matrix
 
+|                       |Actual Positive (1)|Actual Negative (0)|
+|-----------------------|-------------------|-------------------|
+| Predicted Positive (1)|       113         |        59         |
+| Predicted Negative (1)|       33          |        99         |
+<p></p>
+
+#### Performance Analysis: 
+<p></p>
+
+With a 0.68 F1 score our model is performing fairly well but can still imporveability to correctly predict whether major power outages were weather related or not. Through the Classification report, we can observe that our model has a higher precision score in non-weather-related outages (when the model predicts an outage is not weather-related, about 77% of the time it is correct) but a higher recall score (the model correctly identified 75% of the weather-related outages) in weather-related outages. We see that our F1 score is closer to the recall score meaning our model may be better at predciting weather-related outages but could incorrectly include some non-weather-related ones. 
+<p></p>
+
+Through our macro and weighted average we see that our model is fairly balanced in performance across both classes. Our model correctly classified 70% of all instances as seen in the classification report. While this is a passing score, it can be improved. In conclusion, we think out model is above average in performance but still requires improvement for the final model.
+<p></p>
+<p></p>
 
 ---
 
@@ -348,63 +358,78 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
  
 - Best Hyperparameters:
     - bootstrap: True
-    - max_depth: 10
-    - max_features: sqrt
+    - max_depth: 20
+    - max_features: log2
     - min_samples_split: 2
-    - n_estimators: 70
-- F1 Score: 0.7535211267605634
+    - n_estimators: 150
+- F1 Score: 0.7697841726618705
 - Confusion Matrix:
 
 |                       |Actual Positive (1)|Actual Negative (0)|
 |-----------------------|-------------------|-------------------|
-| Predicted Positive (1)|       125         |        45         |
+| Predicted Positive (1)|       131         |        39         |
 | Predicted Negative (1)|       25          |        107        |
 
 ##### Final Model Classification Report 
 
-|              | Precision| Recall   | f1-score | Support  |
-|--------------|----------|----------|----------|----------|
-| False        | 0.83     | 0.74     | 0.78     |   170    |
-| True         | 0.70     | 0.75     | 0.75     |   132    |
-| Accuracy     |          |          | 0.77     |   302    |
-| macro avg    | 0.77     | 0.77     | 0.77     |   302    |
-| weighted avg | 0.78     | 0.77     | 0.77     |   302    |
-
+|              | precision |   recall | f1-score |  support   |
+|--------------|-----------|----------|-----------|-----------|          
+|          0   |    0.84   |   0.77   |   0.80    | 170       |
+|          1   |   0.73    |  0.81    |   0.77    | 132       |
+|              |           |          |           |           |
+|   accuracy   |           |          |  0.79     |   302     |
+|  macro avg   |   0.79    |  0.79    |   0.79    |  302      |
+| weighted avg |  0.79     |   0.79   |  0.79     |   302     |
 
 ---
 
 ### Fairness Analysis
 ### **INSTERT EXPLANATION**
 
-For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED`, column we created in the final model. Group Y is: Outages occurring in rural areas and the, using the `RURAL_DENSITY_NORMALIZED` column we created in the final model. 
+For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: Outages occurring in urban areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. Group Y is: Outages occurring in rural areas, using the `URBAN_DENSITY_NORMALIZED` column we created in the final model. 
 
 As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
-We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
 
 For our Hypothesis we chose: 
 
-**Group 1**: Normalized Urban State Population Density 
-**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural density (group 2) outages is the same, and any observed differences are due to random chance.
+**Group 1**: Urban 
+**Null hypothesis**: The model is fair. Its precision for urban and rural outages is the same, and any observed differences are due to random chance.
 
-**Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
+**Alternative Hypothesis**: The model is unfair. The precision for urban outages is significantly different than that for rural outages.
 
-**Group 2**: Normalized Rural State Population Density
-**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
+To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" column and used the absolute difference in precision between the two groups as our test statistic. 
 
-**Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
-
-To analyze the fairness of the model we split the data into our two groups using the "URBAN_DENSITY_NORMALIZED" and "RURAL_DENSITY_NORMALIZED" columns and used the absolute difference in precision between the two groups as our test statistic. 
-
-We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
+We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.0534, an observed precision for urban areas of 1.0, an observed precision of rural areas of 0.85. Making the observed precision difference of 0.15. 
 
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
 
 <iframe src= "assets/images/FairnessAnalysis.html" width="700" height="400" frameBorder="0"></iframe>
 
+
 <p></p>
 <p></p>
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe>
-<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe> ##### Urban Classification Report 
+
+|              | precision |   recall | f1-score |  support   |
+|--------------|-----------|----------|-----------|-----------|          
+|          0   |   0.85    |   0.87   |   0.86    |    54     |
+|          1   |   0.77    |  0.73    |   0.75    |    56     |
+|              |           |          |           |           |
+|   accuracy   |           |          |  0.82     |   150     |
+|  macro avg   |   0.81    |   0.80   |   0.81    |   150     |
+| weighted avg |   0.82    |   0.82   |  0.82     |   150     |
+
+<iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" frameBorder="0"></iframe> ##### Rural Classification Report 
+
+|              | precision |   recall | f1-score |  support   |
+|--------------|-----------|----------|-----------|-----------|          
+|          0   |   0.80    |   0.63   |   0.86    |    54     |
+|          1   |   0.70    |  0.84    |   0.75    |    56     |
+|              |           |          |           |           |
+|   accuracy   |           |          |  0.82     |   150     |
+|  macro avg   |   0.75    |   0.74   |   0.81    |   150     |
+| weighted avg |   0.75    |   0.74   |  0.82     |   150     |
+
 <p></p>
 <p></p>
 <p></p>
