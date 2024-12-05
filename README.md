@@ -436,9 +436,9 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Precision_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
-<iframe src= "assets/images/UrbanClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/UrbanClassification_report.html" width="500" height="400" frameBorder="0"></iframe>
 
-<iframe src= "assets/images/RuralClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/RuralClassification_report.html" width="500" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
