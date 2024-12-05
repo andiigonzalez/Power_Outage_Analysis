@@ -319,14 +319,7 @@ These features were chosen due to their direct relationship to weather. We belie
 <p></p>
 
 ###### Performance Metric 2: Classification Report
-
-|              | Precision| Recall   | f1-score | Support  |
-|--------------|----------|----------|----------|----------|
-| False        | 0.77     | 0.66     | 0.71     |   172    |
-| True         | 0.63     | 0.75     | 0.68     |   132    |
-| Accuracy     |          |          | 0.70     |   304    |
-| macro avg    | 0.70     | 0.70     | 0.70     |   304    |
-| weighted avg | 0.71     | 0.70     | 0.70     |   304    |
+<iframe src= "assets/images/BaseClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 
 <p></p>
 
@@ -410,15 +403,7 @@ The features we engineered we believe are important beacuse we believe they impo
 | Predicted Negative (1)|       25          |        107        |
 
 ##### Final Model Classification Report 
-
-|              | precision |   recall | f1-score |  support   |
-|--------------|-----------|----------|-----------|-----------|          
-|          0   |    0.84   |   0.77   |   0.80    | 170       |
-|          1   |   0.73    |  0.81    |   0.77    | 132       |
-|              |           |          |           |           |
-|   accuracy   |           |          |  0.79     |   302     |
-|  macro avg   |   0.79    |  0.79    |   0.79    |  302      |
-| weighted avg |  0.79     |   0.79   |  0.79     |   302     |
+<iframe src= "assets/images/FinalClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 
 ---
 
@@ -448,7 +433,8 @@ We performed 10,000 permutations and set a significance level of 0.05. Getting a
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
 
 <iframe src= "assets/images/FairnessAnalysis.html" width="700" height="400" frameBorder="0"></iframe>
-
+<iframe src= "assets/images/UrbanClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/RuralClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
 <p></p>
 <iframe src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" frameBorder="0"></iframe>
