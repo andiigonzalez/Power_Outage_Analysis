@@ -405,7 +405,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 ##### Final Model Classification Report 
 
-<iframe src= "assets/images/FinalClassification_report.html" width="700" height="400" frameBorder="0"></iframe>
+<iframe src= "assets/images/FinalClassification_report.png" width="700" height="400" frameBorder="0"></iframe>
 
 ---
 
