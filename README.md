@@ -319,7 +319,9 @@ These features were chosen due to their direct relationship to weather. We belie
 <p></p>
 
 ###### Performance Metric 2: Classification Report
-<iframe src="assets/images/Baseclassification_report.html" width="700px" height="600px" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <iframe src="assets/images/Baseclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+</div>
 
 <p></p>
 
@@ -403,8 +405,9 @@ The features we engineered we believe are important beacuse we believe they impo
 
 ##### Final Model Classification Report 
 
-<iframe src="assets/images/Finalclassification_report.html" width="700px" height="600px" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
-
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <iframe src="assets/images/Finalclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+</div>
 
 
 ---
@@ -437,10 +440,11 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Precision_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <iframe src="assets/images/Urbanclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+ <iframe src="assets/images/Ruralclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+</div>
 
-<iframe src= "assets/images/Urbanclassification_report.html" width="700px" height="600px" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
-<iframe src= "assets/images/Ruralclassification_report.html" width="700px" height="600px" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
-<p></p>
 <p></p>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" alt= "Confusion Matrix Rural" </img>
