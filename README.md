@@ -350,10 +350,11 @@ To improve our model we implemented hyperparameter tuning and adding as well as 
 Improvements: 
 <p></p>
 **1.** Included more features (normal and engineered):
-data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"], 
-data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION'], 
-data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna(), 
-data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna(), 
+<p></p>
+data["URBAN_DENSITY_NORMALIZED"] = data["POPDEN_URBAN"] / data["POPULATION"]
+data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION']
+data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna()
+data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 
 <p></p>
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
@@ -416,15 +417,15 @@ We also created classifiation reports for both variables to do an in depth analy
 
 For our Hypothesis we chose: 
 
-*Group 1*: Normalized Urban State Population Density 
-*Null hypothesis*: The model is fair. Its precision for urban density (group 1) and rural density (group 2) outages is the same, and any observed differences are due to random chance.
+**Group 1**: Normalized Urban State Population Density 
+**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural density (group 2) outages is the same, and any observed differences are due to random chance.
 
 *Alternative Hypothesis*: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
 
-*Group 2*: Normalized Rural State Population Density
-*Null hypothesis*: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
+**Group 2**: Normalized Rural State Population Density
+**Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
 
-*Alternative Hypothesis*: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
+**Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
 
 To analyze the fairness of the model we split the data into our two groups using the `URBAN_DENSITY_NORMALIZED` and `RURAL_DENSITY_NORMALIZED` columns and used the absolute difference in precision between the two groups as our test statistic. 
 
