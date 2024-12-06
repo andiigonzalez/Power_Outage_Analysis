@@ -322,7 +322,7 @@ These features were chosen due to their direct relationship to weather. We belie
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
         Classification Report:
     </h5>
-  <iframe src="assets/images/Baseclassification_report.html" width="80%"frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+  <iframe src="assets/images/Baseclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
 <p></p>
@@ -448,19 +448,18 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
-        Urban Classification Report:
-    </h5>
+     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;"> Urban Classification Report:</h5>
   <iframe src="assets/images/Urbanclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
-    <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
-        Rural Classification Report:
-    </h5>
+  </div>
+  
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+    <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;"> Rural Classification Report:</h5>
  <iframe src="assets/images/Ruralclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
 <p></p>
-<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="700" height="400" alt="Confusion Matrix Urban" ></img>
-<img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="700" height="400" alt= "Confusion Matrix Rural" </img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="500" height="400" alt="Confusion Matrix Urban"> </img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="500" height="400" alt= "Confusion Matrix Rural"</img>
 <p></p>
 <p></p>
 <p></p>
