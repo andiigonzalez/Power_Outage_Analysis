@@ -466,8 +466,8 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 </div>
 <p></p>
 <p></p>
-<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="500" height="400" alt= "Confusion Matrix Urban"> </img>
-<img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="500" height="400" alt= "Confusion Matrix Rural"</img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="400" height="400" alt= "Confusion Matrix Urban"> </img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="400" height="400" alt= "Confusion Matrix Rural"</img>
 <p></p>
 <p></p>
 <p></p>
