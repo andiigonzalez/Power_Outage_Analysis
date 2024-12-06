@@ -425,6 +425,8 @@ For the Fairness Analysis we focused on analyzing outages occurring in rural are
 
 As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
 We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
+<p></p>
+<p></p>
 
 For our Hypothesis we chose: 
 
@@ -437,15 +439,19 @@ For our Hypothesis we chose:
 **Null hypothesis**: The model is fair. Its precision for urban density (group 1) and rural (group 2) outages is the same, and any observed differences are due to random chance.
 
 **Alternative Hypothesis**: The model is unfair. The precision for urban outages (group 1) is significantly different than that for rural outages (group 2).
-
+<p></p>
+<p></p>
 To analyze the fairness of the model we split the data into our two groups using the `URBAN_DENSITY_NORMALIZED` and `RURAL_DENSITY_NORMALIZED` columns and used the absolute difference in precision between the two groups as our test statistic. 
 
 We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
 
 These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
-
+<p></p>
+<p></p>
 <iframe src= "assets/images/Precision_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
+<p></p>
+<p></p>
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
      <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;"> Urban Classification Report:</h5>
@@ -456,7 +462,7 @@ These results lead us to conclude that there is sufficient evidence to fail to r
     <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;"> Rural Classification Report:</h5>
  <iframe src="assets/images/Ruralclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
-
+<p></p>
 <p></p>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="500" height="400" alt="Confusion Matrix Urban"> </img>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="500" height="400" alt= "Confusion Matrix Rural"</img>
