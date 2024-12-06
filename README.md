@@ -394,7 +394,7 @@ The features we engineered we believe are important beacuse we believe they impo
 - `MONTH_SIN` & `MONTH_COS`: Since most weather related phenomens are cyclical this feature helps ensure the model understands cyclical patterns.
 - `POPULATION`: We believe population size has a direct correlation with outages hence adding population as a feature we believe helps imporve the predictive capabilities of the model.
 - `YEAR`: The variable Year we beleive captures important patterns in long term weather related events which can help improve the model predictions.
-- `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the sales, this provides valuable economic data that correlat with weather related events as if changes in sales exist. By analyzing these factors we believe the model could imporve its predictions capabilities. 
+- `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the sales, this provides valuable economic data that correlat with weather related events as if changes in sales exist. By analyzing these factors we believe the model could improve its predictions capabilities. 
 
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
  
