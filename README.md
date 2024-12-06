@@ -17,7 +17,6 @@ This study investigates the trends in power outages across the nation, identifie
 <p style="text-align:center;"><b>Predict the cause of a major power outage?</b></p>
 <p></p>
 
-
 The data we have used comes from the scientific dataset [Data on major power outage events in the continental U.S](https://www.sciencedirect.com/science/article/pii/S2352340918307182?ref=pdf_download&fr=RR-2&rr=8e45b02bd9d82a8f) and contains the major power outage data in the continental U.S. from January 2000 to July 2016. With this data, we will employ data analysis techniques to determine patterns in power outages, draw conclusions from that analysis, and create a predictive model of what the cause of a major power outage in the United States might be.  
 
 
@@ -360,9 +359,9 @@ Improvements:
 <p></p>
 **1.** Included more features (normal and engineered):
 <p></p>
-data[`URBAN_DENSITY_NORMALIZED`] = data[`POPDEN_URBAN`] / data`"POPULATION`]
+data[`URBAN_DENSITY_NORMALIZED`] = data[`POPDEN_URBAN`] / data[`POPULATION`]
 
-data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION']
+data[`AVG_MW_PER_PERSON`] = data[`TOTAL.SALES`]/data['POPULATION']
 
 data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna()
 
