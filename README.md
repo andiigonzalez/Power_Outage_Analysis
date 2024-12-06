@@ -359,6 +359,7 @@ Improvements:
 <p></p>
 **1.** Included more features (normal and engineered):
 <p></p>
+
 data[`URBAN_DENSITY_NORMALIZED`] = data[`POPDEN_URBAN`] / data[`POPULATION`]
 
 data[`AVG_MW_PER_PERSON`] = data[`TOTAL.SALES`]/data['POPULATION']
@@ -371,7 +372,6 @@ data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 - `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
   
 **CATEGORICAL FEATURES**:
-- `Weather_Related`: Binary target variable with value 1 when cause is weather related and 0 otherwise
 - `CLIMATE.CATEGORY`: Qualitative (Categorical) ordinal variable. Transformed into a binary variable using OnehotEnconding dropping the first value.
 - `CLIMATE.REGION`: Qualitative (Categorical) nominal variable. Transformed into a binary variable using OnehotEncoding dropping the first value.
 
@@ -380,7 +380,7 @@ data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 - `POPULATION`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `URBAN_DENSITY_NORMALIZED`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
 - `AVG_MW_PER_PERSON`: Quantitative (Numerical) discrete variable. We standardized the anomaly level using StandardScaler().
-- `MONTH_SIN` & `MONTH_COS`: Quantitative (Numerical) continuous variables (cyclic representation of months). We derived them from the MONTH column using sin and cos transformations.
+- `MONTH_SIN` & `MONTH_COS`: Quantitative (Numerical) continuous variables (cyclic representation of months). We derived them from the MONTH column using sin and cos transformations. Which is a type of quantitative scaling calles linearization through non-linear transformations.
 - `YEAR`: Quantitative (Numerical) discrete variable. Standardized using StandardScaler().
 - `TOTAL.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
 - `IND.SALES`: Quantitative (Numerical) continuous variable. Standardized using StandardScaler().
@@ -389,12 +389,21 @@ data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 
 #### Justification 
 The features we engineered we believe are important beacuse we believe they imporve how the model does predictions making it more accurate. 
-- `URBAN_DENSITY_NORMALIZED`: This feature helps compare areas with different populations more effectively.
-- `AVG_MW_PER_PERSON`: This feature helps compare the demand of electricity per person so that each regions is comparable.
-- `MONTH_SIN` & `MONTH_COS`: Since most weather related phenomens are cyclical this feature helps ensure the model understands cyclical patterns.
+
+- `CLIMATE.CATEGORY`, `ANOMALY.LEVEL` & `CLIMATE.REGION`: Different climate categories are correlated to varying types and degree of weather-events. Similarly, different geographic regions have different weather patterns which influence the type and frequency of weather-events. Moreover, anomaly level quantifies the rarity of weather conditions which is dirrectly correlated to weather-events. As such, these are strongly linked to whether extreme weather-events may occur and thus cause power outages.
+  
+  
+- `URBAN_DENSITY_NORMALIZED`: This feature helps compare areas with different populations more effectively because it now compares population density equally across states even if they have different total populations. Ergo, avalues are on a similar scale reducing the impact of outliers too.
+  
+- `AVG_MW_PER_PERSON`: This feature helps compare the demand of electricity per person so that state energry consumption is comparable even if populations vary.
+  
+- `MONTH_SIN` & `MONTH_COS`: Since most weather related phenomens are cyclical this feature helps ensure the model understands cyclical patterns. It helps our model access patterns of seasonality.
+  
 - `POPULATION`: We believe population size has a direct correlation with outages hence adding population as a feature we believe helps imporve the predictive capabilities of the model.
-- `YEAR`: The variable Year we beleive captures important patterns in long term weather related events which can help improve the model predictions.
-- `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the sales, this provides valuable economic data that correlat with weather related events as if changes in sales exist. By analyzing these factors we believe the model could improve its predictions capabilities. 
+
+- `YEAR`: The variable Year we believe captures important patterns in long term weather patters which are related to events which can help improve the model predictions.
+
+- `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the total and group-specific electricity consumption in states, they add granularity to energy consumption patterns. In turn, they help our model detect correlations between weather-related events and electricity consumption patterns.
 
 <iframe src= "assets/images/FeatureImportance.html" width="700" height="400" frameBorder="0"></iframe>
  
