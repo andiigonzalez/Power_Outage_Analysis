@@ -320,7 +320,7 @@ These features were chosen due to their direct relationship to weather. We belie
 
 ###### Performance Metric 2: Classification Report
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <iframe src="assets/images/Baseclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+  <iframe src="assets/images/Baseclassification_report.html" width="80%"frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
 <p></p>
@@ -406,7 +406,7 @@ The features we engineered we believe are important beacuse we believe they impo
 ##### Final Model Classification Report 
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <iframe src="assets/images/Finalclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+  <iframe src="assets/images/Finalclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
 
@@ -441,8 +441,8 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 <iframe src= "assets/images/Recall_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-  <iframe src="assets/images/Urbanclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
- <iframe src="assets/images/Ruralclassification_report.html" width="80%" height="600px" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 800px;"> </iframe>
+  <iframe src="assets/images/Urbanclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+ <iframe src="assets/images/Ruralclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
 <p></p>
