@@ -328,7 +328,7 @@ These features were chosen due to their direct relationship to weather. We belie
     <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">
         Classification Report:
     </h5>
-  <iframe src="assets/images/Baseclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+  <iframe src="assets/images/Baseclassification_report.html" width="60%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 500px;"> </iframe>
 </div>
 
 <p></p>
@@ -418,7 +418,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
  <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Final Model Classification Report</h5>
-  <iframe src="assets/images/Finalclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+  <iframe src="assets/images/Finalclassification_report.html" width="60%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 500px;"> </iframe>
 </div>
 
 
@@ -460,16 +460,16 @@ These results lead us to conclude that there is sufficient evidence to fail to r
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
      <h5 style="color: darkblue;"> Urban Classification Report:</h5>
-  <iframe src="assets/images/Urbanclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+  <iframe src="assets/images/Urbanclassification_report.html" width="60%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 500px;"> </iframe>
   </div>
   
 <div style="display: flex; justify-content: center; margin-top: 20px;">
     <h5 style="color: darkblue;"> Rural Classification Report:</h5>
- <iframe src="assets/images/Ruralclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
+ <iframe src="assets/images/Ruralclassification_report.html" width="60%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 500px;"> </iframe>
 </div>
 <p></p>
 <p></p>
-<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="500" height="400" alt="Confusion Matrix Urban"> </img>
+<img src= "assets/images/FairnessAnalysisConfusionMatrix_Urban.png" width="500" height="400" alt= "Confusion Matrix Urban"> </img>
 <img src= "assets/images/FairnessAnalysisConfusionMatrix_Rural.png" width="500" height="400" alt= "Confusion Matrix Rural"</img>
 <p></p>
 <p></p>
