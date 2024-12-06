@@ -320,12 +320,12 @@ For our baseline model we created a target binary variable `Weather_Related` whi
 
 These features were chosen due to their direct relationship to weather. We believed that these features could singularly predict to an extent whether a power outage was caused by weather or not. To evaluate our model we implemented several scoring methods. We also ensured that the features used did not contain a significant level of missing values given that we did not want to introduce too much bias by dropping them nor influence the model by imputing them. The first evaluation metric was an F1 score 
 
-###### Performance Metric 1: F1 Score
+<h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;"> F1 Score:</h5>
 - F1 Score: 0.682
 <p></p>
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <h5 style="color: darkblue;">
+    <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">
         Classification Report:
     </h5>
   <iframe src="assets/images/Baseclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
@@ -334,7 +334,7 @@ These features were chosen due to their direct relationship to weather. We belie
 <p></p>
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
-    <h5 style="color: darkblue; ">Confusion Matrix: </h5></div>
+    <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Confusion Matrix: </h5></div>
 
 |                       |Actual Positive (1)|Actual Negative (0)|
 |-----------------------|-------------------|-------------------|
@@ -417,7 +417,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
- <h5 style="color: darkblue;">Final Model Classification Report</h5>
+ <h5 style="margin: 0 2px 20px 0; text-align: center; color: darkblue;">Final Model Classification Report</h5>
   <iframe src="assets/images/Finalclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
