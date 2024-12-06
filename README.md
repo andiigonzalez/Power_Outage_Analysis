@@ -401,7 +401,7 @@ The features we engineered we believe are important beacuse we believe they impo
   
 - `POPULATION`: We believe population size has a direct correlation with outages hence adding population as a feature we believe helps imporve the predictive capabilities of the model.
 
-- `YEAR`: The variable Year we believe captures important patterns in long term weather patters which are related to events which can help improve the model predictions.
+- `YEAR`: The variable Year we believe captures important patterns in long term weather patters which are related to events which can help improve the model predictions. Moreover, it could be correlated to the quality of infrastructure during that time.
 
 - `TOTAL.SALES`, `IND.SALES`, `COM.SALES`, `RES.SALES`: As these features capture the total and group-specific electricity consumption in states, they add granularity to energy consumption patterns. In turn, they help our model detect correlations between weather-related events and electricity consumption patterns. These features were purposefully not transformed because we believe the actual value might impact how overloaded power lines and grids are which may have a direct relationship on the sensitivity of these to extreme weather events. 
 
