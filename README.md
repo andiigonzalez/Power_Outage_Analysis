@@ -186,20 +186,25 @@ It is important to note that the abstract of our dataset determines that "A majo
 
 #### Interesting Aggregates
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #1: </h5>
+<p></p>
 This first pivot table consists of the 9 different climate regions in the United States and the number o
 f power outages that occured in those regions, separated by cause category. Essentially, this pivot table can help us visualize trends of power outage occurence and cause in the different climatic regions. For example, the Northeast region experienced the most outages during the years of our data with 350 outages over the course of 10 years. The majority of these were caused either by severe weather (176) or intentional attacks(135).
+<p></p>
 
   <iframe src="assets/images/pivot_table_outages_by_year_&_climate_region.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center;"> </iframe>
-  
+  <p></p>
+  <p></p>
 
 <h5 style="margin: 15px 0 10px 0; text-align: center; color: darkblue;"> Pivot Table #2: Total Number of Outages by Month Occurance and Cause </h5>
-
+<p></p>
 The overarching idea of this project is to understand patterns in when, why, and perhaps where power outages occured from January 2000 to July 2016. In this pivot table, we are calculating the total number of outages that occured due to a specific cause in a specific month. The goal was to see if certain months are more likely to suffer certain power outages whether it be due to severe weather and seasonality or due to other causes such as vandalism, public appeal...etc. 
 
 While we did not separate by State which is relevant in terms of climate, we wanted to observe if there were any cylcical trends in the outages. In this pivot table, we can observe that vandalism is a constant cause of power outages throughout the months. Another detail to highlight is that thunderstorms amass the largest number of outages within the severe weather category and occured substantially more often in May, June, and July whilst winterstorms - the second largest severe weather contributor to the outages- occurred most prominently in January and February. 
+<p></p>
 
   <iframe src="assets/images/outages_by_month.html" width="100%" scrolling="yes" frameBorder="0" style="display: block; text-align: center"> </iframe>
-
+<p></p>
+<p></p>
   
 ------
 
@@ -236,7 +241,7 @@ In this analysis,  we compared the distribution of outage duration missingness a
 - P-value: 0.0
 
 Using a 5% significance level, we can say that there is statistically significant evidence to determine that the missingness of outage duration depends on year. Thus, we can infer that outage duration misisngess if MAR on Year.
-
+<p></p>
 <iframe src= "assets/images/OutageDuration_vs_Year.html" width="700" height="400" frameBorder="0"></iframe>
 <iframe src="assets/images/OutageDuration_Year_Missingness.html" width="700" height="400" frameBorder="0"></iframe>
 <p></p>
@@ -260,9 +265,9 @@ Using a 5% significance level, we can say that there is statistically significan
 For this part we tested whether the outage duration distributions differ if the weather indicates it was warm or cold at the moment of the power outage. The relevant columns for this analysis are the `CLIMATE.CATEGORY` that describes the weather at the moment of the outage and the `OUTAGE.DURATION` column that describes the length of the power outage. 
 
 We performed 10,000 permutations and in order to have a representative sample to analyze. 
-
+<p></p>
 With these permutations we got an **observed statistic** of **0.077** and a **p-value of 0.2306**. These findings lead us to say we fail to reject the null hypothesis since there is no statistical significance of our findings at the 5% level to suggest that the distributions of outage durations differ between "cold" and "warm" climate categories.
-
+<p></p>
 The plot below shows the permutations carried out and the observed statistics. 
 <iframe src= "assets/images/HypothesisPlot.html" width="700" height="400" frameBorder="0"></iframe>
 
@@ -272,33 +277,34 @@ The plot below shows the permutations carried out and the observed statistics.
 ### Prediction Problem: Predicting the Cause Category
 <p></p>
 Our prediction model attempts to determine ***whether a major power outage is caused by weather during the outage*** using a binary classification model that predicts whether a major power outage was caused by weather conditions or a different cause using `Weather_Related` as our response variable. `Weather_Related` takes a value of one when the outage cause is weather related and zero otherwise. 
-
+<p></p>
 To evaluate our models performance we use several metrics. The first is an F1 score to predict and recall how many weather-related outages were correctly predicted and identified. This metric was chosen over accuracy due to the imbalance in outage cause observations in our data to balance precision and recall. Additionally, we added a classification report. This report gives a more in depth analysis of the metrics within each class (weather cause outages and non-weather outage causes) as it includes the scores for F1, Accuracy, Recall, Support for each. Support, for example shows us the true instances of each event. The report also gives us the accuracy with which each event was correctly predicted however this is a misleading statistic by itself. The macro average computes the unweighted mean of F1, precision and, accuracy giving us a measure of how well our model performs across all these metrics. On the overhand, the weighted average gives us the same measurement except it takes into account the imbalance of each class.
-
+<p></p>
 Moreover, and for visual aid, we have a confusion matrix that quantifies the number of Type I and Type II Errors made by our model. This allows us to understand if our model is over or underestimating the response variable and how well it performs in classifying each group instance. This can be a helpful measure when Type I error is costly due to unnecessary resource allocation.
 
+<p></p>
+<p></p>
 
 **Information Known At Time of Prediction**
-Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demand loss, and customers affected)
+Because our model aims to predict whether the cause of a major power outage is weather-related or not, we have access to all variables except 5 (Cause category, cause category detail, outage duration, demand loss, and customers affected). 
 
-|   Unknown       | 
-|-----------------|
-| 'STATE`         | 
-| `CLIMATE.REGION`|                         
+
+|   Unknown        | 
+|------------------|
+| 'STATE`          | 
+| `CLIMATE.REGION` |                         
 | `CLIMATE.CATEGORY|                          
-|`ANOMALY.LEVEL`  |       
-| `OUTAGE.START`  |            
-| `YEAR`          |   
-| `NERC.REGION`   |  
-| `RES.SALES`     | 
-| `COM.SALES`     |  
-| `IND.SALES`     | 
-| `TOTAL.SALES`   |  
-| `POPULATION`    |
-| `POPDEN_URBAN`  |
-| `POPDEN_RURAL`  |
-
-
+|`ANOMALY.LEVEL`   |       
+| `OUTAGE.START`   |            
+| `YEAR`           |   
+| `NERC.REGION`    |  
+| `RES.SALES`      | 
+| `COM.SALES`      |  
+| `IND.SALES`      | 
+| `TOTAL.SALES`    |  
+| `POPULATION`     |
+| `POPDEN_URBAN`   |
+| `POPDEN_RURAL`   |
 
 ---
 
@@ -359,8 +365,11 @@ Improvements:
 **1.** Included more features (normal and engineered):
 <p></p>
 data[`URBAN_DENSITY_NORMALIZED`] = data[`POPDEN_URBAN`] / data`"POPULATION`]
+
 data["AVG_MW_PER_PERSON"] = data["TOTAL.SALES"]/data['POPULATION']
+
 data['MONTH_SIN'] = np.sin(2 * np.pi * data['MONTH'] / 12).dropna()
+
 data['MONTH_COS'] = np.cos(2 * np.pi * data['MONTH'] / 12).dropna()
 
 <p></p>
@@ -410,9 +419,7 @@ The features we engineered we believe are important beacuse we believe they impo
 
 
 <div style="display: flex; justify-content: center; margin-top: 20px;">
- <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">
-        Final Model Classification Report:
-    </h5>
+ <h5 style="margin: 0 0 20px 0; text-align: center; color: darkblue; width: 100%;">Final Model Classification Report</h5>
   <iframe src="assets/images/Finalclassification_report.html" width="80%" frameBorder="0" scrolling="yes" style="display: block; border: none; min-width: 700px;"> </iframe>
 </div>
 
