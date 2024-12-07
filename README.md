@@ -458,7 +458,7 @@ We also split the data into the same two groups ans performed the same analysis 
 
 For the precision anlaysis we performed 10,000 permutations and set a significance level of 0.05. Getting as a result a p-value of 0.0 and an observed precision for the urban category of 0.78, as well as an observed precision for the rural category of 0.71. With a difference in precision between the groups of 0.07, indicating that the model is generally fair in most cases.
 
-For the recall analysis we also performed 10,000 permutations and set a significance level of 0.05. getting as a result a p-value of 0.0 and an observed recall for the urban category of 0.6964, as well as an observed recall for the rural category of 0.8684. With a difference in recall between the two groups of 0.1720.
+For the recall analysis we also performed 10,000 permutations and set a significance level of 0.05. Getting as a result a p-value of 0.0 and an observed recall for the urban category of 0.6964, as well as an observed recall for the rural category of 0.8684. With a difference in recall between the two groups of 0.1720.
 
 
 These results lead us to conclude that there is sufficient evidence to reject the null hypothesis since the p-value is smaller than the chosen significance level of 0.05. 
