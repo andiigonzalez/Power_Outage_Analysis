@@ -434,8 +434,8 @@ The features we engineered we believe are important beacuse we believe they impo
 
 For the Fairness Analysis we focused on analyzing outages occurring in rural areas and outages occurring in urban areas. Group X is: ⁠ `URBAN_DENSITY_NORMALIZED` ⁠ outages, focusing on the datapoints where the density is higher than the median of the `URBAN_DENSITY_NORMALIZED` column. Group Y is: ⁠ `URBAN_DENSITY_NORMALIZED` ⁠ outages, focusing on the data points that are samller than the median `URBAN_DENSITY_NORMALIZED` column as urban density and rural density are inversely related. 
 
-As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model.
-We also created classifiation reports for both variables to do an in depth analysis of the precision of the models, getting necessary metrics like the precision and f1 scores.
+As an evaluation metric we focussed on analyzing precision, which measures the proportion of true positive predictions out of all positive predictions made by the model. We also focused on analyzing the recall of the model which measures how well the model identifies all positive instances of the datapoints.
+We also created classifiation reports for both variables and both analysis to do an in depth analysis of how accurate the final model is, getting necessary metrics like the precision, recall and f1 scores.
 <p></p>
 <p></p>
 
@@ -454,9 +454,14 @@ For our Hypothesis we chose:
 <p></p>
 To analyze the fairness of the model we split the data into our two groups using the `URBAN_DENSITY_NORMALIZED` and `RURAL_DENSITY_NORMALIZED` columns and used the absolute difference in precision between the two groups as our test statistic. 
 
-We performed 10,000 permutations and set a significance level of 0.05. Getting as result a p-value of 0.4448, an observed precision for urban areas of 0.76, an observed precision of rural areas of 0.69. Making the observed precision difference of 0.0645. 
+We also split the data into the same two groups ans performed the same analysis to analyze the difference in recall between the two groups. 
 
-These results lead us to conclude that there is sufficient evidence to fail to reject the null hypothesis since the p-value is greater than the chosen significance level. 
+For the precision anlaysis we performed 10,000 permutations and set a significance level of 0.05. Getting as a result a p-value of 0.0 and an observed precision for the urban category of 0.78, as well as an observed precision for the rural category of 0.71. With a difference in precision between the groups of 0.07, indicating that the model is generally fair in most cases.
+
+For the recall analysis we also performed 10,000 permutations and set a significance level of 0.05. getting as a result a p-value of 0.0 and an observed recall for the urban category of 0.6964, as well as an observed recall for the rural category of 0.8684. With a difference in recall between the two groups of 0.1720.
+
+
+These results lead us to conclude that there is sufficient evidence to reject the null hypothesis since the p-value is smaller than the chosen significance level of 0.05. 
 <p></p>
 <p></p>
 <iframe src= "assets/images/Precision_Permutation.html" width="700" height="400" frameBorder="0"></iframe>
